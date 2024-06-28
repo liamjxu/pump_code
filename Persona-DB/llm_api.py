@@ -22,7 +22,7 @@ def chatbot(input, model="bedrock-runtime", response_format="text", batch_size=1
                 })
 
 
-                modelId = 'anthropic.claude-3-sonnet-20240229-v1:0'
+                modelId = 'anthropic.claude-v2'
                 accept = 'application/json'
                 contentType = 'application/json'
 
