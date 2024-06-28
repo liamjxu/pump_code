@@ -149,7 +149,7 @@ latex*.txt
 testing*.py
 #note*.txt
 experiment*/
-data/*
+# data/*
 /model/states/
 other_repo*/
 wandb/
@@ -162,7 +162,7 @@ test*.py
 _gitignore.txt
 
 StanfordParser-*/
-/data/
+# /data/
 plan.jpg
 *.ppt
 *.pptx
@@ -185,7 +185,7 @@ data_new/*
 *images/*
 *reply/*
 *month/*
-*.json
+# *.json
 *.jsonl
 .filepart
 *.zip

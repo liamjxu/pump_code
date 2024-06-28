@@ -1,0 +1,849 @@
+{
+    "OPTIMIST_W41": {
+        "question": "Please think about what things will be like in 2050, about 30 years from now. Thinking about the future of the United States, would you say you are",
+        "options": {
+            "very optimistic": 1,
+            "somewhat optimistic": 2,
+            "somewhat pessimistic": 3,
+            "very pessimistic": 4,
+            "refused": 99
+        }
+    },
+    "AVGFAM_W41": {
+        "question": "Over the next 30 years, do you think that the average American family will see its standard of living",
+        "options": {
+            "get better": 1,
+            "stay about the same": 2,
+            "get worse": 3,
+            "refused": 99
+        }
+    },
+    "HAPPENa_W41": {
+        "question": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? The U.S. economy will be stronger/weaker",
+        "options": {
+            "the u.s. economy will be stronger": 1,
+            "the u.s. economy will be weaker": 2,
+            "refused": 99
+        }
+    },
+    "HAPPENb_W41": {
+        "question": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? Health care will be more/less affordable",
+        "options": {
+            "health care will be more affordable": 1,
+            "health care will be less affordable": 2,
+            "refused": 99
+        }
+    },
+    "HAPPENc_W41": {
+        "question": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? Race relations will improve/get worse",
+        "options": {
+            "race relations will improve": 1,
+            "race relations will get worse": 2,
+            "refused": 99
+        }
+    },
+    "HAPPENd_W41": {
+        "question": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? The U.S. will be more/less important in the world",
+        "options": {
+            "the u.s. will be more important in the world": 1,
+            "the u.s. will be less important in the world": 2,
+            "refused": 99
+        }
+    },
+    "HAPPENe_W41": {
+        "question": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? The gap between the rich and the poor will grow/get smaller",
+        "options": {
+            "the gap between the rich and the poor will grow": 1,
+            "the gap between the rich and the poor will get smaller": 2,
+            "refused": 99
+        }
+    },
+    "HAPPENf_W41": {
+        "question": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? The public education system will improve/get worse",
+        "options": {
+            "the public education system will improve": 1,
+            "the public education system will get worse": 2,
+            "refused": 99
+        }
+    },
+    "HAPPENg_W41": {
+        "question": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? Religion will become less/about as important",
+        "options": {
+            "religion will become less important": 1,
+            "religion will be about as important as it is now": 2,
+            "refused": 99
+        }
+    },
+    "HAPPENhF1_W41": {
+        "question": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? People 65 and older will have a better/worse standard of living",
+        "options": {
+            "people 65 and older will have a better standard of living": 1,
+            "people 65 and older will have a worse standard of living": 2,
+            "refused": 99
+        }
+    },
+    "HAPPENiF2_W41": {
+        "question": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? Children will have a better/worse standard of living",
+        "options": {
+            "children will have a better standard of living": 1,
+            "children will have a worse standard of living": 2,
+            "refused": 99
+        }
+    },
+    "HAPPENj_W41": {
+        "question": "Still thinking ahead 30 years, which do you think is more likely to happen in the U.S.? The country will be more/less politically divided",
+        "options": {
+            "the country will be more politically divided": 1,
+            "the country will be less politically divided": 2,
+            "refused": 99
+        }
+    },
+    "HAPPEN2a_W41": {
+        "question": "How likely do you think it is that the following will happen in the next 30 years? There will be a terrorist attack on the U.S. as bad as or worse than 9/11",
+        "options": {
+            "will definitely happen": 1,
+            "will probably happen": 2,
+            "will probably not happen": 3,
+            "will definitely not happen": 4,
+            "refused": 99
+        }
+    },
+    "HAPPEN2b_W41": {
+        "question": "How likely do you think it is that the following will happen in the next 30 years? The world will face a major energy crisis",
+        "options": {
+            "will definitely happen": 1,
+            "will probably happen": 2,
+            "will probably not happen": 3,
+            "will definitely not happen": 4,
+            "refused": 99
+        }
+    },
+    "HAPPEN2c_W41": {
+        "question": "How likely do you think it is that the following will happen in the next 30 years? There will be a cure for Alzheimer's disease",
+        "options": {
+            "will definitely happen": 1,
+            "will probably happen": 2,
+            "will probably not happen": 3,
+            "will definitely not happen": 4,
+            "refused": 99
+        }
+    },
+    "HAPPEN2d_W41": {
+        "question": "How likely do you think it is that the following will happen in the next 30 years? China will overtake the U.S. as the world's main superpower",
+        "options": {
+            "will definitely happen": 1,
+            "will probably happen": 2,
+            "will probably not happen": 3,
+            "will definitely not happen": 4,
+            "refused": 99
+        }
+    },
+    "HAPPEN2e_W41": {
+        "question": "How likely do you think it is that the following will happen in the next 30 years? A woman will be elected U.S. president",
+        "options": {
+            "will definitely happen": 1,
+            "will probably happen": 2,
+            "will probably not happen": 3,
+            "will definitely not happen": 4,
+            "refused": 99
+        }
+    },
+    "HAPPEN2f_W41": {
+        "question": "How likely do you think it is that the following will happen in the next 30 years? A Hispanic person will be elected U.S. president",
+        "options": {
+            "will definitely happen": 1,
+            "will probably happen": 2,
+            "will probably not happen": 3,
+            "will definitely not happen": 4,
+            "refused": 99
+        }
+    },
+    "HAPPEN2g_W41": {
+        "question": "How likely do you think it is that the following will happen in the next 30 years? Most Americans will work into their 70s to have enough resources to retire",
+        "options": {
+            "will definitely happen": 1,
+            "will probably happen": 2,
+            "will probably not happen": 3,
+            "will definitely not happen": 4,
+            "refused": 99
+        }
+    },
+    "HAPPEN2h_W41": {
+        "question": "How likely do you think it is that the following will happen in the next 30 years? There will be increasing violence against Jews in the U.S.",
+        "options": {
+            "will definitely happen": 1,
+            "will probably happen": 2,
+            "will probably not happen": 3,
+            "will definitely not happen": 4,
+            "refused": 99
+        }
+    },
+    "NATDEBT_W41": {
+        "question": "Which do you think is most likely to occur over the next 30 years? The national debt will",
+        "options": {
+            "grow larger": 1,
+            "stay about the same": 2,
+            "be reduced": 3,
+            "be eliminated": 4,
+            "refused": 99
+        }
+    },
+    "ENVC_W41": {
+        "question": "By the year 2050, do you think the overall condition of the environment will be",
+        "options": {
+            "better than it is now": 1,
+            "worse than it is now": 2,
+            "about the same as it is now": 3,
+            "refused": 99
+        }
+    },
+    "POPPROB_W41": {
+        "question": "In 2050, do you think population growth in the U.S. will be a",
+        "options": {
+            "major problem": 1,
+            "minor problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "FTRWORRYa_W41": {
+        "question": "Still thinking about the future of our country, how worried are you, if at all, about the overall soundness of our economic system?",
+        "options": {
+            "very worried": 1,
+            "fairly worried": 2,
+            "not too worried": 3,
+            "not at all worried": 4,
+            "refused": 99
+        }
+    },
+    "FTRWORRYb_W41": {
+        "question": "Still thinking about the future of our country, how worried are you, if at all, about the ability of public schools to provide a quality education?",
+        "options": {
+            "very worried": 1,
+            "fairly worried": 2,
+            "not too worried": 3,
+            "not at all worried": 4,
+            "refused": 99
+        }
+    },
+    "FTRWORRYc_W41": {
+        "question": "Still thinking about the future of our country, how worried are you, if at all, about the way the government in Washington works?",
+        "options": {
+            "very worried": 1,
+            "fairly worried": 2,
+            "not too worried": 3,
+            "not at all worried": 4,
+            "refused": 99
+        }
+    },
+    "FTRWORRYd_W41": {
+        "question": "Still thinking about the future of our country, how worried are you, if at all, about the ability of political leaders to solve the country's biggest problems?",
+        "options": {
+            "very worried": 1,
+            "fairly worried": 2,
+            "not too worried": 3,
+            "not at all worried": 4,
+            "refused": 99
+        }
+    },
+    "FTRWORRYe_W41": {
+        "question": "Still thinking about the future of our country, how worried are you, if at all, about the moral values of Americans?",
+        "options": {
+            "very worried": 1,
+            "fairly worried": 2,
+            "not too worried": 3,
+            "not at all worried": 4,
+            "refused": 99
+        }
+    },
+    "FTRWORRYf_W41": {
+        "question": "Still thinking about the future of our country, how worried are you, if at all, about climate change?",
+        "options": {
+            "very worried": 1,
+            "fairly worried": 2,
+            "not too worried": 3,
+            "not at all worried": 4,
+            "refused": 99
+        }
+    },
+    "ELDCARE_W41": {
+        "question": "Thinking ahead 30 years from now, which do you think is more likely to happen? Adults ages 65 and older will be",
+        "options": {
+            "better prepared financially for retirement than older adults are today": 1,
+            "less prepared financially for retirement than older adults today": 2,
+            "refused": 99
+        }
+    },
+    "ELDFINANCEF1_W41": {
+        "question": "Who do you think will be mostly responsible for paying for the long-term care older Americans may need?",
+        "options": {
+            "family members": 1,
+            "government": 2,
+            "older americans themselves": 3,
+            "refused": 99
+        }
+    },
+    "ELDFINANCEF2_W41": {
+        "question": "Who do you think should be mostly responsible for paying for the long-term care older Americans may need?",
+        "options": {
+            "family members": 1,
+            "government": 2,
+            "older americans themselves": 3,
+            "refused": 99
+        }
+    },
+    "GOVPRIOa_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing the national debt?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOb_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to increasing spending for education?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOc_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to providing high-quality, affordable health care to all Americans?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOd_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to increasing spending on scientific research?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOe_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing the gap between the rich and the poor?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOfF1_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing military spending?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOgF1_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing the number of undocumented immigrants coming into the U.S.?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOhF1_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing spending on Social Security, Medicare and Medicaid?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOiF1_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to increasing spending for roads, bridges and other infrastructure?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOjF1_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to avoiding tax increases?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOkF2_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to increasing military spending?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOlF2_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to who come here legally? Allowing more immigrants into the U.S.",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOmF2_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to increasing spending on Social Security, Medicare and Medicaid?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOnF2_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to reducing spending for roads, bridges and other infrastructure?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "GOVPRIOoF2_W41": {
+        "question": "If you were deciding what the federal government should do to improve the quality of life for future generations, what priority would you give to dealing with climate change?",
+        "options": {
+            "a top priority": 1,
+            "an important, but not a top priority": 2,
+            "a lower priority": 3,
+            "should not be done": 4,
+            "refused": 99
+        }
+    },
+    "WRKTRN1F1_W41": {
+        "question": "Over the next 30 years, who should be most responsible for making sure American workers have the right skills and training to get a good job?",
+        "options": {
+            "government": 1,
+            "employers": 2,
+            "the education system": 3,
+            "individuals themselves": 4,
+            "refused": 99
+        }
+    },
+    "WRKTRN1F2_W41": {
+        "question": "Over the next 30 years, who should be most responsible for making sure young adults have the right skills and training to get a good job?",
+        "options": {
+            "government": 1,
+            "employers": 2,
+            "the education system": 3,
+            "individuals themselves": 4,
+            "refused": 99
+        }
+    },
+    "JOBSECURITY_W41": {
+        "question": "By the year 2050, will the average working person in this country have",
+        "options": {
+            "more job security": 1,
+            "less job security": 2,
+            "about the same": 3,
+            "refused": 99
+        }
+    },
+    "JOBBENEFITS_W41": {
+        "question": "Over the next 30 years, will the average working person in this country have employee benefits, such as health insurance, paid vacations and retirement plans that are",
+        "options": {
+            "better than they are now": 1,
+            "not as good as they are now": 2,
+            "about the same as they are now": 3,
+            "refused": 99
+        }
+    },
+    "AUTOWKPLC_W41": {
+        "question": "Overall, has the automation of jobs through new technology in the workplace",
+        "options": {
+            "mostly helped american workers": 1,
+            "mostly hurt american workers": 2,
+            "neither helped nor hurt": 3,
+            "refused": 99
+        }
+    },
+    "ROBWRK_W41": {
+        "question": "Overall, how likely do you think it is that 30 years from now robots and computers will do much of the work currently done by humans? Do you think this will",
+        "options": {
+            "definitely happen": 1,
+            "probably happen": 2,
+            "probably not happen": 3,
+            "definitely not happen": 4,
+            "refused": 99
+        }
+    },
+    "ROBWRK2_W41": {
+        "question": "If robots and computers do much of the work currently done by humans, do you think this would be",
+        "options": {
+            "a very good thing for the country": 1,
+            "a somewhat good thing for the country": 2,
+            "a somewhat bad thing for the country": 3,
+            "a very bad thing for the country": 4,
+            "refused": 99
+        }
+    },
+    "AUTOLKLY_W41": {
+        "question": "Within the next 30 years, how likely do you think it is that the type of work that you do will be done by robots or computers? Do you think this will",
+        "options": {
+            "definitely happen": 1,
+            "probably happen": 2,
+            "probably not happen": 3,
+            "definitely not happen": 4,
+            "refused": 99
+        }
+    },
+    "ROBIMPACTa_W41": {
+        "question": "If robots and computers perform most of the jobs currently being done by humans, do you think it is likely or not that inequality between the rich and the poor would increase",
+        "options": {
+            "yes, likely": 1,
+            "no, not likely": 2,
+            "refused": 99
+        }
+    },
+    "ROBIMPACTb_W41": {
+        "question": "If robots and computers perform most of the jobs currently being done by humans, do you think it is likely or not that the economy would create many new, better-paying jobs for humans",
+        "options": {
+            "yes, likely": 1,
+            "no, not likely": 2,
+            "refused": 99
+        }
+    },
+    "LEGALIMG_W41": {
+        "question": "In order to maintain the strength of the U.S. economy over the next 30 years, do you think that legal immigration will need to be",
+        "options": {
+            "increased": 1,
+            "maintained at current levels": 2,
+            "decreased": 3,
+            "refused": 99
+        }
+    },
+    "FUTRCLASSa_W41": {
+        "question": "Over the next 30 years, do you think the share of Americans who are upper class will increase, decrease, or stay about the same?",
+        "options": {
+            "increase": 1,
+            "decrease": 2,
+            "stay about the same": 3,
+            "refused": 99
+        }
+    },
+    "FUTRCLASSb_W41": {
+        "question": "Over the next 30 years, do you think the share of Americans who are in Middle Class will increase, decrease, or stay about the same?",
+        "options": {
+            "increase": 1,
+            "decrease": 2,
+            "stay about the same": 3,
+            "refused": 99
+        }
+    },
+    "FUTRCLASSc_W41": {
+        "question": "Over the next 30 years, do you think the share of Americans who are lower class will increase, decrease, or stay about the same?",
+        "options": {
+            "increase": 1,
+            "decrease": 2,
+            "stay about the same": 3,
+            "refused": 99
+        }
+    },
+    "HARASS1F1a_W41": {
+        "question": "When it comes to sexual harassment and sexual assault in the workplace today, how much of a problem, if at all, would you say women claiming they have experienced sexual harassment or assault when it hasn't actually is?",
+        "options": {
+            "major problem": 1,
+            "minor problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "HARASS1F1b_W41": {
+        "question": "When it comes to sexual harassment and sexual assault in the workplace today, how much of a problem, if at all, would you say employers firing men who have been accused of sexual harassment or assault before finding ou is?",
+        "options": {
+            "major problem": 1,
+            "minor problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "HARASS1F1c_W41": {
+        "question": "When it comes to sexual harassment and sexual assault in the workplace today, how much of a problem, if at all, would you say men getting away with committing sexual harassment or assault is?",
+        "options": {
+            "major problem": 1,
+            "minor problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "HARASS1F1d_W41": {
+        "question": "When it comes to sexual harassment and sexual assault in the workplace today, how much of a problem, if at all, would you say women not being believed when they claim that they have experienced sexual harassment or ass is?",
+        "options": {
+            "major problem": 1,
+            "minor problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "HARASS1NOWRKF2a_W41": {
+        "question": "When it comes to sexual harassment and sexual assault today, how much of a problem, if at all, would you say women claiming they have experienced sexual harassment or assault when it hasn't actually occurred is?",
+        "options": {
+            "major problem": 1,
+            "minor problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "HARASS1NOWRKF2c_W41": {
+        "question": "When it comes to sexual harassment and sexual assault today, how much of a problem, if at all, would you say men getting away with committing sexual harassment or assault is?",
+        "options": {
+            "major problem": 1,
+            "minor problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "HARASS1NOWRKF2d_W41": {
+        "question": "When it comes to sexual harassment and sexual assault today, how much of a problem, if at all, would you say women not being believed when they claim that they have experienced sexual harassment or assault is?",
+        "options": {
+            "major problem": 1,
+            "minor problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "HARASS3F1_W41": {
+        "question": "Do you think the increased focus on sexual harassment and assault has made it easier or harder for men to know how to interact with women in the workplace, or hasn't it made much difference?",
+        "options": {
+            "has made it easier for men": 1,
+            "has made it harder for men": 2,
+            "hasn't made much difference": 3,
+            "refused": 99
+        }
+    },
+    "HARASS3NOWRKF2_W41": {
+        "question": "Do you think the increased focus on sexual harassment and assault has made it easier or harder for men to know how to interact with women, or hasn't it made much difference?",
+        "options": {
+            "has made it easier for men": 1,
+            "has made it harder for men": 2,
+            "hasn't made much difference": 3,
+            "refused": 99
+        }
+    },
+    "HARASS4_W41": {
+        "question": "Now thinking about your own experiences have you ever personally received unwanted sexual advances or verbal or physical harassment of a sexual nature? This can be in any circumstance, whether or not work-related.",
+        "options": {
+            "yes": 1,
+            "no": 2,
+            "refused": 99
+        }
+    },
+    "HARASS5_W41": {
+        "question": "Have you received unwanted sexual advances or verbal or physical harassment of a sexual nature",
+        "options": {
+            "in a professional or work setting": 1,
+            "outside of a professional or work setting": 2,
+            "both": 3,
+            "refused": 99
+        }
+    },
+    "ETHNCMAJMOD_W41": {
+        "question": "According to the U.S. Census Bureau, by the year 2050, a majority of the population will be made up of blacks, Asians, Hispanics, and other racial minorities. In terms of its impact on the country, do you think this will be",
+        "options": {
+            "a very good thing": 1,
+            "a somewhat good thing": 2,
+            "a somewhat bad thing": 3,
+            "a very bad thing": 4,
+            "neither a good nor bad thing": 5,
+            "refused": 99
+        }
+    },
+    "AGEMAJ_W41": {
+        "question": "According to the U.S. Census Bureau, by the year 2050, the number of people in the population who are 65 or older will outnumber people younger than 18. In terms of its impact on the country, do you think this will be",
+        "options": {
+            "a very good thing": 1,
+            "a somewhat good thing": 2,
+            "a somewhat bad thing": 3,
+            "a very bad thing": 4,
+            "neither a good nor bad thing": 5,
+            "refused": 99
+        }
+    },
+    "INTRMAR_W41": {
+        "question": "According to the U.S. Census Bureau, more people of different races are marrying each other these days than in the past. In terms of its impact on the country, do you think this is",
+        "options": {
+            "a very good thing": 1,
+            "a somewhat good thing": 2,
+            "a somewhat bad thing": 3,
+            "a very bad thing": 4,
+            "neither a good nor bad thing": 5,
+            "refused": 99
+        }
+    },
+    "SSMONEY_W41": {
+        "question": "Thinking about what the Social Security system will look like when you are ready to retire, do you think there will be enough money to provide benefits to older Americans?",
+        "options": {
+            "yes, at current levels": 1,
+            "yes, but at reduced levels": 2,
+            "no": 3,
+            "refused": 99
+        }
+    },
+    "SSCUT_W41": {
+        "question": "Thinking about the long-term future of Social Security, which statement comes closer to your view, even if neither is exactly right?",
+        "options": {
+            "some reductions in benefits for future retirees will need to be made": 1,
+            "social security benefits should not be reduced in any way": 2,
+            "refused": 99
+        }
+    },
+    "FUTR_ABR_W41": {
+        "question": "Thinking again about the year 2050, or 30 years from now, do you think abortion will be",
+        "options": {
+            "legal with no restrictions": 1,
+            "legal but with some restrictions": 2,
+            "illegal except in certain cases": 3,
+            "illegal with no exceptions": 4,
+            "refused": 99
+        }
+    },
+    "FUTR_DIV_W41": {
+        "question": "By 2050, do you expect that people who are married will be",
+        "options": {
+            "more likely to get divorced than people are now": 1,
+            "less likely to get divorced than people are now": 2,
+            "about as likely to get divorced as people are now": 3,
+            "refused": 99
+        }
+    },
+    "FUTR_M_W41": {
+        "question": "By 2050, do you expect that people will be",
+        "options": {
+            "more likely to get married than people are now": 1,
+            "less likely to get married than people are now": 2,
+            "about as likely to get married as people are now": 3,
+            "refused": 99
+        }
+    },
+    "FUTR_K_W41": {
+        "question": "By 2050, do you expect that people will be",
+        "options": {
+            "more likely to have children than people are now": 1,
+            "less likely to have children than people are now": 2,
+            "about as likely to have children as people are now": 3,
+            "refused": 99
+        }
+    },
+    "SOLVPROBa_W41": {
+        "question": "In the future, what kind of an impact do you think science and technology will have in solving the biggest problems facing the country?",
+        "options": {
+            "a very positive impact": 1,
+            "a somewhat positive impact": 2,
+            "a somewhat negative impact": 3,
+            "a very negative impact": 4,
+            "refused": 99
+        }
+    },
+    "SOLVPROBb_W41": {
+        "question": "In the future, what kind of an impact do you think major corporations will have in solving the biggest problems facing the country?",
+        "options": {
+            "a very positive impact": 1,
+            "a somewhat positive impact": 2,
+            "a somewhat negative impact": 3,
+            "a very negative impact": 4,
+            "refused": 99
+        }
+    },
+    "SOLVPROBc_W41": {
+        "question": "In the future, what kind of an impact do you think religious groups will have in solving the biggest problems facing the country?",
+        "options": {
+            "a very positive impact": 1,
+            "a somewhat positive impact": 2,
+            "a somewhat negative impact": 3,
+            "a very negative impact": 4,
+            "refused": 99
+        }
+    },
+    "SOLVPROBdF1_W41": {
+        "question": "In the future, what kind of an impact do you think the government in Washington will have in solving the biggest problems facing the country?",
+        "options": {
+            "a very positive impact": 1,
+            "a somewhat positive impact": 2,
+            "a somewhat negative impact": 3,
+            "a very negative impact": 4,
+            "refused": 99
+        }
+    },
+    "SOLVPROBeF2_W41": {
+        "question": "In the future, what kind of an impact do you think state and local government will have in solving the biggest problems facing the country?",
+        "options": {
+            "a very positive impact": 1,
+            "a somewhat positive impact": 2,
+            "a somewhat negative impact": 3,
+            "a very negative impact": 4,
+            "refused": 99
+        }
+    },
+    "SOLVPROBf_W41": {
+        "question": "In the future, what kind of an impact do you think the news media will have in solving the biggest problems facing the country?",
+        "options": {
+            "a very positive impact": 1,
+            "a somewhat positive impact": 2,
+            "a somewhat negative impact": 3,
+            "a very negative impact": 4,
+            "refused": 99
+        }
+    },
+    "SOLVPROBg_W41": {
+        "question": "In the future, what kind of an impact do you think the military will have in solving the biggest problems facing the country?",
+        "options": {
+            "a very positive impact": 1,
+            "a somewhat positive impact": 2,
+            "a somewhat negative impact": 3,
+            "a very negative impact": 4,
+            "refused": 99
+        }
+    },
+    "SOLVPROBh_W41": {
+        "question": "In the future, what kind of an impact do you think colleges and universities will have in solving the biggest problems facing the country?",
+        "options": {
+            "a very positive impact": 1,
+            "a somewhat positive impact": 2,
+            "a somewhat negative impact": 3,
+            "a very negative impact": 4,
+            "refused": 99
+        }
+    },
+    "SOLVPROBi_W41": {
+        "question": "In the future, what kind of an impact do you think public K-12 schools will have in solving the biggest problems facing the country?",
+        "options": {
+            "a very positive impact": 1,
+            "a somewhat positive impact": 2,
+            "a somewhat negative impact": 3,
+            "a very negative impact": 4,
+            "refused": 99
+        }
+    }
+}

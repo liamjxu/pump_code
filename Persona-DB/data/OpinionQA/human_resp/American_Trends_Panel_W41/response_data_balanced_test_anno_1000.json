@@ -1,0 +1,5002 @@
+[
+    {
+        "author_id": 1831,
+        "conversation_id": "HARASS1F1d_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 2196,
+        "conversation_id": "SOLVPROBeF2_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 509,
+        "conversation_id": "HAPPENhF1_W41",
+        "label": "People 65 and older will have a better standard of living"
+    },
+    {
+        "author_id": 1223,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 373,
+        "conversation_id": "GOVPRIOb_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1924,
+        "conversation_id": "HARASS1F1c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 930,
+        "conversation_id": "FUTR_M_W41",
+        "label": "Less likely to get married than people are now"
+    },
+    {
+        "author_id": 1912,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1891,
+        "conversation_id": "HAPPEN2b_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 321,
+        "conversation_id": "HAPPENe_W41",
+        "label": "The gap between the rich and the poor will grow"
+    },
+    {
+        "author_id": 276,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 594,
+        "conversation_id": "GOVPRIOgF1_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 2044,
+        "conversation_id": "HAPPENb_W41",
+        "label": "Health care will be less affordable"
+    },
+    {
+        "author_id": 1855,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1064,
+        "conversation_id": "FUTR_DIV_W41",
+        "label": "About as likely to get divorced as people are now"
+    },
+    {
+        "author_id": 1652,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 636,
+        "conversation_id": "LEGALIMG_W41",
+        "label": "Maintained at current levels"
+    },
+    {
+        "author_id": 191,
+        "conversation_id": "WRKTRN1F2_W41",
+        "label": "Individuals themselves"
+    },
+    {
+        "author_id": 1239,
+        "conversation_id": "SOLVPROBdF1_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1230,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Grow larger"
+    },
+    {
+        "author_id": 1856,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "About the same as they are now"
+    },
+    {
+        "author_id": 273,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 2389,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Grow larger"
+    },
+    {
+        "author_id": 1004,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 489,
+        "conversation_id": "WRKTRN1F2_W41",
+        "label": "Government"
+    },
+    {
+        "author_id": 2259,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Race relations will improve"
+    },
+    {
+        "author_id": 1082,
+        "conversation_id": "GOVPRIOfF1_W41",
+        "label": "Should not be done"
+    },
+    {
+        "author_id": 906,
+        "conversation_id": "SOLVPROBeF2_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1062,
+        "conversation_id": "HARASS1F1d_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1233,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Grow larger"
+    },
+    {
+        "author_id": 180,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 69,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 132,
+        "conversation_id": "HARASS1F1d_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 2354,
+        "conversation_id": "HARASS3F1_W41",
+        "label": "Has made it easier for men"
+    },
+    {
+        "author_id": 2148,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1142,
+        "conversation_id": "SSMONEY_W41",
+        "label": "No"
+    },
+    {
+        "author_id": 184,
+        "conversation_id": "INTRMAR_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 236,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A very bad thing for the country"
+    },
+    {
+        "author_id": 2024,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1622,
+        "conversation_id": "FUTR_M_W41",
+        "label": "About as likely to get married as people are now"
+    },
+    {
+        "author_id": 946,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 2511,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 2101,
+        "conversation_id": "FUTRCLASSb_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 1825,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 2098,
+        "conversation_id": "ETHNCMAJMOD_W41",
+        "label": "A somewhat bad thing"
+    },
+    {
+        "author_id": 407,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 2365,
+        "conversation_id": "SSMONEY_W41",
+        "label": "No"
+    },
+    {
+        "author_id": 89,
+        "conversation_id": "AUTOLKLY_W41",
+        "label": "Probably happen"
+    },
+    {
+        "author_id": 1054,
+        "conversation_id": "HAPPENb_W41",
+        "label": "Health care will be less affordable"
+    },
+    {
+        "author_id": 592,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 610,
+        "conversation_id": "FUTRCLASSb_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1441,
+        "conversation_id": "SSCUT_W41",
+        "label": "Social Security benefits should not be reduced in any way"
+    },
+    {
+        "author_id": 2511,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2059,
+        "conversation_id": "HARASS4_W41",
+        "label": "Yes"
+    },
+    {
+        "author_id": 1002,
+        "conversation_id": "ENVC_W41",
+        "label": "About the same as it is now"
+    },
+    {
+        "author_id": 134,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat pessimistic"
+    },
+    {
+        "author_id": 1318,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1178,
+        "conversation_id": "HAPPENe_W41",
+        "label": "The gap between the rich and the poor will grow"
+    },
+    {
+        "author_id": 2359,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 561,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 964,
+        "conversation_id": "AUTOLKLY_W41",
+        "label": "Probably not happen"
+    },
+    {
+        "author_id": 2185,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 491,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal with no restrictions"
+    },
+    {
+        "author_id": 667,
+        "conversation_id": "FTRWORRYb_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1203,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 2211,
+        "conversation_id": "SOLVPROBeF2_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 823,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 839,
+        "conversation_id": "HARASS1F1c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 493,
+        "conversation_id": "ROBWRK_W41",
+        "label": "Probably happen"
+    },
+    {
+        "author_id": 2292,
+        "conversation_id": "FUTR_K_W41",
+        "label": "About as likely to have children as people are now"
+    },
+    {
+        "author_id": 1759,
+        "conversation_id": "FUTR_M_W41",
+        "label": "Less likely to get married than people are now"
+    },
+    {
+        "author_id": 1220,
+        "conversation_id": "ELDFINANCEF2_W41",
+        "label": "Government"
+    },
+    {
+        "author_id": 1404,
+        "conversation_id": "SOLVPROBeF2_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 641,
+        "conversation_id": "GOVPRIOfF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2097,
+        "conversation_id": "FUTRCLASSb_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 84,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 2413,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Grow larger"
+    },
+    {
+        "author_id": 2400,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will definitely not happen"
+    },
+    {
+        "author_id": 1051,
+        "conversation_id": "GOVPRIOmF2_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2465,
+        "conversation_id": "HARASS4_W41",
+        "label": "Yes"
+    },
+    {
+        "author_id": 268,
+        "conversation_id": "GOVPRIOjF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 916,
+        "conversation_id": "SOLVPROBi_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1551,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A very bad thing for the country"
+    },
+    {
+        "author_id": 457,
+        "conversation_id": "WRKTRN1F2_W41",
+        "label": "The education system"
+    },
+    {
+        "author_id": 1795,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A very bad thing for the country"
+    },
+    {
+        "author_id": 1833,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 2469,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 629,
+        "conversation_id": "LEGALIMG_W41",
+        "label": "Increased"
+    },
+    {
+        "author_id": 2504,
+        "conversation_id": "HAPPENe_W41",
+        "label": "The gap between the rich and the poor will grow"
+    },
+    {
+        "author_id": 566,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2084,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1936,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 450,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2143,
+        "conversation_id": "WRKTRN1F2_W41",
+        "label": "The education system"
+    },
+    {
+        "author_id": 1923,
+        "conversation_id": "ROBIMPACTb_W41",
+        "label": "No, not likely"
+    },
+    {
+        "author_id": 884,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1225,
+        "conversation_id": "HARASS3F1_W41",
+        "label": "Has made it easier for men"
+    },
+    {
+        "author_id": 2051,
+        "conversation_id": "POPPROB_W41",
+        "label": "Not a problem"
+    },
+    {
+        "author_id": 1109,
+        "conversation_id": "GOVPRIOlF2_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2481,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 2120,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Race relations will get worse"
+    },
+    {
+        "author_id": 529,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be weaker"
+    },
+    {
+        "author_id": 458,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "Better than they are now"
+    },
+    {
+        "author_id": 1344,
+        "conversation_id": "POPPROB_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 519,
+        "conversation_id": "HAPPENhF1_W41",
+        "label": "People 65 and older will have a better standard of living"
+    },
+    {
+        "author_id": 2083,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "About the same as they are now"
+    },
+    {
+        "author_id": 913,
+        "conversation_id": "INTRMAR_W41",
+        "label": "A very good thing"
+    },
+    {
+        "author_id": 1803,
+        "conversation_id": "ETHNCMAJMOD_W41",
+        "label": "A somewhat bad thing"
+    },
+    {
+        "author_id": 1837,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "About the same as they are now"
+    },
+    {
+        "author_id": 1355,
+        "conversation_id": "HARASS3F1_W41",
+        "label": "Has made it harder for men"
+    },
+    {
+        "author_id": 2168,
+        "conversation_id": "POPPROB_W41",
+        "label": "Not a problem"
+    },
+    {
+        "author_id": 1579,
+        "conversation_id": "FUTR_M_W41",
+        "label": "About as likely to get married as people are now"
+    },
+    {
+        "author_id": 1085,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat optimistic"
+    },
+    {
+        "author_id": 759,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A very negative impact"
+    },
+    {
+        "author_id": 415,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1132,
+        "conversation_id": "HARASS1NOWRKF2c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1569,
+        "conversation_id": "FUTR_K_W41",
+        "label": "Less likely to have children than people are now"
+    },
+    {
+        "author_id": 1122,
+        "conversation_id": "FUTRCLASSb_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 137,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2453,
+        "conversation_id": "GOVPRIOnF2_W41",
+        "label": "Should not be done"
+    },
+    {
+        "author_id": 405,
+        "conversation_id": "HARASS3NOWRKF2_W41",
+        "label": "Hasn't made much difference"
+    },
+    {
+        "author_id": 1911,
+        "conversation_id": "HARASS1NOWRKF2d_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 2169,
+        "conversation_id": "HAPPENe_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 329,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will become less important"
+    },
+    {
+        "author_id": 1671,
+        "conversation_id": "SSCUT_W41",
+        "label": "Some reductions in benefits for future retirees will need to be made"
+    },
+    {
+        "author_id": 1916,
+        "conversation_id": "FUTRCLASSb_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1484,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 461,
+        "conversation_id": "POPPROB_W41",
+        "label": "Not a problem"
+    },
+    {
+        "author_id": 1396,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Mostly hurt American workers"
+    },
+    {
+        "author_id": 2337,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 2112,
+        "conversation_id": "GOVPRIOjF1_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1042,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1752,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will become less important"
+    },
+    {
+        "author_id": 1042,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be weaker"
+    },
+    {
+        "author_id": 2108,
+        "conversation_id": "FTRWORRYc_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1511,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 2262,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be weaker"
+    },
+    {
+        "author_id": 1548,
+        "conversation_id": "INTRMAR_W41",
+        "label": "A somewhat good thing"
+    },
+    {
+        "author_id": 1744,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 912,
+        "conversation_id": "GOVPRIOlF2_W41",
+        "label": "Should not be done"
+    },
+    {
+        "author_id": 2347,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2414,
+        "conversation_id": "ROBIMPACTb_W41",
+        "label": "No, not likely"
+    },
+    {
+        "author_id": 2112,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Not too worried"
+    },
+    {
+        "author_id": 1120,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 803,
+        "conversation_id": "SSMONEY_W41",
+        "label": "Yes, but at reduced levels"
+    },
+    {
+        "author_id": 62,
+        "conversation_id": "ROBIMPACTa_W41",
+        "label": "Yes, likely"
+    },
+    {
+        "author_id": 2323,
+        "conversation_id": "ELDCARE_W41",
+        "label": "less prepared financially for retirement than older adults today"
+    },
+    {
+        "author_id": 2020,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1242,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1949,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1153,
+        "conversation_id": "HARASS1F1a_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 1534,
+        "conversation_id": "GOVPRIOfF1_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1797,
+        "conversation_id": "FTRWORRYb_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 2160,
+        "conversation_id": "INTRMAR_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 1027,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1256,
+        "conversation_id": "HAPPENhF1_W41",
+        "label": "People 65 and older will have a worse standard of living"
+    },
+    {
+        "author_id": 1440,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Race relations will get worse"
+    },
+    {
+        "author_id": 192,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1947,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2416,
+        "conversation_id": "FUTR_DIV_W41",
+        "label": "About as likely to get divorced as people are now"
+    },
+    {
+        "author_id": 574,
+        "conversation_id": "INTRMAR_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 217,
+        "conversation_id": "ETHNCMAJMOD_W41",
+        "label": "A somewhat good thing"
+    },
+    {
+        "author_id": 2422,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 1449,
+        "conversation_id": "HAPPENe_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1824,
+        "conversation_id": "HARASS1NOWRKF2a_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 954,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 447,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A very bad thing for the country"
+    },
+    {
+        "author_id": 446,
+        "conversation_id": "GOVPRIOd_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 224,
+        "conversation_id": "WRKTRN1F1_W41",
+        "label": "The education system"
+    },
+    {
+        "author_id": 1319,
+        "conversation_id": "HAPPENa_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 277,
+        "conversation_id": "HAPPEN2b_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 302,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A somewhat good thing for the country"
+    },
+    {
+        "author_id": 2277,
+        "conversation_id": "SSCUT_W41",
+        "label": "Social Security benefits should not be reduced in any way"
+    },
+    {
+        "author_id": 2143,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A very negative impact"
+    },
+    {
+        "author_id": 2205,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 1820,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 586,
+        "conversation_id": "HAPPENb_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 882,
+        "conversation_id": "HAPPEN2b_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 293,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1605,
+        "conversation_id": "ROBWRK_W41",
+        "label": "Probably happen"
+    },
+    {
+        "author_id": 1880,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 761,
+        "conversation_id": "HAPPENb_W41",
+        "label": "Health care will be less affordable"
+    },
+    {
+        "author_id": 515,
+        "conversation_id": "FUTR_M_W41",
+        "label": "About as likely to get married as people are now"
+    },
+    {
+        "author_id": 629,
+        "conversation_id": "ELDCARE_W41",
+        "label": "better prepared financially for retirement than older adults are today"
+    },
+    {
+        "author_id": 1101,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 2077,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2495,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1122,
+        "conversation_id": "GOVPRIOgF1_W41",
+        "label": "Should not be done"
+    },
+    {
+        "author_id": 728,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 1609,
+        "conversation_id": "GOVPRIOmF2_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 2118,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 46,
+        "conversation_id": "FUTR_K_W41",
+        "label": "About as likely to have children as people are now"
+    },
+    {
+        "author_id": 1731,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1822,
+        "conversation_id": "HARASS3F1_W41",
+        "label": "Has made it harder for men"
+    },
+    {
+        "author_id": 1923,
+        "conversation_id": "HARASS3F1_W41",
+        "label": "Hasn't made much difference"
+    },
+    {
+        "author_id": 481,
+        "conversation_id": "HAPPENe_W41",
+        "label": "The gap between the rich and the poor will grow"
+    },
+    {
+        "author_id": 967,
+        "conversation_id": "GOVPRIOfF1_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 650,
+        "conversation_id": "HARASS1F1c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1120,
+        "conversation_id": "HARASS4_W41",
+        "label": "Yes"
+    },
+    {
+        "author_id": 1133,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 1932,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 104,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 706,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be weaker"
+    },
+    {
+        "author_id": 45,
+        "conversation_id": "FUTR_K_W41",
+        "label": "About as likely to have children as people are now"
+    },
+    {
+        "author_id": 1971,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1105,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 752,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 1239,
+        "conversation_id": "GOVPRIOgF1_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 796,
+        "conversation_id": "HAPPENj_W41",
+        "label": "The country will be less politically divided"
+    },
+    {
+        "author_id": 1404,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Illegal with no exceptions"
+    },
+    {
+        "author_id": 1815,
+        "conversation_id": "HARASS5_W41",
+        "label": "Outside of a professional or work setting"
+    },
+    {
+        "author_id": 953,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Mostly hurt American workers"
+    },
+    {
+        "author_id": 69,
+        "conversation_id": "HAPPENf_W41",
+        "label": "The public education system will get worse"
+    },
+    {
+        "author_id": 311,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 2037,
+        "conversation_id": "ETHNCMAJMOD_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 2072,
+        "conversation_id": "HAPPENj_W41",
+        "label": "The country will be less politically divided"
+    },
+    {
+        "author_id": 952,
+        "conversation_id": "HARASS1F1d_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 2014,
+        "conversation_id": "HAPPENf_W41",
+        "label": "The public education system will improve"
+    },
+    {
+        "author_id": 1103,
+        "conversation_id": "INTRMAR_W41",
+        "label": "A somewhat good thing"
+    },
+    {
+        "author_id": 811,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 2483,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 1513,
+        "conversation_id": "HAPPENb_W41",
+        "label": "Health care will be less affordable"
+    },
+    {
+        "author_id": 707,
+        "conversation_id": "HARASS1F1d_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 508,
+        "conversation_id": "FTRWORRYb_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 441,
+        "conversation_id": "GOVPRIOhF1_W41",
+        "label": "Should not be done"
+    },
+    {
+        "author_id": 139,
+        "conversation_id": "HAPPENj_W41",
+        "label": "The country will be more politically divided"
+    },
+    {
+        "author_id": 97,
+        "conversation_id": "HARASS5_W41",
+        "label": "Outside of a professional or work setting"
+    },
+    {
+        "author_id": 789,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1348,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1017,
+        "conversation_id": "HAPPEN2h_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2244,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A very negative impact"
+    },
+    {
+        "author_id": 1867,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 2281,
+        "conversation_id": "FTRWORRYb_W41",
+        "label": "Not too worried"
+    },
+    {
+        "author_id": 1120,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "Less job security"
+    },
+    {
+        "author_id": 2317,
+        "conversation_id": "ENVC_W41",
+        "label": "Better than it is now"
+    },
+    {
+        "author_id": 179,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 951,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1822,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A very bad thing for the country"
+    },
+    {
+        "author_id": 1043,
+        "conversation_id": "GOVPRIOhF1_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1024,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will definitely not happen"
+    },
+    {
+        "author_id": 2414,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1769,
+        "conversation_id": "SOLVPROBi_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 1102,
+        "conversation_id": "GOVPRIOhF1_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2159,
+        "conversation_id": "HARASS3NOWRKF2_W41",
+        "label": "Has made it harder for men"
+    },
+    {
+        "author_id": 2156,
+        "conversation_id": "ENVC_W41",
+        "label": "About the same as it is now"
+    },
+    {
+        "author_id": 1112,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 2408,
+        "conversation_id": "ROBIMPACTb_W41",
+        "label": "No, not likely"
+    },
+    {
+        "author_id": 1475,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 864,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 1894,
+        "conversation_id": "ELDCARE_W41",
+        "label": "less prepared financially for retirement than older adults today"
+    },
+    {
+        "author_id": 1744,
+        "conversation_id": "HARASS5_W41",
+        "label": "Both"
+    },
+    {
+        "author_id": 2153,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 119,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat pessimistic"
+    },
+    {
+        "author_id": 1639,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will become less important"
+    },
+    {
+        "author_id": 1061,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A very negative impact"
+    },
+    {
+        "author_id": 188,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 66,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 524,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A very negative impact"
+    },
+    {
+        "author_id": 1450,
+        "conversation_id": "GOVPRIOd_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1631,
+        "conversation_id": "HAPPENb_W41",
+        "label": "Health care will be less affordable"
+    },
+    {
+        "author_id": 1977,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will be about as important as it is now"
+    },
+    {
+        "author_id": 947,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 1177,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Get worse"
+    },
+    {
+        "author_id": 932,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2293,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 734,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 1959,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1497,
+        "conversation_id": "ELDCARE_W41",
+        "label": "less prepared financially for retirement than older adults today"
+    },
+    {
+        "author_id": 2318,
+        "conversation_id": "ENVC_W41",
+        "label": "About the same as it is now"
+    },
+    {
+        "author_id": 1763,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1759,
+        "conversation_id": "HARASS4_W41",
+        "label": "No"
+    },
+    {
+        "author_id": 2438,
+        "conversation_id": "GOVPRIOgF1_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 570,
+        "conversation_id": "ROBIMPACTa_W41",
+        "label": "Yes, likely"
+    },
+    {
+        "author_id": 1222,
+        "conversation_id": "HAPPENhF1_W41",
+        "label": "People 65 and older will have a better standard of living"
+    },
+    {
+        "author_id": 157,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Mostly hurt American workers"
+    },
+    {
+        "author_id": 2011,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1652,
+        "conversation_id": "HARASS1NOWRKF2c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1254,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "About the same as they are now"
+    },
+    {
+        "author_id": 1879,
+        "conversation_id": "HAPPEN2b_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 877,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will be about as important as it is now"
+    },
+    {
+        "author_id": 818,
+        "conversation_id": "SSMONEY_W41",
+        "label": "Yes, but at reduced levels"
+    },
+    {
+        "author_id": 1681,
+        "conversation_id": "ROBIMPACTb_W41",
+        "label": "No, not likely"
+    },
+    {
+        "author_id": 1676,
+        "conversation_id": "GOVPRIOd_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 216,
+        "conversation_id": "HAPPEN2h_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2023,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 87,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Not too worried"
+    },
+    {
+        "author_id": 254,
+        "conversation_id": "FUTR_M_W41",
+        "label": "Less likely to get married than people are now"
+    },
+    {
+        "author_id": 1179,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A somewhat bad thing for the country"
+    },
+    {
+        "author_id": 2035,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A very negative impact"
+    },
+    {
+        "author_id": 1043,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1400,
+        "conversation_id": "ELDFINANCEF2_W41",
+        "label": "Government"
+    },
+    {
+        "author_id": 644,
+        "conversation_id": "HAPPENb_W41",
+        "label": "Health care will be more affordable"
+    },
+    {
+        "author_id": 956,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be weaker"
+    },
+    {
+        "author_id": 2155,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat pessimistic"
+    },
+    {
+        "author_id": 380,
+        "conversation_id": "FUTR_K_W41",
+        "label": "More likely to have children than people are now"
+    },
+    {
+        "author_id": 2445,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 2300,
+        "conversation_id": "HAPPENf_W41",
+        "label": "The public education system will get worse"
+    },
+    {
+        "author_id": 1303,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A very negative impact"
+    },
+    {
+        "author_id": 1312,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2311,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2454,
+        "conversation_id": "HARASS3NOWRKF2_W41",
+        "label": "Has made it easier for men"
+    },
+    {
+        "author_id": 1803,
+        "conversation_id": "SOLVPROBa_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1738,
+        "conversation_id": "ELDFINANCEF2_W41",
+        "label": "Government"
+    },
+    {
+        "author_id": 76,
+        "conversation_id": "HAPPENd_W41",
+        "label": "The U.S. will be less important in the world"
+    },
+    {
+        "author_id": 1070,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 2124,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1885,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1300,
+        "conversation_id": "HARASS1F1c_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 1368,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 2421,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 2034,
+        "conversation_id": "SSMONEY_W41",
+        "label": "Yes, but at reduced levels"
+    },
+    {
+        "author_id": 2083,
+        "conversation_id": "HAPPENd_W41",
+        "label": "The U.S. will be less important in the world"
+    },
+    {
+        "author_id": 1874,
+        "conversation_id": "WRKTRN1F1_W41",
+        "label": "The education system"
+    },
+    {
+        "author_id": 1200,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Mostly helped American workers"
+    },
+    {
+        "author_id": 917,
+        "conversation_id": "ELDFINANCEF1_W41",
+        "label": "Older Americans themselves"
+    },
+    {
+        "author_id": 115,
+        "conversation_id": "INTRMAR_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 1045,
+        "conversation_id": "FTRWORRYb_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 821,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1217,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2161,
+        "conversation_id": "HARASS1NOWRKF2c_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 1066,
+        "conversation_id": "FUTRCLASSb_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 497,
+        "conversation_id": "ROBIMPACTa_W41",
+        "label": "Yes, likely"
+    },
+    {
+        "author_id": 1018,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 1925,
+        "conversation_id": "HAPPEN2b_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2,
+        "conversation_id": "ROBWRK_W41",
+        "label": "Probably happen"
+    },
+    {
+        "author_id": 2019,
+        "conversation_id": "GOVPRIOmF2_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 1534,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 959,
+        "conversation_id": "HARASS1F1d_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 823,
+        "conversation_id": "HAPPENd_W41",
+        "label": "The U.S. will be less important in the world"
+    },
+    {
+        "author_id": 2506,
+        "conversation_id": "FTRWORRYb_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 479,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 398,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1729,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 451,
+        "conversation_id": "HAPPENb_W41",
+        "label": "Health care will be less affordable"
+    },
+    {
+        "author_id": 1942,
+        "conversation_id": "FTRWORRYc_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1068,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will be about as important as it is now"
+    },
+    {
+        "author_id": 50,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 560,
+        "conversation_id": "HAPPENj_W41",
+        "label": "The country will be more politically divided"
+    },
+    {
+        "author_id": 2440,
+        "conversation_id": "HAPPEN2h_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 920,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1405,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A somewhat good thing for the country"
+    },
+    {
+        "author_id": 1459,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Get worse"
+    },
+    {
+        "author_id": 670,
+        "conversation_id": "GOVPRIOkF2_W41",
+        "label": "Should not be done"
+    },
+    {
+        "author_id": 865,
+        "conversation_id": "HARASS1NOWRKF2a_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 2494,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "Not as good as they are now"
+    },
+    {
+        "author_id": 2364,
+        "conversation_id": "HAPPEN2b_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 1834,
+        "conversation_id": "HARASS1NOWRKF2a_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1527,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1252,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 1336,
+        "conversation_id": "ELDFINANCEF1_W41",
+        "label": "Older Americans themselves"
+    },
+    {
+        "author_id": 2251,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Not too worried"
+    },
+    {
+        "author_id": 2478,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "About the same"
+    },
+    {
+        "author_id": 2060,
+        "conversation_id": "ROBWRK_W41",
+        "label": "Definitely happen"
+    },
+    {
+        "author_id": 1192,
+        "conversation_id": "LEGALIMG_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 690,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 153,
+        "conversation_id": "HAPPENe_W41",
+        "label": "The gap between the rich and the poor will grow"
+    },
+    {
+        "author_id": 144,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1255,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 245,
+        "conversation_id": "HARASS1NOWRKF2a_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 709,
+        "conversation_id": "GOVPRIOjF1_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 70,
+        "conversation_id": "POPPROB_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 2230,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1763,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2486,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 619,
+        "conversation_id": "GOVPRIOb_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 228,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 876,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Grow larger"
+    },
+    {
+        "author_id": 974,
+        "conversation_id": "HARASS4_W41",
+        "label": "Yes"
+    },
+    {
+        "author_id": 16,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 520,
+        "conversation_id": "HARASS3NOWRKF2_W41",
+        "label": "Has made it harder for men"
+    },
+    {
+        "author_id": 2095,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be weaker"
+    },
+    {
+        "author_id": 2081,
+        "conversation_id": "HAPPEN2h_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 407,
+        "conversation_id": "FTRWORRYc_W41",
+        "label": "Not too worried"
+    },
+    {
+        "author_id": 2034,
+        "conversation_id": "SOLVPROBi_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 879,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Mostly helped American workers"
+    },
+    {
+        "author_id": 222,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 731,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 692,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1236,
+        "conversation_id": "HARASS5_W41",
+        "label": "Outside of a professional or work setting"
+    },
+    {
+        "author_id": 957,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2374,
+        "conversation_id": "AGEMAJ_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 469,
+        "conversation_id": "SOLVPROBeF2_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1132,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 1899,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 131,
+        "conversation_id": "HARASS1NOWRKF2a_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 238,
+        "conversation_id": "GOVPRIOb_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1184,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 466,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be stronger"
+    },
+    {
+        "author_id": 2079,
+        "conversation_id": "SOLVPROBi_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1136,
+        "conversation_id": "ROBIMPACTb_W41",
+        "label": "No, not likely"
+    },
+    {
+        "author_id": 1892,
+        "conversation_id": "ENVC_W41",
+        "label": "Worse than it is now"
+    },
+    {
+        "author_id": 1204,
+        "conversation_id": "HAPPENe_W41",
+        "label": "The gap between the rich and the poor will get smaller"
+    },
+    {
+        "author_id": 2006,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "Better than they are now"
+    },
+    {
+        "author_id": 1082,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 365,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 471,
+        "conversation_id": "HARASS1F1a_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 1528,
+        "conversation_id": "WRKTRN1F1_W41",
+        "label": "Individuals themselves"
+    },
+    {
+        "author_id": 174,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 2356,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2384,
+        "conversation_id": "HARASS1NOWRKF2c_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 1210,
+        "conversation_id": "HARASS1NOWRKF2a_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 2032,
+        "conversation_id": "FUTRCLASSb_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 1770,
+        "conversation_id": "HAPPENj_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 420,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 2342,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will become less important"
+    },
+    {
+        "author_id": 2168,
+        "conversation_id": "HARASS1NOWRKF2c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 530,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Get better"
+    },
+    {
+        "author_id": 1236,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will become less important"
+    },
+    {
+        "author_id": 240,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Get better"
+    },
+    {
+        "author_id": 608,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Not too worried"
+    },
+    {
+        "author_id": 290,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "Less job security"
+    },
+    {
+        "author_id": 909,
+        "conversation_id": "ROBIMPACTa_W41",
+        "label": "No, not likely"
+    },
+    {
+        "author_id": 2158,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1624,
+        "conversation_id": "ELDCARE_W41",
+        "label": "less prepared financially for retirement than older adults today"
+    },
+    {
+        "author_id": 2113,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "Not as good as they are now"
+    },
+    {
+        "author_id": 1901,
+        "conversation_id": "GOVPRIOgF1_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 1467,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A very negative impact"
+    },
+    {
+        "author_id": 402,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "Less job security"
+    },
+    {
+        "author_id": 2075,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 2421,
+        "conversation_id": "HAPPENf_W41",
+        "label": "The public education system will get worse"
+    },
+    {
+        "author_id": 960,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 1059,
+        "conversation_id": "INTRMAR_W41",
+        "label": "A very good thing"
+    },
+    {
+        "author_id": 514,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 2019,
+        "conversation_id": "POPPROB_W41",
+        "label": "Not a problem"
+    },
+    {
+        "author_id": 1791,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Race relations will improve"
+    },
+    {
+        "author_id": 1446,
+        "conversation_id": "HAPPENd_W41",
+        "label": "The U.S. will be more important in the world"
+    },
+    {
+        "author_id": 999,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Not a problem"
+    },
+    {
+        "author_id": 2428,
+        "conversation_id": "HAPPENe_W41",
+        "label": "The gap between the rich and the poor will grow"
+    },
+    {
+        "author_id": 2096,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 2229,
+        "conversation_id": "AUTOLKLY_W41",
+        "label": "Definitely not happen"
+    },
+    {
+        "author_id": 2170,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 968,
+        "conversation_id": "ROBIMPACTa_W41",
+        "label": "No, not likely"
+    },
+    {
+        "author_id": 1509,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1380,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 2443,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 354,
+        "conversation_id": "SSCUT_W41",
+        "label": "Social Security benefits should not be reduced in any way"
+    },
+    {
+        "author_id": 2398,
+        "conversation_id": "FUTR_DIV_W41",
+        "label": "About as likely to get divorced as people are now"
+    },
+    {
+        "author_id": 138,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 80,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1012,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Get worse"
+    },
+    {
+        "author_id": 2482,
+        "conversation_id": "SSMONEY_W41",
+        "label": "Yes, but at reduced levels"
+    },
+    {
+        "author_id": 868,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2487,
+        "conversation_id": "GOVPRIOhF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 257,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1062,
+        "conversation_id": "GOVPRIOjF1_W41",
+        "label": "Should not be done"
+    },
+    {
+        "author_id": 667,
+        "conversation_id": "GOVPRIOlF2_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 2229,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1754,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1225,
+        "conversation_id": "FUTR_K_W41",
+        "label": "Less likely to have children than people are now"
+    },
+    {
+        "author_id": 828,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 831,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 2215,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 850,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be weaker"
+    },
+    {
+        "author_id": 956,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 1845,
+        "conversation_id": "ENVC_W41",
+        "label": "About the same as it is now"
+    },
+    {
+        "author_id": 122,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 562,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "About the same"
+    },
+    {
+        "author_id": 1295,
+        "conversation_id": "GOVPRIOfF1_W41",
+        "label": "Should not be done"
+    },
+    {
+        "author_id": 1928,
+        "conversation_id": "LEGALIMG_W41",
+        "label": "Decreased"
+    },
+    {
+        "author_id": 771,
+        "conversation_id": "GOVPRIOb_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2260,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A somewhat good thing for the country"
+    },
+    {
+        "author_id": 1186,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 2430,
+        "conversation_id": "LEGALIMG_W41",
+        "label": "Maintained at current levels"
+    },
+    {
+        "author_id": 1848,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 1633,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1183,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1344,
+        "conversation_id": "GOVPRIOhF1_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 230,
+        "conversation_id": "FUTR_K_W41",
+        "label": "Less likely to have children than people are now"
+    },
+    {
+        "author_id": 1211,
+        "conversation_id": "SSCUT_W41",
+        "label": "Some reductions in benefits for future retirees will need to be made"
+    },
+    {
+        "author_id": 211,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "Should not be done"
+    },
+    {
+        "author_id": 288,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "More job security"
+    },
+    {
+        "author_id": 1675,
+        "conversation_id": "AGEMAJ_W41",
+        "label": "A somewhat bad thing"
+    },
+    {
+        "author_id": 1706,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "About the same"
+    },
+    {
+        "author_id": 206,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1693,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 2373,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2284,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 518,
+        "conversation_id": "ETHNCMAJMOD_W41",
+        "label": "A very good thing"
+    },
+    {
+        "author_id": 1090,
+        "conversation_id": "FTRWORRYc_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1539,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Grow larger"
+    },
+    {
+        "author_id": 2012,
+        "conversation_id": "ROBWRK_W41",
+        "label": "Probably happen"
+    },
+    {
+        "author_id": 1196,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1361,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 84,
+        "conversation_id": "HARASS1F1c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 977,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 122,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 1433,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 2111,
+        "conversation_id": "SSMONEY_W41",
+        "label": "Yes, but at reduced levels"
+    },
+    {
+        "author_id": 1731,
+        "conversation_id": "HARASS1F1c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1571,
+        "conversation_id": "HARASS1NOWRKF2c_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 905,
+        "conversation_id": "HARASS1F1a_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 224,
+        "conversation_id": "SOLVPROBa_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 14,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 2509,
+        "conversation_id": "GOVPRIOfF1_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2264,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 46,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A somewhat good thing for the country"
+    },
+    {
+        "author_id": 832,
+        "conversation_id": "GOVPRIOb_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2436,
+        "conversation_id": "ROBIMPACTa_W41",
+        "label": "No, not likely"
+    },
+    {
+        "author_id": 1028,
+        "conversation_id": "SOLVPROBa_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1496,
+        "conversation_id": "HARASS1NOWRKF2a_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1052,
+        "conversation_id": "HAPPENd_W41",
+        "label": "The U.S. will be less important in the world"
+    },
+    {
+        "author_id": 460,
+        "conversation_id": "ENVC_W41",
+        "label": "Worse than it is now"
+    },
+    {
+        "author_id": 1744,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 596,
+        "conversation_id": "ROBIMPACTb_W41",
+        "label": "Yes, likely"
+    },
+    {
+        "author_id": 1638,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 360,
+        "conversation_id": "HAPPENf_W41",
+        "label": "The public education system will get worse"
+    },
+    {
+        "author_id": 2267,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Get worse"
+    },
+    {
+        "author_id": 2278,
+        "conversation_id": "ENVC_W41",
+        "label": "Better than it is now"
+    },
+    {
+        "author_id": 2046,
+        "conversation_id": "SSMONEY_W41",
+        "label": "Yes, at current levels"
+    },
+    {
+        "author_id": 1816,
+        "conversation_id": "HAPPENj_W41",
+        "label": "The country will be more politically divided"
+    },
+    {
+        "author_id": 1577,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Not too worried"
+    },
+    {
+        "author_id": 275,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat pessimistic"
+    },
+    {
+        "author_id": 1247,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 541,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 112,
+        "conversation_id": "FUTR_DIV_W41",
+        "label": "About as likely to get divorced as people are now"
+    },
+    {
+        "author_id": 72,
+        "conversation_id": "HAPPEN2h_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 1323,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 2289,
+        "conversation_id": "GOVPRIOjF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 340,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal with no restrictions"
+    },
+    {
+        "author_id": 2021,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Not too worried"
+    },
+    {
+        "author_id": 2362,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat optimistic"
+    },
+    {
+        "author_id": 2263,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 111,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1798,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Get worse"
+    },
+    {
+        "author_id": 365,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be stronger"
+    },
+    {
+        "author_id": 2385,
+        "conversation_id": "SSCUT_W41",
+        "label": "Some reductions in benefits for future retirees will need to be made"
+    },
+    {
+        "author_id": 995,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 602,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1325,
+        "conversation_id": "FTRWORRYc_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1581,
+        "conversation_id": "WRKTRN1F2_W41",
+        "label": "Employers"
+    },
+    {
+        "author_id": 1245,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1251,
+        "conversation_id": "GOVPRIOkF2_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1852,
+        "conversation_id": "GOVPRIOiF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 641,
+        "conversation_id": "HAPPENhF1_W41",
+        "label": "People 65 and older will have a better standard of living"
+    },
+    {
+        "author_id": 22,
+        "conversation_id": "INTRMAR_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 2173,
+        "conversation_id": "ROBWRK_W41",
+        "label": "Probably happen"
+    },
+    {
+        "author_id": 2471,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 1242,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1435,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be weaker"
+    },
+    {
+        "author_id": 2230,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 1217,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 943,
+        "conversation_id": "SSMONEY_W41",
+        "label": "No"
+    },
+    {
+        "author_id": 1543,
+        "conversation_id": "HARASS1NOWRKF2c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 773,
+        "conversation_id": "ELDCARE_W41",
+        "label": "less prepared financially for retirement than older adults today"
+    },
+    {
+        "author_id": 838,
+        "conversation_id": "GOVPRIOiF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1683,
+        "conversation_id": "POPPROB_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 1884,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1112,
+        "conversation_id": "ENVC_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 402,
+        "conversation_id": "GOVPRIOd_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 403,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Be reduced"
+    },
+    {
+        "author_id": 1443,
+        "conversation_id": "HAPPEN2h_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 327,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 486,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1762,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 954,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 2470,
+        "conversation_id": "INTRMAR_W41",
+        "label": "A very good thing"
+    },
+    {
+        "author_id": 538,
+        "conversation_id": "HARASS1F1a_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 865,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "Not as good as they are now"
+    },
+    {
+        "author_id": 1261,
+        "conversation_id": "INTRMAR_W41",
+        "label": "A very good thing"
+    },
+    {
+        "author_id": 30,
+        "conversation_id": "FUTR_M_W41",
+        "label": "About as likely to get married as people are now"
+    },
+    {
+        "author_id": 1373,
+        "conversation_id": "FTRWORRYb_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 720,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat pessimistic"
+    },
+    {
+        "author_id": 1577,
+        "conversation_id": "HAPPENd_W41",
+        "label": "The U.S. will be less important in the world"
+    },
+    {
+        "author_id": 914,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A somewhat bad thing for the country"
+    },
+    {
+        "author_id": 1575,
+        "conversation_id": "SSCUT_W41",
+        "label": "Some reductions in benefits for future retirees will need to be made"
+    },
+    {
+        "author_id": 646,
+        "conversation_id": "HAPPENb_W41",
+        "label": "Health care will be less affordable"
+    },
+    {
+        "author_id": 2464,
+        "conversation_id": "FUTR_K_W41",
+        "label": "About as likely to have children as people are now"
+    },
+    {
+        "author_id": 270,
+        "conversation_id": "SOLVPROBa_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 429,
+        "conversation_id": "SOLVPROBa_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 197,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 1941,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 2147,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will become less important"
+    },
+    {
+        "author_id": 1390,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Mostly hurt American workers"
+    },
+    {
+        "author_id": 577,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1148,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1464,
+        "conversation_id": "FUTR_M_W41",
+        "label": "Less likely to get married than people are now"
+    },
+    {
+        "author_id": 2240,
+        "conversation_id": "FUTR_DIV_W41",
+        "label": "About as likely to get divorced as people are now"
+    },
+    {
+        "author_id": 367,
+        "conversation_id": "FUTR_DIV_W41",
+        "label": "About as likely to get divorced as people are now"
+    },
+    {
+        "author_id": 1606,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Grow larger"
+    },
+    {
+        "author_id": 110,
+        "conversation_id": "SOLVPROBi_W41",
+        "label": "A very negative impact"
+    },
+    {
+        "author_id": 968,
+        "conversation_id": "HAPPENe_W41",
+        "label": "The gap between the rich and the poor will get smaller"
+    },
+    {
+        "author_id": 1157,
+        "conversation_id": "GOVPRIOfF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 885,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 2101,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 205,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1257,
+        "conversation_id": "ELDCARE_W41",
+        "label": "better prepared financially for retirement than older adults are today"
+    },
+    {
+        "author_id": 162,
+        "conversation_id": "FUTRCLASSb_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 1428,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 228,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 844,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2519,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 2354,
+        "conversation_id": "FUTR_K_W41",
+        "label": "About as likely to have children as people are now"
+    },
+    {
+        "author_id": 229,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will be about as important as it is now"
+    },
+    {
+        "author_id": 554,
+        "conversation_id": "ROBIMPACTb_W41",
+        "label": "No, not likely"
+    },
+    {
+        "author_id": 1448,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will definitely not happen"
+    },
+    {
+        "author_id": 462,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 1636,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 2256,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 718,
+        "conversation_id": "HARASS5_W41",
+        "label": "Both"
+    },
+    {
+        "author_id": 214,
+        "conversation_id": "SOLVPROBi_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 45,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "About the same as they are now"
+    },
+    {
+        "author_id": 2500,
+        "conversation_id": "SSCUT_W41",
+        "label": "Social Security benefits should not be reduced in any way"
+    },
+    {
+        "author_id": 229,
+        "conversation_id": "ROBIMPACTa_W41",
+        "label": "Yes, likely"
+    },
+    {
+        "author_id": 1903,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Mostly hurt American workers"
+    },
+    {
+        "author_id": 1330,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1309,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 2361,
+        "conversation_id": "SSCUT_W41",
+        "label": "Social Security benefits should not be reduced in any way"
+    },
+    {
+        "author_id": 1347,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Mostly helped American workers"
+    },
+    {
+        "author_id": 323,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 299,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 168,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1707,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 664,
+        "conversation_id": "INTRMAR_W41",
+        "label": "A somewhat bad thing"
+    },
+    {
+        "author_id": 1448,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 809,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Grow larger"
+    },
+    {
+        "author_id": 1698,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1404,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 346,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 976,
+        "conversation_id": "HAPPENj_W41",
+        "label": "The country will be more politically divided"
+    },
+    {
+        "author_id": 2244,
+        "conversation_id": "SOLVPROBeF2_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 556,
+        "conversation_id": "ROBWRK_W41",
+        "label": "Definitely happen"
+    },
+    {
+        "author_id": 593,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1712,
+        "conversation_id": "ELDCARE_W41",
+        "label": "less prepared financially for retirement than older adults today"
+    },
+    {
+        "author_id": 1239,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 2078,
+        "conversation_id": "FUTR_M_W41",
+        "label": "Less likely to get married than people are now"
+    },
+    {
+        "author_id": 2336,
+        "conversation_id": "GOVPRIOiF1_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 2323,
+        "conversation_id": "HARASS1F1a_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1289,
+        "conversation_id": "HARASS1NOWRKF2d_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1922,
+        "conversation_id": "HAPPENf_W41",
+        "label": "The public education system will improve"
+    },
+    {
+        "author_id": 2117,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat optimistic"
+    },
+    {
+        "author_id": 625,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Race relations will improve"
+    },
+    {
+        "author_id": 2453,
+        "conversation_id": "SSCUT_W41",
+        "label": "Social Security benefits should not be reduced in any way"
+    },
+    {
+        "author_id": 1362,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Get worse"
+    },
+    {
+        "author_id": 969,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 1920,
+        "conversation_id": "HAPPEN2b_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 973,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "Not as good as they are now"
+    },
+    {
+        "author_id": 2483,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1450,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 2042,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be stronger"
+    },
+    {
+        "author_id": 1358,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1196,
+        "conversation_id": "FUTR_M_W41",
+        "label": "About as likely to get married as people are now"
+    },
+    {
+        "author_id": 1479,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 2110,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will be about as important as it is now"
+    },
+    {
+        "author_id": 2136,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1078,
+        "conversation_id": "WRKTRN1F2_W41",
+        "label": "Individuals themselves"
+    },
+    {
+        "author_id": 1814,
+        "conversation_id": "FUTR_K_W41",
+        "label": "Less likely to have children than people are now"
+    },
+    {
+        "author_id": 1794,
+        "conversation_id": "AGEMAJ_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 960,
+        "conversation_id": "FTRWORRYb_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 148,
+        "conversation_id": "HAPPENd_W41",
+        "label": "The U.S. will be more important in the world"
+    },
+    {
+        "author_id": 1846,
+        "conversation_id": "POPPROB_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 2105,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "About the same as they are now"
+    },
+    {
+        "author_id": 2189,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be weaker"
+    },
+    {
+        "author_id": 2268,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Race relations will improve"
+    },
+    {
+        "author_id": 160,
+        "conversation_id": "SSCUT_W41",
+        "label": "Some reductions in benefits for future retirees will need to be made"
+    },
+    {
+        "author_id": 1214,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "About the same"
+    },
+    {
+        "author_id": 1918,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1363,
+        "conversation_id": "HARASS5_W41",
+        "label": "Both"
+    },
+    {
+        "author_id": 2253,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 2189,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 604,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "Better than they are now"
+    },
+    {
+        "author_id": 87,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "About the same as they are now"
+    },
+    {
+        "author_id": 1629,
+        "conversation_id": "HARASS3NOWRKF2_W41",
+        "label": "Has made it harder for men"
+    },
+    {
+        "author_id": 1739,
+        "conversation_id": "HAPPENd_W41",
+        "label": "The U.S. will be less important in the world"
+    },
+    {
+        "author_id": 2009,
+        "conversation_id": "AUTOLKLY_W41",
+        "label": "Definitely not happen"
+    },
+    {
+        "author_id": 2164,
+        "conversation_id": "HARASS3F1_W41",
+        "label": "Has made it harder for men"
+    },
+    {
+        "author_id": 257,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1499,
+        "conversation_id": "HARASS5_W41",
+        "label": "In a professional or work setting"
+    },
+    {
+        "author_id": 510,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1903,
+        "conversation_id": "FUTR_K_W41",
+        "label": "Less likely to have children than people are now"
+    },
+    {
+        "author_id": 1342,
+        "conversation_id": "POPPROB_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1720,
+        "conversation_id": "INTRMAR_W41",
+        "label": "A very good thing"
+    },
+    {
+        "author_id": 1225,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 1429,
+        "conversation_id": "HAPPENhF1_W41",
+        "label": "People 65 and older will have a worse standard of living"
+    },
+    {
+        "author_id": 1098,
+        "conversation_id": "AGEMAJ_W41",
+        "label": "A somewhat bad thing"
+    },
+    {
+        "author_id": 899,
+        "conversation_id": "LEGALIMG_W41",
+        "label": "Maintained at current levels"
+    },
+    {
+        "author_id": 1964,
+        "conversation_id": "ELDFINANCEF2_W41",
+        "label": "Older Americans themselves"
+    },
+    {
+        "author_id": 2072,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Not too worried"
+    },
+    {
+        "author_id": 623,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 2474,
+        "conversation_id": "POPPROB_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 2196,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "About the same"
+    },
+    {
+        "author_id": 2281,
+        "conversation_id": "SOLVPROBeF2_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 2357,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat pessimistic"
+    },
+    {
+        "author_id": 2360,
+        "conversation_id": "FUTR_M_W41",
+        "label": "Less likely to get married than people are now"
+    },
+    {
+        "author_id": 893,
+        "conversation_id": "HAPPENd_W41",
+        "label": "The U.S. will be less important in the world"
+    },
+    {
+        "author_id": 2387,
+        "conversation_id": "HARASS1F1d_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 724,
+        "conversation_id": "HAPPENf_W41",
+        "label": "The public education system will improve"
+    },
+    {
+        "author_id": 164,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Get worse"
+    },
+    {
+        "author_id": 654,
+        "conversation_id": "FUTR_K_W41",
+        "label": "About as likely to have children as people are now"
+    },
+    {
+        "author_id": 331,
+        "conversation_id": "ELDFINANCEF2_W41",
+        "label": "Government"
+    },
+    {
+        "author_id": 118,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1586,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 1426,
+        "conversation_id": "HARASS1F1a_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 2468,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2255,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will definitely not happen"
+    },
+    {
+        "author_id": 1273,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1684,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat pessimistic"
+    },
+    {
+        "author_id": 1464,
+        "conversation_id": "GOVPRIOd_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 245,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 760,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1572,
+        "conversation_id": "AGEMAJ_W41",
+        "label": "A somewhat bad thing"
+    },
+    {
+        "author_id": 1259,
+        "conversation_id": "HAPPENe_W41",
+        "label": "The gap between the rich and the poor will grow"
+    },
+    {
+        "author_id": 2388,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will become less important"
+    },
+    {
+        "author_id": 1259,
+        "conversation_id": "GOVPRIOmF2_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1287,
+        "conversation_id": "POPPROB_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 926,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1087,
+        "conversation_id": "ROBIMPACTa_W41",
+        "label": "Yes, likely"
+    },
+    {
+        "author_id": 1166,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1018,
+        "conversation_id": "SOLVPROBeF2_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 2459,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 1140,
+        "conversation_id": "LEGALIMG_W41",
+        "label": "Increased"
+    },
+    {
+        "author_id": 1132,
+        "conversation_id": "HARASS1NOWRKF2d_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1376,
+        "conversation_id": "HARASS1NOWRKF2a_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1921,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will be about as important as it is now"
+    },
+    {
+        "author_id": 1007,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will become less important"
+    },
+    {
+        "author_id": 1945,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1746,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A very bad thing for the country"
+    },
+    {
+        "author_id": 1728,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2239,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "Less job security"
+    },
+    {
+        "author_id": 2062,
+        "conversation_id": "HARASS3F1_W41",
+        "label": "Has made it harder for men"
+    },
+    {
+        "author_id": 1110,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 870,
+        "conversation_id": "HARASS4_W41",
+        "label": "Yes"
+    },
+    {
+        "author_id": 583,
+        "conversation_id": "ROBWRK_W41",
+        "label": "Probably happen"
+    },
+    {
+        "author_id": 2348,
+        "conversation_id": "HARASS1F1c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1737,
+        "conversation_id": "HAPPENf_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1966,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 2340,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1914,
+        "conversation_id": "FUTR_K_W41",
+        "label": "Less likely to have children than people are now"
+    },
+    {
+        "author_id": 1271,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "Less job security"
+    },
+    {
+        "author_id": 1089,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Not a problem"
+    },
+    {
+        "author_id": 1385,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 987,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 804,
+        "conversation_id": "HAPPENf_W41",
+        "label": "The public education system will get worse"
+    },
+    {
+        "author_id": 2196,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 482,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will definitely not happen"
+    },
+    {
+        "author_id": 1457,
+        "conversation_id": "HAPPENb_W41",
+        "label": "Health care will be more affordable"
+    },
+    {
+        "author_id": 1943,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 1980,
+        "conversation_id": "FUTR_K_W41",
+        "label": "About as likely to have children as people are now"
+    },
+    {
+        "author_id": 648,
+        "conversation_id": "ETHNCMAJMOD_W41",
+        "label": "A somewhat bad thing"
+    },
+    {
+        "author_id": 89,
+        "conversation_id": "HAPPEN2b_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2102,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 187,
+        "conversation_id": "HAPPENf_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 308,
+        "conversation_id": "HARASS1NOWRKF2a_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 2004,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Not too worried"
+    },
+    {
+        "author_id": 670,
+        "conversation_id": "ETHNCMAJMOD_W41",
+        "label": "A very good thing"
+    },
+    {
+        "author_id": 1109,
+        "conversation_id": "GOVPRIOb_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 538,
+        "conversation_id": "GOVPRIOiF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2453,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 304,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 1930,
+        "conversation_id": "JOBSECURITY_W41",
+        "label": "About the same"
+    },
+    {
+        "author_id": 2486,
+        "conversation_id": "INTRMAR_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 378,
+        "conversation_id": "GOVPRIOd_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 998,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 1209,
+        "conversation_id": "FUTR_DIV_W41",
+        "label": "More likely to get divorced than people are now"
+    },
+    {
+        "author_id": 151,
+        "conversation_id": "LEGALIMG_W41",
+        "label": "Maintained at current levels"
+    },
+    {
+        "author_id": 1624,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1869,
+        "conversation_id": "GOVPRIOgF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 318,
+        "conversation_id": "FTRWORRYc_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1866,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 2282,
+        "conversation_id": "HAPPENb_W41",
+        "label": "Health care will be less affordable"
+    },
+    {
+        "author_id": 1840,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 144,
+        "conversation_id": "GOVPRIOlF2_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 282,
+        "conversation_id": "GOVPRIOgF1_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 1579,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1807,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat optimistic"
+    },
+    {
+        "author_id": 2375,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 525,
+        "conversation_id": "AGEMAJ_W41",
+        "label": "A very bad thing"
+    },
+    {
+        "author_id": 2503,
+        "conversation_id": "HAPPENf_W41",
+        "label": "The public education system will improve"
+    },
+    {
+        "author_id": 2391,
+        "conversation_id": "LEGALIMG_W41",
+        "label": "Maintained at current levels"
+    },
+    {
+        "author_id": 1321,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1172,
+        "conversation_id": "GOVPRIOlF2_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 612,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A very bad thing for the country"
+    },
+    {
+        "author_id": 334,
+        "conversation_id": "FUTR_DIV_W41",
+        "label": "More likely to get divorced than people are now"
+    },
+    {
+        "author_id": 835,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1347,
+        "conversation_id": "HARASS3NOWRKF2_W41",
+        "label": "Has made it harder for men"
+    },
+    {
+        "author_id": 2374,
+        "conversation_id": "HARASS1F1c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1708,
+        "conversation_id": "HARASS1F1a_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1504,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 457,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Race relations will get worse"
+    },
+    {
+        "author_id": 1880,
+        "conversation_id": "ETHNCMAJMOD_W41",
+        "label": "A very bad thing"
+    },
+    {
+        "author_id": 1448,
+        "conversation_id": "GOVPRIOjF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 323,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Race relations will improve"
+    },
+    {
+        "author_id": 42,
+        "conversation_id": "GOVPRIOlF2_W41",
+        "label": "Should not be done"
+    },
+    {
+        "author_id": 1706,
+        "conversation_id": "HAPPEN2h_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 2092,
+        "conversation_id": "GOVPRIOfF1_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2437,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 161,
+        "conversation_id": "FUTRCLASSb_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 1924,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1329,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Mostly hurt American workers"
+    },
+    {
+        "author_id": 341,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat pessimistic"
+    },
+    {
+        "author_id": 336,
+        "conversation_id": "SOLVPROBa_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1331,
+        "conversation_id": "FTRWORRYc_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 2029,
+        "conversation_id": "SOLVPROBa_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 2063,
+        "conversation_id": "SOLVPROBa_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 423,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 1352,
+        "conversation_id": "GOVPRIOgF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1582,
+        "conversation_id": "SOLVPROBeF2_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1746,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 1357,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1163,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1098,
+        "conversation_id": "HARASS1NOWRKF2a_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 592,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 317,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 75,
+        "conversation_id": "WRKTRN1F1_W41",
+        "label": "Individuals themselves"
+    },
+    {
+        "author_id": 155,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 1952,
+        "conversation_id": "ELDFINANCEF2_W41",
+        "label": "Government"
+    },
+    {
+        "author_id": 2431,
+        "conversation_id": "SOLVPROBeF2_W41",
+        "label": "A very negative impact"
+    },
+    {
+        "author_id": 2072,
+        "conversation_id": "AGEMAJ_W41",
+        "label": "A somewhat good thing"
+    },
+    {
+        "author_id": 2069,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 316,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 2107,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be stronger"
+    },
+    {
+        "author_id": 736,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 1919,
+        "conversation_id": "ROBIMPACTa_W41",
+        "label": "Yes, likely"
+    },
+    {
+        "author_id": 1402,
+        "conversation_id": "FUTR_DIV_W41",
+        "label": "About as likely to get divorced as people are now"
+    },
+    {
+        "author_id": 343,
+        "conversation_id": "SSCUT_W41",
+        "label": "Some reductions in benefits for future retirees will need to be made"
+    },
+    {
+        "author_id": 1313,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 25,
+        "conversation_id": "HAPPEN2h_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 910,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 266,
+        "conversation_id": "AUTOLKLY_W41",
+        "label": "Probably not happen"
+    },
+    {
+        "author_id": 1872,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1580,
+        "conversation_id": "AGEMAJ_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 104,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 1649,
+        "conversation_id": "ROBWRK_W41",
+        "label": "Definitely happen"
+    },
+    {
+        "author_id": 1349,
+        "conversation_id": "ETHNCMAJMOD_W41",
+        "label": "A somewhat bad thing"
+    },
+    {
+        "author_id": 301,
+        "conversation_id": "FUTR_M_W41",
+        "label": "About as likely to get married as people are now"
+    },
+    {
+        "author_id": 2435,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 1617,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 1543,
+        "conversation_id": "ROBWRK_W41",
+        "label": "Probably happen"
+    },
+    {
+        "author_id": 756,
+        "conversation_id": "WRKTRN1F2_W41",
+        "label": "The education system"
+    },
+    {
+        "author_id": 1611,
+        "conversation_id": "FTRWORRYc_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1488,
+        "conversation_id": "GOVPRIOlF2_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 351,
+        "conversation_id": "GOVPRIOoF2_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1669,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2500,
+        "conversation_id": "FTRWORRYc_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 2405,
+        "conversation_id": "POPPROB_W41",
+        "label": "Not a problem"
+    },
+    {
+        "author_id": 1201,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 285,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1503,
+        "conversation_id": "HARASS1NOWRKF2d_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 1353,
+        "conversation_id": "INTRMAR_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 741,
+        "conversation_id": "GOVPRIOmF2_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2259,
+        "conversation_id": "ROBIMPACTa_W41",
+        "label": "No, not likely"
+    },
+    {
+        "author_id": 1857,
+        "conversation_id": "FTRWORRYc_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 224,
+        "conversation_id": "SSCUT_W41",
+        "label": "Social Security benefits should not be reduced in any way"
+    },
+    {
+        "author_id": 408,
+        "conversation_id": "GOVPRIOfF1_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 1640,
+        "conversation_id": "FUTR_DIV_W41",
+        "label": "About as likely to get divorced as people are now"
+    },
+    {
+        "author_id": 1516,
+        "conversation_id": "FUTR_M_W41",
+        "label": "Less likely to get married than people are now"
+    },
+    {
+        "author_id": 534,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 1132,
+        "conversation_id": "GOVPRIOd_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 751,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 2393,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1668,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 636,
+        "conversation_id": "HARASS4_W41",
+        "label": "No"
+    },
+    {
+        "author_id": 2436,
+        "conversation_id": "HAPPEN2g_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1526,
+        "conversation_id": "HARASS1NOWRKF2d_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 71,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 1596,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1775,
+        "conversation_id": "SSMONEY_W41",
+        "label": "Yes, but at reduced levels"
+    },
+    {
+        "author_id": 2314,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 2515,
+        "conversation_id": "AUTOLKLY_W41",
+        "label": "Probably not happen"
+    },
+    {
+        "author_id": 1054,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 686,
+        "conversation_id": "POPPROB_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1757,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 2152,
+        "conversation_id": "HAPPEN2h_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 486,
+        "conversation_id": "SSCUT_W41",
+        "label": "Social Security benefits should not be reduced in any way"
+    },
+    {
+        "author_id": 1041,
+        "conversation_id": "GOVPRIOjF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 1773,
+        "conversation_id": "SSCUT_W41",
+        "label": "Social Security benefits should not be reduced in any way"
+    },
+    {
+        "author_id": 2193,
+        "conversation_id": "FTRWORRYd_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1450,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A very negative impact"
+    },
+    {
+        "author_id": 1158,
+        "conversation_id": "HAPPENhF1_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1345,
+        "conversation_id": "HARASS3F1_W41",
+        "label": "Hasn't made much difference"
+    },
+    {
+        "author_id": 439,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 2122,
+        "conversation_id": "POPPROB_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 1282,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2413,
+        "conversation_id": "WRKTRN1F1_W41",
+        "label": "Employers"
+    },
+    {
+        "author_id": 1006,
+        "conversation_id": "ELDCARE_W41",
+        "label": "less prepared financially for retirement than older adults today"
+    },
+    {
+        "author_id": 1248,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 2482,
+        "conversation_id": "ENVC_W41",
+        "label": "Worse than it is now"
+    },
+    {
+        "author_id": 1454,
+        "conversation_id": "GOVPRIOiF1_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 609,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "About the same as they are now"
+    },
+    {
+        "author_id": 1892,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 388,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be stronger"
+    },
+    {
+        "author_id": 1261,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Race relations will get worse"
+    },
+    {
+        "author_id": 2399,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Grow larger"
+    },
+    {
+        "author_id": 1162,
+        "conversation_id": "ENVC_W41",
+        "label": "About the same as it is now"
+    },
+    {
+        "author_id": 1428,
+        "conversation_id": "SSCUT_W41",
+        "label": "Social Security benefits should not be reduced in any way"
+    },
+    {
+        "author_id": 2490,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 2426,
+        "conversation_id": "HARASS4_W41",
+        "label": "No"
+    },
+    {
+        "author_id": 469,
+        "conversation_id": "ROBIMPACTb_W41",
+        "label": "No, not likely"
+    },
+    {
+        "author_id": 1024,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will become less important"
+    },
+    {
+        "author_id": 135,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1682,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1944,
+        "conversation_id": "ELDFINANCEF2_W41",
+        "label": "Family members"
+    },
+    {
+        "author_id": 919,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 265,
+        "conversation_id": "FUTRCLASSb_W41",
+        "label": "Decrease"
+    },
+    {
+        "author_id": 1510,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Mostly helped American workers"
+    },
+    {
+        "author_id": 1592,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2057,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 1382,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 607,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 137,
+        "conversation_id": "WRKTRN1F1_W41",
+        "label": "Individuals themselves"
+    },
+    {
+        "author_id": 1654,
+        "conversation_id": "HAPPENd_W41",
+        "label": "The U.S. will be more important in the world"
+    },
+    {
+        "author_id": 2391,
+        "conversation_id": "HAPPEN2a_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 249,
+        "conversation_id": "HAPPENe_W41",
+        "label": "The gap between the rich and the poor will grow"
+    },
+    {
+        "author_id": 1909,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 1483,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 1615,
+        "conversation_id": "FTRWORRYf_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1806,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 1623,
+        "conversation_id": "SOLVPROBi_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 653,
+        "conversation_id": "HARASS5_W41",
+        "label": "In a professional or work setting"
+    },
+    {
+        "author_id": 1545,
+        "conversation_id": "ROBWRK2_W41",
+        "label": "A somewhat good thing for the country"
+    },
+    {
+        "author_id": 202,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2518,
+        "conversation_id": "HARASS3NOWRKF2_W41",
+        "label": "Has made it harder for men"
+    },
+    {
+        "author_id": 222,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Neither helped nor hurt"
+    },
+    {
+        "author_id": 1550,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 2305,
+        "conversation_id": "GOVPRIOmF2_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2244,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 508,
+        "conversation_id": "SOLVPROBdF1_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1656,
+        "conversation_id": "HAPPENhF1_W41",
+        "label": "People 65 and older will have a better standard of living"
+    },
+    {
+        "author_id": 826,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will be about as important as it is now"
+    },
+    {
+        "author_id": 208,
+        "conversation_id": "FUTR_M_W41",
+        "label": "More likely to get married than people are now"
+    },
+    {
+        "author_id": 2438,
+        "conversation_id": "HAPPENhF1_W41",
+        "label": "People 65 and older will have a worse standard of living"
+    },
+    {
+        "author_id": 812,
+        "conversation_id": "HARASS1F1a_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 2071,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Get better"
+    },
+    {
+        "author_id": 1014,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 140,
+        "conversation_id": "INTRMAR_W41",
+        "label": "A somewhat good thing"
+    },
+    {
+        "author_id": 1934,
+        "conversation_id": "HARASS1F1b_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 935,
+        "conversation_id": "GOVPRIOe_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 1842,
+        "conversation_id": "SSMONEY_W41",
+        "label": "No"
+    },
+    {
+        "author_id": 2262,
+        "conversation_id": "HAPPENiF2_W41",
+        "label": "Children will have a worse standard of living"
+    },
+    {
+        "author_id": 204,
+        "conversation_id": "ETHNCMAJMOD_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 1008,
+        "conversation_id": "FTRWORRYc_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 246,
+        "conversation_id": "HAPPENa_W41",
+        "label": "The U.S. economy will be weaker"
+    },
+    {
+        "author_id": 717,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Race relations will improve"
+    },
+    {
+        "author_id": 2090,
+        "conversation_id": "HAPPENiF2_W41",
+        "label": "Children will have a better standard of living"
+    },
+    {
+        "author_id": 1044,
+        "conversation_id": "GOVPRIOc_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 33,
+        "conversation_id": "HAPPENiF2_W41",
+        "label": "Children will have a better standard of living"
+    },
+    {
+        "author_id": 1600,
+        "conversation_id": "INTRMAR_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 731,
+        "conversation_id": "WRKTRN1F2_W41",
+        "label": "Government"
+    },
+    {
+        "author_id": 1416,
+        "conversation_id": "SOLVPROBh_W41",
+        "label": "A very positive impact"
+    },
+    {
+        "author_id": 845,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 893,
+        "conversation_id": "AGEMAJ_W41",
+        "label": "A somewhat bad thing"
+    },
+    {
+        "author_id": 791,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 1324,
+        "conversation_id": "HARASS1NOWRKF2c_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 1381,
+        "conversation_id": "ENVC_W41",
+        "label": "About the same as it is now"
+    },
+    {
+        "author_id": 2131,
+        "conversation_id": "ELDCARE_W41",
+        "label": "less prepared financially for retirement than older adults today"
+    },
+    {
+        "author_id": 1739,
+        "conversation_id": "GOVPRIOa_W41",
+        "label": "A lower priority"
+    },
+    {
+        "author_id": 1230,
+        "conversation_id": "HAPPEN2f_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 200,
+        "conversation_id": "NATDEBT_W41",
+        "label": "Grow larger"
+    },
+    {
+        "author_id": 2197,
+        "conversation_id": "INTRMAR_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 1196,
+        "conversation_id": "FTRWORRYb_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 552,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will definitely happen"
+    },
+    {
+        "author_id": 1292,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1798,
+        "conversation_id": "FTRWORRYb_W41",
+        "label": "Not too worried"
+    },
+    {
+        "author_id": 1977,
+        "conversation_id": "FTRWORRYe_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 249,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1313,
+        "conversation_id": "GOVPRIOb_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 221,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2126,
+        "conversation_id": "FUTR_ABR_W41",
+        "label": "Legal but with some restrictions"
+    },
+    {
+        "author_id": 450,
+        "conversation_id": "ELDCARE_W41",
+        "label": "less prepared financially for retirement than older adults today"
+    },
+    {
+        "author_id": 587,
+        "conversation_id": "POPPROB_W41",
+        "label": "Not a problem"
+    },
+    {
+        "author_id": 369,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will become less important"
+    },
+    {
+        "author_id": 407,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1992,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 673,
+        "conversation_id": "JOBBENEFITS_W41",
+        "label": "About the same as they are now"
+    },
+    {
+        "author_id": 2277,
+        "conversation_id": "HAPPEN2h_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1653,
+        "conversation_id": "ENVC_W41",
+        "label": "About the same as it is now"
+    },
+    {
+        "author_id": 1782,
+        "conversation_id": "INTRMAR_W41",
+        "label": "Neither a good nor bad thing"
+    },
+    {
+        "author_id": 1983,
+        "conversation_id": "AVGFAM_W41",
+        "label": "Stay about the same"
+    },
+    {
+        "author_id": 88,
+        "conversation_id": "GOVPRIOiF1_W41",
+        "label": "A top priority"
+    },
+    {
+        "author_id": 2265,
+        "conversation_id": "HARASS1NOWRKF2d_W41",
+        "label": "Major problem"
+    },
+    {
+        "author_id": 590,
+        "conversation_id": "SOLVPROBb_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1033,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 1414,
+        "conversation_id": "SOLVPROBdF1_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 269,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably not happen"
+    },
+    {
+        "author_id": 330,
+        "conversation_id": "ELDCARE_W41",
+        "label": "less prepared financially for retirement than older adults today"
+    },
+    {
+        "author_id": 1189,
+        "conversation_id": "HAPPENg_W41",
+        "label": "Religion will be about as important as it is now"
+    },
+    {
+        "author_id": 1631,
+        "conversation_id": "SOLVPROBi_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 1222,
+        "conversation_id": "SOLVPROBg_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 58,
+        "conversation_id": "FUTR_DIV_W41",
+        "label": "More likely to get divorced than people are now"
+    },
+    {
+        "author_id": 1607,
+        "conversation_id": "SOLVPROBf_W41",
+        "label": "A somewhat negative impact"
+    },
+    {
+        "author_id": 24,
+        "conversation_id": "ELDFINANCEF1_W41",
+        "label": "Government"
+    },
+    {
+        "author_id": 172,
+        "conversation_id": "SSCUT_W41",
+        "label": "Social Security benefits should not be reduced in any way"
+    },
+    {
+        "author_id": 2294,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Fairly worried"
+    },
+    {
+        "author_id": 1067,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat pessimistic"
+    },
+    {
+        "author_id": 2263,
+        "conversation_id": "HAPPEN2d_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 1294,
+        "conversation_id": "POPPROB_W41",
+        "label": "Minor problem"
+    },
+    {
+        "author_id": 1342,
+        "conversation_id": "AGEMAJ_W41",
+        "label": "A somewhat bad thing"
+    },
+    {
+        "author_id": 2511,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 884,
+        "conversation_id": "OPTIMIST_W41",
+        "label": "Somewhat pessimistic"
+    },
+    {
+        "author_id": 1095,
+        "conversation_id": "AUTOWKPLC_W41",
+        "label": "Mostly hurt American workers"
+    },
+    {
+        "author_id": 521,
+        "conversation_id": "HAPPEN2c_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 275,
+        "conversation_id": "HAPPEN2e_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 2403,
+        "conversation_id": "FUTRCLASSa_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 124,
+        "conversation_id": "HARASS3F1_W41",
+        "label": "Hasn't made much difference"
+    },
+    {
+        "author_id": 668,
+        "conversation_id": "HAPPENc_W41",
+        "label": "Refused"
+    },
+    {
+        "author_id": 2166,
+        "conversation_id": "FUTRCLASSc_W41",
+        "label": "Increase"
+    },
+    {
+        "author_id": 265,
+        "conversation_id": "GOVPRIOd_W41",
+        "label": "An important, but not a top priority"
+    },
+    {
+        "author_id": 2140,
+        "conversation_id": "FTRWORRYa_W41",
+        "label": "Very worried"
+    },
+    {
+        "author_id": 1033,
+        "conversation_id": "SOLVPROBc_W41",
+        "label": "A somewhat positive impact"
+    },
+    {
+        "author_id": 287,
+        "conversation_id": "HAPPEN2h_W41",
+        "label": "Will probably happen"
+    },
+    {
+        "author_id": 21,
+        "conversation_id": "ROBIMPACTb_W41",
+        "label": "Yes, likely"
+    }
+]

@@ -1,0 +1,5002 @@
+[
+    {
+        "author_id": 438,
+        "conversation_id": "GAP21Q43_e_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 2523,
+        "conversation_id": "GAP21Q17_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 2389,
+        "conversation_id": "GAP21Q33_j_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 608,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Failing to recover from the effects of the coronavirus outbreak in ways that show the weaknesses of its economic system"
+    },
+    {
+        "author_id": 1249,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 461,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 835,
+        "conversation_id": "GAP21Q30_W82",
+        "label": "Most active"
+    },
+    {
+        "author_id": 1530,
+        "conversation_id": "GAP21Q7_d_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 496,
+        "conversation_id": "GAP21Q33_b_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 2044,
+        "conversation_id": "GAP21Q34_b_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 1805,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 303,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 35,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 1588,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 398,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 1125,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 808,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 778,
+        "conversation_id": "GAP21Q38_b_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 397,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 1882,
+        "conversation_id": "GAP21Q25_W82",
+        "label": "A lot of changes"
+    },
+    {
+        "author_id": 2003,
+        "conversation_id": "GAP21Q43_e_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 154,
+        "conversation_id": "GAP21Q13_b_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 1460,
+        "conversation_id": "GAP21Q15_b_W82",
+        "label": "Below average"
+    },
+    {
+        "author_id": 2243,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 701,
+        "conversation_id": "GAP21Q46_W82",
+        "label": "Bad"
+    },
+    {
+        "author_id": 2219,
+        "conversation_id": "GAP21Q34_b_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 2483,
+        "conversation_id": "GAP21Q33_d_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1617,
+        "conversation_id": "GAP21Q26_a_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 1187,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 971,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A little more positively"
+    },
+    {
+        "author_id": 814,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Failing to recover from the effects of the coronavirus outbreak in ways that show the weaknesses of its economic system"
+    },
+    {
+        "author_id": 1198,
+        "conversation_id": "GAP21Q25_W82",
+        "label": "Some changes"
+    },
+    {
+        "author_id": 1228,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 1297,
+        "conversation_id": "GAP21Q2_W82",
+        "label": "Worse off financially than their parents"
+    },
+    {
+        "author_id": 1173,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 1241,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 2191,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 868,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 1130,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 3,
+        "conversation_id": "GAP21Q13_c_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 1562,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 686,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A little more positively"
+    },
+    {
+        "author_id": 1666,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Very good"
+    },
+    {
+        "author_id": 1665,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Have no impact on America's economy"
+    },
+    {
+        "author_id": 2165,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Competitor"
+    },
+    {
+        "author_id": 1213,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Prioritize strengthening economic relations with China, even if it means not addressing human rights issues"
+    },
+    {
+        "author_id": 16,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Strongly support limiting Chinese students"
+    },
+    {
+        "author_id": 956,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 938,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 683,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A lot more positively"
+    },
+    {
+        "author_id": 199,
+        "conversation_id": "GAP21Q33_n_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 520,
+        "conversation_id": "GAP21Q17_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 72,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 461,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 2266,
+        "conversation_id": "GAP21Q15_b_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 1921,
+        "conversation_id": "GAP21Q43_d_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 677,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 843,
+        "conversation_id": "GAP21Q34_d_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 1665,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "The restrictions were about right"
+    },
+    {
+        "author_id": 2443,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Very concerned"
+    },
+    {
+        "author_id": 1934,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "The restrictions were about right"
+    },
+    {
+        "author_id": 1971,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "The restrictions were about right"
+    },
+    {
+        "author_id": 74,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Very bad job"
+    },
+    {
+        "author_id": 219,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 34,
+        "conversation_id": "GAP21Q43_d_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 939,
+        "conversation_id": "GAP21Q34_e_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 2519,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "Fewer restrictions"
+    },
+    {
+        "author_id": 1207,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Somewhat concerned"
+    },
+    {
+        "author_id": 1057,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 631,
+        "conversation_id": "GAP21Q43_d_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 2185,
+        "conversation_id": "GAP21Q33_d_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1952,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Not at all satisfied"
+    },
+    {
+        "author_id": 1966,
+        "conversation_id": "GAP21Q33_b_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 702,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 1685,
+        "conversation_id": "GAP21Q2_W82",
+        "label": "Worse off financially than their parents"
+    },
+    {
+        "author_id": 1079,
+        "conversation_id": "GAP21Q7_d_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 436,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 863,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1020,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Is a good example for other countries to follow"
+    },
+    {
+        "author_id": 2204,
+        "conversation_id": "GAP21Q33_p_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2231,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 1469,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 249,
+        "conversation_id": "GAP21Q13_c_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 2463,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 756,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 2099,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "There are not conflicts"
+    },
+    {
+        "author_id": 587,
+        "conversation_id": "GAP21Q15_a_W82",
+        "label": "Below average"
+    },
+    {
+        "author_id": 2113,
+        "conversation_id": "GAP21Q26_a_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 2093,
+        "conversation_id": "GAP21Q33_s_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1714,
+        "conversation_id": "GAP21Q33_i_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 28,
+        "conversation_id": "GAP21Q28_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 1464,
+        "conversation_id": "GAP21Q33_b_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1992,
+        "conversation_id": "GAP21Q43_d_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 547,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 2246,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 30,
+        "conversation_id": "GAP21Q23_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1934,
+        "conversation_id": "GAP21Q33_r_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1732,
+        "conversation_id": "GAP21Q43_a_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 2193,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 1366,
+        "conversation_id": "GAP21Q33_h_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1437,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Agree on the basic facts"
+    },
+    {
+        "author_id": 709,
+        "conversation_id": "GAP21Q33_k_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1682,
+        "conversation_id": "GAP21Q15_a_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 1700,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 180,
+        "conversation_id": "GAP21Q19_e_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 2240,
+        "conversation_id": "GAP21Q28_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 1921,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "A lot of confidence"
+    },
+    {
+        "author_id": 2082,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1440,
+        "conversation_id": "GAP21Q33_p_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 991,
+        "conversation_id": "GAP21Q43_f_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 871,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 1885,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "It's best for the future of our country to be active in world affairs"
+    },
+    {
+        "author_id": 681,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 454,
+        "conversation_id": "GAP21Q46_W82",
+        "label": "Good"
+    },
+    {
+        "author_id": 1140,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 1920,
+        "conversation_id": "GAP21Q35_W82",
+        "label": "many of the problems facing our country can be solved by working with other countries"
+    },
+    {
+        "author_id": 1620,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Below average"
+    },
+    {
+        "author_id": 2193,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 1550,
+        "conversation_id": "GAP21Q15_e_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 1436,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Competitor"
+    },
+    {
+        "author_id": 1471,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "More restrictions"
+    },
+    {
+        "author_id": 2229,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 49,
+        "conversation_id": "GAP21Q46_W82",
+        "label": "Bad"
+    },
+    {
+        "author_id": 1240,
+        "conversation_id": "GAP21Q14_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 1892,
+        "conversation_id": "GAP21Q26_a_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 1874,
+        "conversation_id": "GAP21Q19_b_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 848,
+        "conversation_id": "GAP21Q33_s_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 895,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Somewhat satisfied"
+    },
+    {
+        "author_id": 1673,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 2440,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Very bad job"
+    },
+    {
+        "author_id": 414,
+        "conversation_id": "GAP21Q33_o_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2242,
+        "conversation_id": "GAP21Q41_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 617,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 2494,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 1235,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 26,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Below average"
+    },
+    {
+        "author_id": 316,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Not at all satisfied"
+    },
+    {
+        "author_id": 822,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Very good"
+    },
+    {
+        "author_id": 1108,
+        "conversation_id": "GAP21Q26_a_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 2309,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 809,
+        "conversation_id": "GAP21Q29_W82",
+        "label": "Be the single world leader"
+    },
+    {
+        "author_id": 2364,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1105,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "Some"
+    },
+    {
+        "author_id": 2577,
+        "conversation_id": "GAP21Q13_a_W82",
+        "label": "It needs minor changes"
+    },
+    {
+        "author_id": 1795,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 770,
+        "conversation_id": "GAP21Q21_c_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 2442,
+        "conversation_id": "GAP21Q34_e_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 234,
+        "conversation_id": "GAP21Q33_k_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1429,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 2508,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A lot more positively"
+    },
+    {
+        "author_id": 1155,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Very good"
+    },
+    {
+        "author_id": 1696,
+        "conversation_id": "GAP21Q4_a_W82",
+        "label": "Very favorable"
+    },
+    {
+        "author_id": 1777,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 2202,
+        "conversation_id": "GAP21Q21_e_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 868,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Somewhat oppose limiting Chinese students"
+    },
+    {
+        "author_id": 534,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 612,
+        "conversation_id": "GAP21Q42_W82",
+        "label": "Building a strong relationship with China on economic issues"
+    },
+    {
+        "author_id": 2141,
+        "conversation_id": "GAP21Q43_h_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 1471,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Somewhat concerned"
+    },
+    {
+        "author_id": 474,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 526,
+        "conversation_id": "GAP21Q2_W82",
+        "label": "Worse off financially than their parents"
+    },
+    {
+        "author_id": 2488,
+        "conversation_id": "GAP21Q13_a_W82",
+        "label": "It needs minor changes"
+    },
+    {
+        "author_id": 168,
+        "conversation_id": "GAP21Q33_d_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1631,
+        "conversation_id": "GAP21Q13_b_W82",
+        "label": "It needs minor changes"
+    },
+    {
+        "author_id": 2347,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 1465,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 796,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 2256,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 2302,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Used to be a good example, but has not been in recent years"
+    },
+    {
+        "author_id": 2250,
+        "conversation_id": "GAP21Q35_W82",
+        "label": "many of the problems facing our country can be solved by working with other countries"
+    },
+    {
+        "author_id": 1189,
+        "conversation_id": "GAP21Q29_W82",
+        "label": "Play a shared leadership role"
+    },
+    {
+        "author_id": 731,
+        "conversation_id": "GAP21Q34_e_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 235,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 973,
+        "conversation_id": "GAP21Q33_a_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 2440,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 1197,
+        "conversation_id": "GAP21Q33_m_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 560,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 39,
+        "conversation_id": "GAP21Q13_c_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 2528,
+        "conversation_id": "GAP21Q5_b_W82",
+        "label": "Yes, respects personal freedoms"
+    },
+    {
+        "author_id": 714,
+        "conversation_id": "GAP21Q23_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 790,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Not at all satisfied"
+    },
+    {
+        "author_id": 629,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A lot more positively"
+    },
+    {
+        "author_id": 606,
+        "conversation_id": "GAP21Q26_c_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 1818,
+        "conversation_id": "GAP21Q35_W82",
+        "label": "few of the problems facing our country can be solved by working with other countries"
+    },
+    {
+        "author_id": 914,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 1706,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 2341,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "It's best for the future of our country to be active in world affairs"
+    },
+    {
+        "author_id": 753,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 2563,
+        "conversation_id": "GAP21Q13_a_W82",
+        "label": "It needs to be completely reformed"
+    },
+    {
+        "author_id": 270,
+        "conversation_id": "GAP21Q33_n_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2217,
+        "conversation_id": "GAP21Q17_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 640,
+        "conversation_id": "GAP21Q43_d_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 1188,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 2071,
+        "conversation_id": "GAP21Q43_g_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 2282,
+        "conversation_id": "GAP21Q46_W82",
+        "label": "Good"
+    },
+    {
+        "author_id": 2518,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 598,
+        "conversation_id": "GAP21Q43_a_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 901,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Disagree on the basic facts"
+    },
+    {
+        "author_id": 976,
+        "conversation_id": "GAP21Q25_W82",
+        "label": "Only a few changes"
+    },
+    {
+        "author_id": 880,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 2426,
+        "conversation_id": "GAP21Q28_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 244,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 1769,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 1320,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 2250,
+        "conversation_id": "GAP21Q4_b_W82",
+        "label": "Very unfavorable"
+    },
+    {
+        "author_id": 1861,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Used to be a good example, but has not been in recent years"
+    },
+    {
+        "author_id": 2,
+        "conversation_id": "GAP21Q19_e_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 808,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 1175,
+        "conversation_id": "GAP21Q33_s_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1827,
+        "conversation_id": "GAP21Q21_e_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 1346,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 465,
+        "conversation_id": "GAP21Q41_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 2027,
+        "conversation_id": "GAP21Q33_s_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1275,
+        "conversation_id": "GAP21Q34_e_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 391,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 2227,
+        "conversation_id": "GAP21Q33_r_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 382,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Competitor"
+    },
+    {
+        "author_id": 1289,
+        "conversation_id": "GAP21Q15_a_W82",
+        "label": "Below average"
+    },
+    {
+        "author_id": 1672,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 2580,
+        "conversation_id": "GAP21Q26_c_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 1285,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 886,
+        "conversation_id": "GAP21Q33_a_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 172,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 961,
+        "conversation_id": "GAP21Q33_p_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 2510,
+        "conversation_id": "GAP21Q23_W82",
+        "label": "Not too serious problem"
+    },
+    {
+        "author_id": 2138,
+        "conversation_id": "GAP21Q33_q_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 478,
+        "conversation_id": "GAP21Q17_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 643,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 91,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 1498,
+        "conversation_id": "GAP21Q9_W82",
+        "label": "More divided than before the coronavirus outbreak"
+    },
+    {
+        "author_id": 903,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 967,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 1335,
+        "conversation_id": "GAP21Q43_c_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 1622,
+        "conversation_id": "GAP21Q23_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 2398,
+        "conversation_id": "GAP21Q21_c_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 956,
+        "conversation_id": "GAP21Q35_W82",
+        "label": "many of the problems facing our country can be solved by working with other countries"
+    },
+    {
+        "author_id": 1417,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Strongly support limiting Chinese students"
+    },
+    {
+        "author_id": 1905,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 1222,
+        "conversation_id": "GAP21Q43_d_W82",
+        "label": "Not a problem at all"
+    },
+    {
+        "author_id": 2464,
+        "conversation_id": "GAP21Q33_g_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 359,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should follow its own national interests even when its allies strongly disagree"
+    },
+    {
+        "author_id": 2331,
+        "conversation_id": "GAP21Q33_j_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1407,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Try to promote human rights in China, even if it harms economic relations with China"
+    },
+    {
+        "author_id": 1239,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 1445,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A little more positively"
+    },
+    {
+        "author_id": 981,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 1952,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Try to promote human rights in China, even if it harms economic relations with China"
+    },
+    {
+        "author_id": 864,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Disagree on the basic facts"
+    },
+    {
+        "author_id": 2190,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 2265,
+        "conversation_id": "GAP21Q33_g_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 106,
+        "conversation_id": "GAP21Q33_t_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 652,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Competitor"
+    },
+    {
+        "author_id": 479,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Failing to recover from the effects of the coronavirus outbreak in ways that show the weaknesses of its economic system"
+    },
+    {
+        "author_id": 140,
+        "conversation_id": "GAP21Q19_e_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 1390,
+        "conversation_id": "GAP21Q4_b_W82",
+        "label": "Very unfavorable"
+    },
+    {
+        "author_id": 2364,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Disagree on the basic facts"
+    },
+    {
+        "author_id": 1022,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Somewhat concerned"
+    },
+    {
+        "author_id": 1472,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Not at all concerned"
+    },
+    {
+        "author_id": 1009,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 1745,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 241,
+        "conversation_id": "GAP21Q34_d_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 2453,
+        "conversation_id": "GAP21Q14_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 1332,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 983,
+        "conversation_id": "GAP21Q15_a_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 236,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 1109,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Not at all satisfied"
+    },
+    {
+        "author_id": 1981,
+        "conversation_id": "GAP21Q33_o_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 691,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 2018,
+        "conversation_id": "GAP21Q9_W82",
+        "label": "More divided than before the coronavirus outbreak"
+    },
+    {
+        "author_id": 1323,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 616,
+        "conversation_id": "GAP21Q43_c_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 565,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Somewhat oppose limiting Chinese students"
+    },
+    {
+        "author_id": 640,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Benefit America's economy"
+    },
+    {
+        "author_id": 2175,
+        "conversation_id": "GAP21Q43_h_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 14,
+        "conversation_id": "GAP21Q5_b_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 1525,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Competitor"
+    },
+    {
+        "author_id": 212,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 2378,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Recovering from the effects of the coronavirus outbreak in ways that show the strengths of its economic system"
+    },
+    {
+        "author_id": 1456,
+        "conversation_id": "GAP21Q33_k_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1200,
+        "conversation_id": "GAP21Q4_a_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 405,
+        "conversation_id": "GAP21Q15_a_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 1515,
+        "conversation_id": "GAP21Q33_t_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 258,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 2,
+        "conversation_id": "GAP21Q2_W82",
+        "label": "Worse off financially than their parents"
+    },
+    {
+        "author_id": 817,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 1498,
+        "conversation_id": "GAP21Q29_W82",
+        "label": "Play a shared leadership role"
+    },
+    {
+        "author_id": 2144,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 526,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Not at all concerned"
+    },
+    {
+        "author_id": 1123,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 1614,
+        "conversation_id": "GAP21Q23_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 396,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 716,
+        "conversation_id": "GAP21Q17_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 318,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 1353,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Very concerned"
+    },
+    {
+        "author_id": 1311,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "A lot of confidence"
+    },
+    {
+        "author_id": 2309,
+        "conversation_id": "GAP21Q30_W82",
+        "label": "Most active"
+    },
+    {
+        "author_id": 1710,
+        "conversation_id": "GAP21Q4_b_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 314,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "Fewer restrictions"
+    },
+    {
+        "author_id": 1041,
+        "conversation_id": "GAP21Q26_c_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 2505,
+        "conversation_id": "GAP21Q9_W82",
+        "label": "More divided than before the coronavirus outbreak"
+    },
+    {
+        "author_id": 1827,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Strongly oppose limiting Chinese students"
+    },
+    {
+        "author_id": 1942,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Strongly oppose limiting Chinese students"
+    },
+    {
+        "author_id": 2053,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Very good"
+    },
+    {
+        "author_id": 2588,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 2107,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 2265,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 1373,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 708,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "We should pay less attention to problems overseas and concentrate on problems here at home"
+    },
+    {
+        "author_id": 1579,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 892,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "It's best for the future of our country to be active in world affairs"
+    },
+    {
+        "author_id": 2152,
+        "conversation_id": "GAP21Q42_W82",
+        "label": "Building a strong relationship with China on economic issues"
+    },
+    {
+        "author_id": 2268,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Try to promote human rights in China, even if it harms economic relations with China"
+    },
+    {
+        "author_id": 1362,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Prioritize strengthening economic relations with China, even if it means not addressing human rights issues"
+    },
+    {
+        "author_id": 1429,
+        "conversation_id": "GAP21Q21_c_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 1367,
+        "conversation_id": "GAP21Q4_a_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 2342,
+        "conversation_id": "GAP21Q33_g_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 104,
+        "conversation_id": "GAP21Q43_c_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 78,
+        "conversation_id": "GAP21Q15_e_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 1442,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 23,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 1638,
+        "conversation_id": "GAP21Q26_a_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 2266,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 179,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 1367,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 2476,
+        "conversation_id": "GAP21Q33_t_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 159,
+        "conversation_id": "GAP21Q35_W82",
+        "label": "few of the problems facing our country can be solved by working with other countries"
+    },
+    {
+        "author_id": 2495,
+        "conversation_id": "GAP21Q43_c_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1836,
+        "conversation_id": "GAP21Q17_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 578,
+        "conversation_id": "GAP21Q14_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 2524,
+        "conversation_id": "GAP21Q25_W82",
+        "label": "A lot of changes"
+    },
+    {
+        "author_id": 1301,
+        "conversation_id": "GAP21Q33_q_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 746,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "A lot of confidence"
+    },
+    {
+        "author_id": 1584,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A lot more positively"
+    },
+    {
+        "author_id": 2108,
+        "conversation_id": "GAP21Q13_b_W82",
+        "label": "It needs to be completely reformed"
+    },
+    {
+        "author_id": 467,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 1866,
+        "conversation_id": "GAP21Q43_h_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 2327,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 2229,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Disagree on the basic facts"
+    },
+    {
+        "author_id": 485,
+        "conversation_id": "GAP21Q4_c_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 1640,
+        "conversation_id": "GAP21Q4_c_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 1242,
+        "conversation_id": "GAP21Q42_W82",
+        "label": "Getting tougher with China on economic issues"
+    },
+    {
+        "author_id": 671,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 765,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 1853,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 2066,
+        "conversation_id": "GAP21Q17_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 608,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 1963,
+        "conversation_id": "GAP21Q4_f_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 307,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 1770,
+        "conversation_id": "GAP21Q4_a_W82",
+        "label": "Somewhat unfavorable"
+    },
+    {
+        "author_id": 1892,
+        "conversation_id": "GAP21Q33_o_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1873,
+        "conversation_id": "GAP21Q4_c_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 1976,
+        "conversation_id": "GAP21Q9_W82",
+        "label": "More divided than before the coronavirus outbreak"
+    },
+    {
+        "author_id": 1575,
+        "conversation_id": "GAP21Q43_h_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 1383,
+        "conversation_id": "GAP21Q33_i_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2315,
+        "conversation_id": "GAP21Q43_g_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 299,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Recovering from the effects of the coronavirus outbreak in ways that show the strengths of its economic system"
+    },
+    {
+        "author_id": 1251,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 1704,
+        "conversation_id": "GAP21Q33_t_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 596,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Used to be a good example, but has not been in recent years"
+    },
+    {
+        "author_id": 2112,
+        "conversation_id": "GAP21Q33_g_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 226,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 108,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Not too satisfied"
+    },
+    {
+        "author_id": 608,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "Not at all"
+    },
+    {
+        "author_id": 1964,
+        "conversation_id": "GAP21Q33_b_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1695,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 1537,
+        "conversation_id": "GAP21Q42_W82",
+        "label": "Building a strong relationship with China on economic issues"
+    },
+    {
+        "author_id": 746,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 2035,
+        "conversation_id": "GAP21Q5_b_W82",
+        "label": "Yes, respects personal freedoms"
+    },
+    {
+        "author_id": 2201,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 1613,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 735,
+        "conversation_id": "GAP21Q33_l_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1889,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Competitor"
+    },
+    {
+        "author_id": 13,
+        "conversation_id": "GAP21Q34_b_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 1868,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 1038,
+        "conversation_id": "GAP21Q13_b_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 331,
+        "conversation_id": "GAP21Q43_c_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 349,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 646,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 1962,
+        "conversation_id": "GAP21Q23_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 348,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Is a good example for other countries to follow"
+    },
+    {
+        "author_id": 1690,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 2260,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 1866,
+        "conversation_id": "GAP21Q35_W82",
+        "label": "many of the problems facing our country can be solved by working with other countries"
+    },
+    {
+        "author_id": 144,
+        "conversation_id": "GAP21Q43_g_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 139,
+        "conversation_id": "GAP21Q25_W82",
+        "label": "A lot of changes"
+    },
+    {
+        "author_id": 1767,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Benefit America's economy"
+    },
+    {
+        "author_id": 1763,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should follow its own national interests even when its allies strongly disagree"
+    },
+    {
+        "author_id": 2394,
+        "conversation_id": "GAP21Q46_W82",
+        "label": "Good"
+    },
+    {
+        "author_id": 2584,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "More restrictions"
+    },
+    {
+        "author_id": 1994,
+        "conversation_id": "GAP21Q31_W82",
+        "label": "Not too important"
+    },
+    {
+        "author_id": 810,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 2545,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 1545,
+        "conversation_id": "GAP21Q43_f_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 1725,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 2480,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should follow its own national interests even when its allies strongly disagree"
+    },
+    {
+        "author_id": 135,
+        "conversation_id": "GAP21Q43_f_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 1753,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Agree on the basic facts"
+    },
+    {
+        "author_id": 1802,
+        "conversation_id": "GAP21Q28_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 397,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 465,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Is a good example for other countries to follow"
+    },
+    {
+        "author_id": 210,
+        "conversation_id": "GAP21Q33_p_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 517,
+        "conversation_id": "GAP21Q28_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 261,
+        "conversation_id": "GAP21Q4_b_W82",
+        "label": "Very unfavorable"
+    },
+    {
+        "author_id": 29,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "It's best for the future of our country to be active in world affairs"
+    },
+    {
+        "author_id": 119,
+        "conversation_id": "GAP21Q46_W82",
+        "label": "Good"
+    },
+    {
+        "author_id": 518,
+        "conversation_id": "GAP21Q33_a_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 267,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 1411,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 2299,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 383,
+        "conversation_id": "GAP21Q42_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 605,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 1994,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Strongly oppose limiting Chinese students"
+    },
+    {
+        "author_id": 1529,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 1421,
+        "conversation_id": "GAP21Q30_W82",
+        "label": "About as active"
+    },
+    {
+        "author_id": 2027,
+        "conversation_id": "GAP21Q19_b_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 2490,
+        "conversation_id": "GAP21Q33_b_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2110,
+        "conversation_id": "GAP21Q34_e_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 89,
+        "conversation_id": "GAP21Q33_e_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1168,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A lot more positively"
+    },
+    {
+        "author_id": 1744,
+        "conversation_id": "GAP21Q21_c_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 53,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 1306,
+        "conversation_id": "GAP21Q15_b_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 2157,
+        "conversation_id": "GAP21Q33_c_W82",
+        "label": "No priority"
+    },
+    {
+        "author_id": 723,
+        "conversation_id": "GAP21Q34_e_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 700,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 1099,
+        "conversation_id": "GAP21Q9_W82",
+        "label": "More divided than before the coronavirus outbreak"
+    },
+    {
+        "author_id": 1994,
+        "conversation_id": "GAP21Q33_k_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2478,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 176,
+        "conversation_id": "GAP21Q43_f_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1958,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Competitor"
+    },
+    {
+        "author_id": 2182,
+        "conversation_id": "GAP21Q20_W82",
+        "label": "A better place to live"
+    },
+    {
+        "author_id": 1279,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "It's best for the future of our country to be active in world affairs"
+    },
+    {
+        "author_id": 1788,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 1777,
+        "conversation_id": "GAP21Q19_e_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 219,
+        "conversation_id": "GAP21Q28_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 2025,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 303,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Not too satisfied"
+    },
+    {
+        "author_id": 2091,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 324,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 1240,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 211,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 95,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 182,
+        "conversation_id": "GAP21Q34_d_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 548,
+        "conversation_id": "GAP21Q34_e_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 466,
+        "conversation_id": "GAP21Q13_c_W82",
+        "label": "It needs minor changes"
+    },
+    {
+        "author_id": 366,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 2193,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 2153,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 1874,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 2359,
+        "conversation_id": "GAP21Q43_c_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1255,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 1139,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "It's best for the future of our country to be active in world affairs"
+    },
+    {
+        "author_id": 2370,
+        "conversation_id": "GAP21Q26_c_W82",
+        "label": "Very bad job"
+    },
+    {
+        "author_id": 1482,
+        "conversation_id": "GAP21Q34_b_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1891,
+        "conversation_id": "GAP21Q7_d_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 2259,
+        "conversation_id": "GAP21Q15_e_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 983,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 2047,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 121,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 856,
+        "conversation_id": "GAP21Q43_h_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 662,
+        "conversation_id": "GAP21Q4_c_W82",
+        "label": "Somewhat unfavorable"
+    },
+    {
+        "author_id": 1073,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Recovering from the effects of the coronavirus outbreak in ways that show the strengths of its economic system"
+    },
+    {
+        "author_id": 1429,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 1356,
+        "conversation_id": "GAP21Q19_e_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 969,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 1780,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 1861,
+        "conversation_id": "GAP21Q19_b_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 602,
+        "conversation_id": "GAP21Q13_b_W82",
+        "label": "It needs minor changes"
+    },
+    {
+        "author_id": 909,
+        "conversation_id": "GAP21Q33_q_W82",
+        "label": "No priority"
+    },
+    {
+        "author_id": 1625,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 1837,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 918,
+        "conversation_id": "GAP21Q42_W82",
+        "label": "Building a strong relationship with China on economic issues"
+    },
+    {
+        "author_id": 84,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Have no impact on America's economy"
+    },
+    {
+        "author_id": 1630,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 633,
+        "conversation_id": "GAP21Q33_q_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1106,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Below average"
+    },
+    {
+        "author_id": 1176,
+        "conversation_id": "GAP21Q19_b_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 423,
+        "conversation_id": "GAP21Q13_a_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 1928,
+        "conversation_id": "GAP21Q33_q_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1850,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 774,
+        "conversation_id": "GAP21Q33_n_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 0,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 2515,
+        "conversation_id": "GAP21Q34_d_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 1512,
+        "conversation_id": "GAP21Q15_b_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 1703,
+        "conversation_id": "GAP21Q19_e_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 2497,
+        "conversation_id": "GAP21Q42_W82",
+        "label": "Getting tougher with China on economic issues"
+    },
+    {
+        "author_id": 984,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 2471,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "Not at all"
+    },
+    {
+        "author_id": 1144,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 2080,
+        "conversation_id": "GAP21Q15_e_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 1250,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Enemy"
+    },
+    {
+        "author_id": 557,
+        "conversation_id": "GAP21Q21_c_W82",
+        "label": "There are not conflicts"
+    },
+    {
+        "author_id": 190,
+        "conversation_id": "GAP21Q33_b_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 233,
+        "conversation_id": "GAP21Q20_W82",
+        "label": "A worse place to live"
+    },
+    {
+        "author_id": 1206,
+        "conversation_id": "GAP21Q4_a_W82",
+        "label": "Very favorable"
+    },
+    {
+        "author_id": 900,
+        "conversation_id": "GAP21Q33_r_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1492,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 1122,
+        "conversation_id": "GAP21Q15_a_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 2187,
+        "conversation_id": "GAP21Q21_c_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 2129,
+        "conversation_id": "GAP21Q4_a_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 1861,
+        "conversation_id": "GAP21Q38_b_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 1490,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Disagree on the basic facts"
+    },
+    {
+        "author_id": 1267,
+        "conversation_id": "GAP21Q31_W82",
+        "label": "Somewhat important"
+    },
+    {
+        "author_id": 857,
+        "conversation_id": "GAP21Q15_e_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 2216,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Competitor"
+    },
+    {
+        "author_id": 30,
+        "conversation_id": "GAP21Q43_a_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 274,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "Fewer restrictions"
+    },
+    {
+        "author_id": 1294,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 1180,
+        "conversation_id": "GAP21Q4_d_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 1129,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 208,
+        "conversation_id": "GAP21Q15_e_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 596,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should follow its own national interests even when its allies strongly disagree"
+    },
+    {
+        "author_id": 154,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Used to be a good example, but has not been in recent years"
+    },
+    {
+        "author_id": 2256,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 1292,
+        "conversation_id": "GAP21Q33_t_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 279,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Disagree on the basic facts"
+    },
+    {
+        "author_id": 2040,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 953,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1948,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 2535,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 2445,
+        "conversation_id": "GAP21Q14_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 1196,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 2489,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 448,
+        "conversation_id": "GAP21Q43_g_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 2391,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Enemy"
+    },
+    {
+        "author_id": 2113,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 319,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "Some"
+    },
+    {
+        "author_id": 1651,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 883,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 833,
+        "conversation_id": "GAP21Q43_c_W82",
+        "label": "Not a problem at all"
+    },
+    {
+        "author_id": 2440,
+        "conversation_id": "GAP21Q29_W82",
+        "label": "Play a shared leadership role"
+    },
+    {
+        "author_id": 1471,
+        "conversation_id": "GAP21Q33_q_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1238,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 748,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Recovering from the effects of the coronavirus outbreak in ways that show the strengths of its economic system"
+    },
+    {
+        "author_id": 722,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Harm America's economy"
+    },
+    {
+        "author_id": 377,
+        "conversation_id": "GAP21Q13_b_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 706,
+        "conversation_id": "GAP21Q43_h_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 68,
+        "conversation_id": "GAP21Q33_d_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 2114,
+        "conversation_id": "GAP21Q33_l_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1012,
+        "conversation_id": "GAP21Q33_i_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1279,
+        "conversation_id": "GAP21Q5_b_W82",
+        "label": "Yes, respects personal freedoms"
+    },
+    {
+        "author_id": 647,
+        "conversation_id": "GAP21Q21_e_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 2190,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 1045,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 807,
+        "conversation_id": "GAP21Q34_e_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 1962,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 1627,
+        "conversation_id": "GAP21Q4_c_W82",
+        "label": "Somewhat unfavorable"
+    },
+    {
+        "author_id": 277,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 1360,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 174,
+        "conversation_id": "GAP21Q4_a_W82",
+        "label": "Very favorable"
+    },
+    {
+        "author_id": 2386,
+        "conversation_id": "GAP21Q42_W82",
+        "label": "Building a strong relationship with China on economic issues"
+    },
+    {
+        "author_id": 346,
+        "conversation_id": "GAP21Q33_l_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 128,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "More restrictions"
+    },
+    {
+        "author_id": 807,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 1018,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Recovering from the effects of the coronavirus outbreak in ways that show the strengths of its economic system"
+    },
+    {
+        "author_id": 283,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Strongly support limiting Chinese students"
+    },
+    {
+        "author_id": 2333,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 1813,
+        "conversation_id": "GAP21Q15_a_W82",
+        "label": "Below average"
+    },
+    {
+        "author_id": 790,
+        "conversation_id": "GAP21Q33_g_W82",
+        "label": "No priority"
+    },
+    {
+        "author_id": 1698,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A lot more positively"
+    },
+    {
+        "author_id": 2337,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 31,
+        "conversation_id": "GAP21Q13_b_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 952,
+        "conversation_id": "GAP21Q4_a_W82",
+        "label": "Very favorable"
+    },
+    {
+        "author_id": 987,
+        "conversation_id": "GAP21Q33_s_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 248,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A little more negatively"
+    },
+    {
+        "author_id": 2234,
+        "conversation_id": "GAP21Q43_f_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 550,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Strongly oppose limiting Chinese students"
+    },
+    {
+        "author_id": 411,
+        "conversation_id": "GAP21Q13_a_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 2288,
+        "conversation_id": "GAP21Q25_W82",
+        "label": "Some changes"
+    },
+    {
+        "author_id": 1779,
+        "conversation_id": "GAP21Q43_h_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 1202,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A little more positively"
+    },
+    {
+        "author_id": 1871,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 1176,
+        "conversation_id": "GAP21Q25_W82",
+        "label": "Some changes"
+    },
+    {
+        "author_id": 926,
+        "conversation_id": "GAP21Q33_i_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1544,
+        "conversation_id": "GAP21Q33_n_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 2211,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 662,
+        "conversation_id": "GAP21Q43_c_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 137,
+        "conversation_id": "GAP21Q19_e_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 2409,
+        "conversation_id": "GAP21Q20_W82",
+        "label": "A better place to live"
+    },
+    {
+        "author_id": 2189,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 383,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Partner"
+    },
+    {
+        "author_id": 591,
+        "conversation_id": "GAP21Q42_W82",
+        "label": "Building a strong relationship with China on economic issues"
+    },
+    {
+        "author_id": 1781,
+        "conversation_id": "GAP21Q2_W82",
+        "label": "Better off financially than their parents"
+    },
+    {
+        "author_id": 877,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Agree on the basic facts"
+    },
+    {
+        "author_id": 2007,
+        "conversation_id": "GAP21Q20_W82",
+        "label": "A better place to live"
+    },
+    {
+        "author_id": 2108,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "None at all"
+    },
+    {
+        "author_id": 1319,
+        "conversation_id": "GAP21Q26_c_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 126,
+        "conversation_id": "GAP21Q43_h_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 199,
+        "conversation_id": "GAP21Q15_a_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 513,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 2574,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 916,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "We should pay less attention to problems overseas and concentrate on problems here at home"
+    },
+    {
+        "author_id": 807,
+        "conversation_id": "GAP21Q43_g_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 274,
+        "conversation_id": "GAP21Q33_r_W82",
+        "label": "No priority"
+    },
+    {
+        "author_id": 1519,
+        "conversation_id": "GAP21Q43_a_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 2090,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 1183,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 22,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Strongly oppose limiting Chinese students"
+    },
+    {
+        "author_id": 189,
+        "conversation_id": "GAP21Q33_q_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 2412,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 1095,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 1909,
+        "conversation_id": "GAP21Q33_j_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1280,
+        "conversation_id": "GAP21Q2_W82",
+        "label": "Worse off financially than their parents"
+    },
+    {
+        "author_id": 1552,
+        "conversation_id": "GAP21Q34_b_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 2509,
+        "conversation_id": "GAP21Q43_g_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 75,
+        "conversation_id": "GAP21Q13_a_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 1828,
+        "conversation_id": "GAP21Q33_m_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 2140,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 2508,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 2055,
+        "conversation_id": "GAP21Q21_e_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 1958,
+        "conversation_id": "GAP21Q38_b_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 1722,
+        "conversation_id": "GAP21Q21_c_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 931,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "More restrictions"
+    },
+    {
+        "author_id": 1457,
+        "conversation_id": "GAP21Q9_W82",
+        "label": "More divided than before the coronavirus outbreak"
+    },
+    {
+        "author_id": 2054,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 922,
+        "conversation_id": "GAP21Q23_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1426,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 2486,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Somewhat concerned"
+    },
+    {
+        "author_id": 2059,
+        "conversation_id": "GAP21Q43_c_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1686,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "We should pay less attention to problems overseas and concentrate on problems here at home"
+    },
+    {
+        "author_id": 74,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should follow its own national interests even when its allies strongly disagree"
+    },
+    {
+        "author_id": 2279,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1825,
+        "conversation_id": "GAP21Q13_c_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 1469,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 1049,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 121,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 21,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "The restrictions were about right"
+    },
+    {
+        "author_id": 893,
+        "conversation_id": "GAP21Q33_d_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 581,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 1101,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 2267,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 1725,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 2587,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 1554,
+        "conversation_id": "GAP21Q9_W82",
+        "label": "More divided than before the coronavirus outbreak"
+    },
+    {
+        "author_id": 838,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 2168,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Failing to recover from the effects of the coronavirus outbreak in ways that show the weaknesses of its economic system"
+    },
+    {
+        "author_id": 601,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 2494,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 1870,
+        "conversation_id": "GAP21Q29_W82",
+        "label": "Play a shared leadership role"
+    },
+    {
+        "author_id": 1975,
+        "conversation_id": "GAP21Q33_s_W82",
+        "label": "No priority"
+    },
+    {
+        "author_id": 1503,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1053,
+        "conversation_id": "GAP21Q19_b_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 1632,
+        "conversation_id": "GAP21Q31_W82",
+        "label": "Very important"
+    },
+    {
+        "author_id": 2069,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 2333,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Disagree on the basic facts"
+    },
+    {
+        "author_id": 1501,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 2370,
+        "conversation_id": "GAP21Q26_a_W82",
+        "label": "Very bad job"
+    },
+    {
+        "author_id": 362,
+        "conversation_id": "GAP21Q7_d_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 973,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 2138,
+        "conversation_id": "GAP21Q33_k_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2257,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 3,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 1404,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 336,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 2122,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 2486,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 954,
+        "conversation_id": "GAP21Q33_l_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2433,
+        "conversation_id": "GAP21Q28_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 919,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Somewhat satisfied"
+    },
+    {
+        "author_id": 1383,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Harm America's economy"
+    },
+    {
+        "author_id": 34,
+        "conversation_id": "GAP21Q33_t_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2404,
+        "conversation_id": "GAP21Q28_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 1954,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Have no impact on America's economy"
+    },
+    {
+        "author_id": 1360,
+        "conversation_id": "GAP21Q13_b_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 1686,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Disagree on the basic facts"
+    },
+    {
+        "author_id": 1403,
+        "conversation_id": "GAP21Q15_e_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 182,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "It's best for the future of our country to be active in world affairs"
+    },
+    {
+        "author_id": 1322,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 337,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 297,
+        "conversation_id": "GAP21Q21_e_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 514,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 834,
+        "conversation_id": "GAP21Q4_b_W82",
+        "label": "Very unfavorable"
+    },
+    {
+        "author_id": 459,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Somewhat satisfied"
+    },
+    {
+        "author_id": 2347,
+        "conversation_id": "GAP21Q21_e_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 1835,
+        "conversation_id": "GAP21Q33_a_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1748,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Used to be a good example, but has not been in recent years"
+    },
+    {
+        "author_id": 2256,
+        "conversation_id": "GAP21Q42_W82",
+        "label": "Getting tougher with China on economic issues"
+    },
+    {
+        "author_id": 380,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 516,
+        "conversation_id": "GAP21Q35_W82",
+        "label": "few of the problems facing our country can be solved by working with other countries"
+    },
+    {
+        "author_id": 496,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 1479,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Not too satisfied"
+    },
+    {
+        "author_id": 2493,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Not too satisfied"
+    },
+    {
+        "author_id": 2111,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 2053,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 63,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1122,
+        "conversation_id": "GAP21Q21_c_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 334,
+        "conversation_id": "GAP21Q31_W82",
+        "label": "Very important"
+    },
+    {
+        "author_id": 932,
+        "conversation_id": "GAP21Q19_e_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 1872,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A little more positively"
+    },
+    {
+        "author_id": 1780,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 2477,
+        "conversation_id": "GAP21Q29_W82",
+        "label": "Play a shared leadership role"
+    },
+    {
+        "author_id": 2531,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Not at all concerned"
+    },
+    {
+        "author_id": 2015,
+        "conversation_id": "GAP21Q33_a_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1016,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 718,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "We should pay less attention to problems overseas and concentrate on problems here at home"
+    },
+    {
+        "author_id": 748,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 10,
+        "conversation_id": "GAP21Q26_c_W82",
+        "label": "Very bad job"
+    },
+    {
+        "author_id": 805,
+        "conversation_id": "GAP21Q33_f_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1839,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "Some"
+    },
+    {
+        "author_id": 1719,
+        "conversation_id": "GAP21Q43_a_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 373,
+        "conversation_id": "GAP21Q33_h_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1219,
+        "conversation_id": "GAP21Q38_b_W82",
+        "label": "Not at all"
+    },
+    {
+        "author_id": 1358,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Not at all satisfied"
+    },
+    {
+        "author_id": 534,
+        "conversation_id": "GAP21Q33_l_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2522,
+        "conversation_id": "GAP21Q19_e_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 665,
+        "conversation_id": "GAP21Q13_c_W82",
+        "label": "It needs minor changes"
+    },
+    {
+        "author_id": 354,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 1333,
+        "conversation_id": "GAP21Q23_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 1971,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 428,
+        "conversation_id": "GAP21Q14_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 2233,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 1865,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "Fewer restrictions"
+    },
+    {
+        "author_id": 2226,
+        "conversation_id": "GAP21Q41_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 100,
+        "conversation_id": "GAP21Q33_l_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2098,
+        "conversation_id": "GAP21Q25_W82",
+        "label": "Only a few changes"
+    },
+    {
+        "author_id": 1436,
+        "conversation_id": "GAP21Q33_p_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 59,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 639,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Have no impact on America's economy"
+    },
+    {
+        "author_id": 2395,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 1777,
+        "conversation_id": "GAP21Q43_e_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 1304,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Not at all concerned"
+    },
+    {
+        "author_id": 279,
+        "conversation_id": "GAP21Q43_g_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 1079,
+        "conversation_id": "GAP21Q34_e_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 1635,
+        "conversation_id": "GAP21Q9_W82",
+        "label": "More divided than before the coronavirus outbreak"
+    },
+    {
+        "author_id": 1042,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 701,
+        "conversation_id": "GAP21Q41_W82",
+        "label": "Very good"
+    },
+    {
+        "author_id": 1593,
+        "conversation_id": "GAP21Q43_e_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1382,
+        "conversation_id": "GAP21Q15_c_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 1700,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 1290,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 2321,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 204,
+        "conversation_id": "GAP21Q30_W82",
+        "label": "About as active"
+    },
+    {
+        "author_id": 779,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 227,
+        "conversation_id": "GAP21Q43_a_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1728,
+        "conversation_id": "GAP21Q14_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 1396,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Competitor"
+    },
+    {
+        "author_id": 263,
+        "conversation_id": "GAP21Q4_d_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 1243,
+        "conversation_id": "GAP21Q20_W82",
+        "label": "A worse place to live"
+    },
+    {
+        "author_id": 1604,
+        "conversation_id": "GAP21Q28_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 1784,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 2124,
+        "conversation_id": "GAP21Q21_c_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 948,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 748,
+        "conversation_id": "GAP21Q31_W82",
+        "label": "Very important"
+    },
+    {
+        "author_id": 2107,
+        "conversation_id": "GAP21Q33_t_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1837,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Somewhat support limiting Chinese students"
+    },
+    {
+        "author_id": 2016,
+        "conversation_id": "GAP21Q33_i_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1918,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 54,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "A lot of confidence"
+    },
+    {
+        "author_id": 1430,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Somewhat support limiting Chinese students"
+    },
+    {
+        "author_id": 327,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 2422,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Benefit America's economy"
+    },
+    {
+        "author_id": 332,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 1838,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 1227,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 981,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 1745,
+        "conversation_id": "GAP21Q13_a_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 2498,
+        "conversation_id": "GAP21Q4_c_W82",
+        "label": "Somewhat unfavorable"
+    },
+    {
+        "author_id": 1880,
+        "conversation_id": "GAP21Q3_W82",
+        "label": "Somewhat satisfied"
+    },
+    {
+        "author_id": 1276,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Very good job"
+    },
+    {
+        "author_id": 1549,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 2334,
+        "conversation_id": "GAP21Q5_b_W82",
+        "label": "Yes, respects personal freedoms"
+    },
+    {
+        "author_id": 1019,
+        "conversation_id": "GAP21Q33_e_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 2377,
+        "conversation_id": "GAP21Q29_W82",
+        "label": "Play a shared leadership role"
+    },
+    {
+        "author_id": 613,
+        "conversation_id": "GAP21Q4_e_W82",
+        "label": "Very favorable"
+    },
+    {
+        "author_id": 234,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 1432,
+        "conversation_id": "GAP21Q33_p_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 392,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 638,
+        "conversation_id": "GAP21Q33_c_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1807,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 652,
+        "conversation_id": "GAP21Q33_c_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 339,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 518,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Is a good example for other countries to follow"
+    },
+    {
+        "author_id": 1535,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Try to promote human rights in China, even if it harms economic relations with China"
+    },
+    {
+        "author_id": 189,
+        "conversation_id": "GAP21Q20_W82",
+        "label": "A better place to live"
+    },
+    {
+        "author_id": 548,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 757,
+        "conversation_id": "GAP21Q46_W82",
+        "label": "Good"
+    },
+    {
+        "author_id": 775,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 1230,
+        "conversation_id": "GAP21Q21_a_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 1705,
+        "conversation_id": "GAP21Q4_c_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 922,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 1172,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 772,
+        "conversation_id": "GAP21Q46_W82",
+        "label": "Good"
+    },
+    {
+        "author_id": 498,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 1639,
+        "conversation_id": "GAP21Q33_o_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1642,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 360,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 2577,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Try to promote human rights in China, even if it harms economic relations with China"
+    },
+    {
+        "author_id": 1647,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 481,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "A lot of confidence"
+    },
+    {
+        "author_id": 1847,
+        "conversation_id": "GAP21Q33_f_W82",
+        "label": "No priority"
+    },
+    {
+        "author_id": 2429,
+        "conversation_id": "GAP21Q20_W82",
+        "label": "A better place to live"
+    },
+    {
+        "author_id": 653,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "Some"
+    },
+    {
+        "author_id": 158,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Competitor"
+    },
+    {
+        "author_id": 1863,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Very good"
+    },
+    {
+        "author_id": 1589,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 1134,
+        "conversation_id": "GAP21Q38_b_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 50,
+        "conversation_id": "GAP21Q26_c_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 2443,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 2349,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 948,
+        "conversation_id": "GAP21Q33_q_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1635,
+        "conversation_id": "GAP21Q13_c_W82",
+        "label": "It needs to be completely reformed"
+    },
+    {
+        "author_id": 643,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 607,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Agree on the basic facts"
+    },
+    {
+        "author_id": 1480,
+        "conversation_id": "GAP21Q43_f_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 2573,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 404,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 1728,
+        "conversation_id": "GAP21Q23_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 2198,
+        "conversation_id": "GAP21Q34_b_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 2106,
+        "conversation_id": "GAP21Q26_d_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 2100,
+        "conversation_id": "GAP21Q46_W82",
+        "label": "Bad"
+    },
+    {
+        "author_id": 246,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 1844,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 1013,
+        "conversation_id": "GAP21Q23_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 64,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 2065,
+        "conversation_id": "GAP21Q13_b_W82",
+        "label": "It needs to be completely reformed"
+    },
+    {
+        "author_id": 509,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 2264,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Agree on the basic facts"
+    },
+    {
+        "author_id": 1034,
+        "conversation_id": "GAP21Q33_p_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 278,
+        "conversation_id": "GAP21Q40_W82",
+        "label": "Competitor"
+    },
+    {
+        "author_id": 1093,
+        "conversation_id": "GAP21Q13_a_W82",
+        "label": "It doesn't need to be changed"
+    },
+    {
+        "author_id": 193,
+        "conversation_id": "GAP21Q15_e_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 691,
+        "conversation_id": "GAP21Q5_b_W82",
+        "label": "Yes, respects personal freedoms"
+    },
+    {
+        "author_id": 2549,
+        "conversation_id": "GAP21Q43_a_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 2192,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 6,
+        "conversation_id": "GAP21Q26_b_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 1425,
+        "conversation_id": "GAP21Q19_b_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 1796,
+        "conversation_id": "GAP21Q20_W82",
+        "label": "A better place to live"
+    },
+    {
+        "author_id": 1223,
+        "conversation_id": "GAP21Q17_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 70,
+        "conversation_id": "GAP21Q43_a_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 226,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 1237,
+        "conversation_id": "GAP21Q25_W82",
+        "label": "Some changes"
+    },
+    {
+        "author_id": 1932,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 2320,
+        "conversation_id": "GAP21Q15_b_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 1067,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "Fewer restrictions"
+    },
+    {
+        "author_id": 1601,
+        "conversation_id": "GAP21Q26_a_W82",
+        "label": "Very bad job"
+    },
+    {
+        "author_id": 2351,
+        "conversation_id": "GAP21Q7_d_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 1125,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 953,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 964,
+        "conversation_id": "GAP21Q43_a_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 399,
+        "conversation_id": "GAP21Q14_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 669,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Harm America's economy"
+    },
+    {
+        "author_id": 1587,
+        "conversation_id": "GAP21Q9_W82",
+        "label": "More divided than before the coronavirus outbreak"
+    },
+    {
+        "author_id": 2103,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 1162,
+        "conversation_id": "GAP21Q31_W82",
+        "label": "Very important"
+    },
+    {
+        "author_id": 2500,
+        "conversation_id": "GAP21Q33_g_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1783,
+        "conversation_id": "GAP21Q33_k_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 2488,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Not too concerned"
+    },
+    {
+        "author_id": 2297,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 428,
+        "conversation_id": "GAP21Q19_b_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 1597,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Recovering from the effects of the coronavirus outbreak in ways that show the strengths of its economic system"
+    },
+    {
+        "author_id": 2230,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Used to be a good example, but has not been in recent years"
+    },
+    {
+        "author_id": 2582,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 2516,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 1305,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "More restrictions"
+    },
+    {
+        "author_id": 1418,
+        "conversation_id": "GAP21Q15_e_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 61,
+        "conversation_id": "GAP21Q20_W82",
+        "label": "A better place to live"
+    },
+    {
+        "author_id": 379,
+        "conversation_id": "GAP21Q34_b_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 742,
+        "conversation_id": "GAP21Q35_W82",
+        "label": "many of the problems facing our country can be solved by working with other countries"
+    },
+    {
+        "author_id": 2084,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 988,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 788,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 1480,
+        "conversation_id": "GAP21Q19_b_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 2294,
+        "conversation_id": "GAP21Q38_b_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 373,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 832,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "A lot of confidence"
+    },
+    {
+        "author_id": 1825,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 1790,
+        "conversation_id": "GAP21Q43_f_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 538,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 1314,
+        "conversation_id": "GAP21Q43_g_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 394,
+        "conversation_id": "GAP21Q1_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 345,
+        "conversation_id": "GAP21Q13_a_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 1905,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 1825,
+        "conversation_id": "GAP21Q33_t_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1524,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Prioritize strengthening economic relations with China, even if it means not addressing human rights issues"
+    },
+    {
+        "author_id": 1726,
+        "conversation_id": "GAP21Q33_r_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 2241,
+        "conversation_id": "GAP21Q12_W82",
+        "label": "Some"
+    },
+    {
+        "author_id": 434,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Failing to recover from the effects of the coronavirus outbreak in ways that show the weaknesses of its economic system"
+    },
+    {
+        "author_id": 2267,
+        "conversation_id": "GAP21Q43_e_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 416,
+        "conversation_id": "GAP21Q33_b_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 219,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "The restrictions were about right"
+    },
+    {
+        "author_id": 99,
+        "conversation_id": "GAP21Q26_c_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 930,
+        "conversation_id": "GAP21Q15_b_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 101,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Used to be a good example, but has not been in recent years"
+    },
+    {
+        "author_id": 654,
+        "conversation_id": "GAP21Q35_W82",
+        "label": "many of the problems facing our country can be solved by working with other countries"
+    },
+    {
+        "author_id": 2412,
+        "conversation_id": "GAP21Q29_W82",
+        "label": "Play a shared leadership role"
+    },
+    {
+        "author_id": 1736,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Strongly oppose limiting Chinese students"
+    },
+    {
+        "author_id": 684,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 2026,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Strongly oppose limiting Chinese students"
+    },
+    {
+        "author_id": 1193,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 1832,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 840,
+        "conversation_id": "GAP21Q4_e_W82",
+        "label": "Very unfavorable"
+    },
+    {
+        "author_id": 791,
+        "conversation_id": "GAP21Q21_b_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 1050,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 98,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 1398,
+        "conversation_id": "GAP21Q21_c_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 2308,
+        "conversation_id": "GAP21Q26_a_W82",
+        "label": "Somewhat good job"
+    },
+    {
+        "author_id": 2562,
+        "conversation_id": "GAP21Q26_c_W82",
+        "label": "Very bad job"
+    },
+    {
+        "author_id": 574,
+        "conversation_id": "GAP21Q34_b_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 635,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 1647,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 594,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 1806,
+        "conversation_id": "GAP21Q4_f_W82",
+        "label": "Somewhat favorable"
+    },
+    {
+        "author_id": 1143,
+        "conversation_id": "GAP21Q7_c_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 760,
+        "conversation_id": "GAP21Q9_W82",
+        "label": "More divided than before the coronavirus outbreak"
+    },
+    {
+        "author_id": 552,
+        "conversation_id": "GAP21Q33_q_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 302,
+        "conversation_id": "GAP21Q7_d_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 1466,
+        "conversation_id": "GAP21Q43_d_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 2207,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Not very strong conflicts"
+    },
+    {
+        "author_id": 727,
+        "conversation_id": "GAP21Q33_l_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 870,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Somewhat oppose limiting Chinese students"
+    },
+    {
+        "author_id": 1320,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 1182,
+        "conversation_id": "GAP21Q15_f_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 751,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Used to be a good example, but has not been in recent years"
+    },
+    {
+        "author_id": 57,
+        "conversation_id": "GAP21Q33_f_W82",
+        "label": "No priority"
+    },
+    {
+        "author_id": 2116,
+        "conversation_id": "GAP21Q33_f_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 233,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Very bad"
+    },
+    {
+        "author_id": 2410,
+        "conversation_id": "GAP21Q13_c_W82",
+        "label": "It needs minor changes"
+    },
+    {
+        "author_id": 1112,
+        "conversation_id": "GAP21Q43_f_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 1945,
+        "conversation_id": "GAP21Q38_a_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 1447,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 1554,
+        "conversation_id": "GAP21Q43_e_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1704,
+        "conversation_id": "GAP21Q43_c_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 1919,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Strong conflicts"
+    },
+    {
+        "author_id": 1048,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Failing to recover from the effects of the coronavirus outbreak in ways that show the weaknesses of its economic system"
+    },
+    {
+        "author_id": 2226,
+        "conversation_id": "GAP21Q30_W82",
+        "label": "Most active"
+    },
+    {
+        "author_id": 1954,
+        "conversation_id": "GAP21Q25_W82",
+        "label": "A lot of changes"
+    },
+    {
+        "author_id": 541,
+        "conversation_id": "GAP21Q34_f_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 2577,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "The best"
+    },
+    {
+        "author_id": 1061,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "Not at all"
+    },
+    {
+        "author_id": 392,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 280,
+        "conversation_id": "GAP21Q33_p_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1699,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Failing to recover from the effects of the coronavirus outbreak in ways that show the weaknesses of its economic system"
+    },
+    {
+        "author_id": 371,
+        "conversation_id": "GAP21Q33_t_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 2329,
+        "conversation_id": "GAP21Q43_a_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 2108,
+        "conversation_id": "GAP21Q21_d_W82",
+        "label": "Very strong conflicts"
+    },
+    {
+        "author_id": 1021,
+        "conversation_id": "GAP21Q15_d_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 1063,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Somewhat oppose limiting Chinese students"
+    },
+    {
+        "author_id": 1752,
+        "conversation_id": "GAP21Q47_W82",
+        "label": "Somewhat oppose limiting Chinese students"
+    },
+    {
+        "author_id": 2386,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Failing to recover from the effects of the coronavirus outbreak in ways that show the weaknesses of its economic system"
+    },
+    {
+        "author_id": 955,
+        "conversation_id": "GAP21Q10_W82",
+        "label": "More restrictions"
+    },
+    {
+        "author_id": 1462,
+        "conversation_id": "GAP21Q43_c_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1043,
+        "conversation_id": "GAP21Q36_W82",
+        "label": "In foreign policy, the US should take into account the interests of its allies even if it means making compromises wit"
+    },
+    {
+        "author_id": 1756,
+        "conversation_id": "GAP21Q6_W82",
+        "label": "Used to be a good example, but has not been in recent years"
+    },
+    {
+        "author_id": 972,
+        "conversation_id": "GAP21Q13_c_W82",
+        "label": "It needs major changes"
+    },
+    {
+        "author_id": 636,
+        "conversation_id": "GAP21Q33_r_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1480,
+        "conversation_id": "GAP21Q29_W82",
+        "label": "Play a shared leadership role"
+    },
+    {
+        "author_id": 1881,
+        "conversation_id": "GAP21Q43_b_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 1651,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 407,
+        "conversation_id": "GAP21Q20_W82",
+        "label": "A better place to live"
+    },
+    {
+        "author_id": 1270,
+        "conversation_id": "GAP21Q34_c_W82",
+        "label": "Very confident"
+    },
+    {
+        "author_id": 1390,
+        "conversation_id": "GAP21Q37_W82",
+        "label": "We should pay less attention to problems overseas and concentrate on problems here at home"
+    },
+    {
+        "author_id": 206,
+        "conversation_id": "GAP21Q26_a_W82",
+        "label": "Very bad job"
+    },
+    {
+        "author_id": 30,
+        "conversation_id": "GAP21Q43_h_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1984,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Not at all confident"
+    },
+    {
+        "author_id": 1421,
+        "conversation_id": "GAP21Q43_d_W82",
+        "label": "Not too serious of a problem"
+    },
+    {
+        "author_id": 503,
+        "conversation_id": "GAP21Q7_a_W82",
+        "label": "Somewhat bad"
+    },
+    {
+        "author_id": 1493,
+        "conversation_id": "GAP21Q19_c_W82",
+        "label": "No confidence at all"
+    },
+    {
+        "author_id": 492,
+        "conversation_id": "GAP21Q29_W82",
+        "label": "Play a shared leadership role"
+    },
+    {
+        "author_id": 2330,
+        "conversation_id": "GAP21Q22_W82",
+        "label": "Agree on the basic facts"
+    },
+    {
+        "author_id": 1917,
+        "conversation_id": "GAP21Q42_W82",
+        "label": "Building a strong relationship with China on economic issues"
+    },
+    {
+        "author_id": 2330,
+        "conversation_id": "GAP21Q41_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 1488,
+        "conversation_id": "GAP21Q18_W82",
+        "label": "Try to promote human rights in China, even if it harms economic relations with China"
+    },
+    {
+        "author_id": 944,
+        "conversation_id": "GAP21Q26_a_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 2423,
+        "conversation_id": "GAP21Q43_a_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1039,
+        "conversation_id": "GAP21Q4_f_W82",
+        "label": "Refused"
+    },
+    {
+        "author_id": 429,
+        "conversation_id": "GAP21Q8_W82",
+        "label": "Not too much"
+    },
+    {
+        "author_id": 791,
+        "conversation_id": "GAP21Q19_e_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 1902,
+        "conversation_id": "GAP21Q11_W82",
+        "label": "Recovering from the effects of the coronavirus outbreak in ways that show the strengths of its economic system"
+    },
+    {
+        "author_id": 1266,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Have no impact on America's economy"
+    },
+    {
+        "author_id": 2298,
+        "conversation_id": "GAP21Q14_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 1014,
+        "conversation_id": "GAP21Q15_a_W82",
+        "label": "Above average"
+    },
+    {
+        "author_id": 1576,
+        "conversation_id": "GAP21Q5_a_W82",
+        "label": "No, does not respect personal freedoms"
+    },
+    {
+        "author_id": 1852,
+        "conversation_id": "GAP21Q7_d_W82",
+        "label": "Somewhat good"
+    },
+    {
+        "author_id": 1214,
+        "conversation_id": "GAP21Q38_c_W82",
+        "label": "A fair amount"
+    },
+    {
+        "author_id": 1238,
+        "conversation_id": "GAP21Q24_W82",
+        "label": "Not at all concerned"
+    },
+    {
+        "author_id": 2322,
+        "conversation_id": "GAP21Q23_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 197,
+        "conversation_id": "GAP21Q7_b_W82",
+        "label": "Very good"
+    },
+    {
+        "author_id": 1230,
+        "conversation_id": "GAP21Q20_W82",
+        "label": "A worse place to live"
+    },
+    {
+        "author_id": 393,
+        "conversation_id": "GAP21Q38_b_W82",
+        "label": "A great deal"
+    },
+    {
+        "author_id": 1895,
+        "conversation_id": "GAP21Q14_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 654,
+        "conversation_id": "GAP21Q7_d_W82",
+        "label": "Very good"
+    },
+    {
+        "author_id": 1558,
+        "conversation_id": "GAP21Q19_b_W82",
+        "label": "Not too much confidence"
+    },
+    {
+        "author_id": 1440,
+        "conversation_id": "GAP21Q7_e_W82",
+        "label": "Very good"
+    },
+    {
+        "author_id": 399,
+        "conversation_id": "GAP21Q13_b_W82",
+        "label": "It needs to be completely reformed"
+    },
+    {
+        "author_id": 2510,
+        "conversation_id": "GAP21Q15_a_W82",
+        "label": "Average"
+    },
+    {
+        "author_id": 430,
+        "conversation_id": "GAP21Q33_n_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 1333,
+        "conversation_id": "GAP21Q32_W82",
+        "label": "A little more negatively"
+    },
+    {
+        "author_id": 2083,
+        "conversation_id": "GAP21Q19_a_W82",
+        "label": "A lot of confidence"
+    },
+    {
+        "author_id": 2420,
+        "conversation_id": "GAP21Q34_a_W82",
+        "label": "Not too confident"
+    },
+    {
+        "author_id": 501,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Harm America's economy"
+    },
+    {
+        "author_id": 346,
+        "conversation_id": "GAP21Q43_g_W82",
+        "label": "Very serious problem"
+    },
+    {
+        "author_id": 1900,
+        "conversation_id": "GAP21Q19_d_W82",
+        "label": "Some confidence"
+    },
+    {
+        "author_id": 1746,
+        "conversation_id": "GAP21Q33_h_W82",
+        "label": "Top priority"
+    },
+    {
+        "author_id": 736,
+        "conversation_id": "GAP21Q33_r_W82",
+        "label": "Some priority"
+    },
+    {
+        "author_id": 1937,
+        "conversation_id": "GAP21Q43_f_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 1660,
+        "conversation_id": "GAP21Q26_c_W82",
+        "label": "Somewhat bad job"
+    },
+    {
+        "author_id": 2526,
+        "conversation_id": "GAP21Q27_W82",
+        "label": "Benefit America's economy"
+    },
+    {
+        "author_id": 518,
+        "conversation_id": "GAP21Q34_b_W82",
+        "label": "Somewhat confident"
+    },
+    {
+        "author_id": 2354,
+        "conversation_id": "GAP21Q43_h_W82",
+        "label": "Somewhat serious problem"
+    },
+    {
+        "author_id": 798,
+        "conversation_id": "GAP21Q15_e_W82",
+        "label": "Above average"
+    }
+]
