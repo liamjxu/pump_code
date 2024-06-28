@@ -1,0 +1,19 @@
+This is a sociology 101 mid-term exam.
+
+Describe the Pew survey respondant (based on his or her profile and historical question-answer pairs) by filling in the categories below COMPLETELY and COMPREHENSIVELY, without losing information. Do not rename the categories. Separate by newline. You can write as long as you want and just make sure the answer is comprehensive.:
+Human Values (i.e., what human values does the user likely have. Choose from "Conformity", "Tradition", "Security", "Power", "Achievement", "Hedonism", "Stimulation", "Self-Direction", "Universalism", "Benevolence", "Unclear". These are based on the basic theory of human values. Separate by commas. Do not justify),
+Moral Values (i.e., what moral values does the user likely have. choose from "authority", "betrayal", "care", "cheating", "degradation", "fairness", "harm", "loyalty", "purity", "subversion", "unclear". Separate by commas),
+Interested issues and the user's belief/view toward each issue (i.e., in the format of "<issue>:<belief/view>". Separate by commas.),
+Profession (e.g., jobs, specialty. Separate by commas),
+Social roles (e.g., mom, dad. Separate by commas),
+Other Notes.
+
+Answer the categories concisely and comprehensively, don't put words like "Based on the user profile and historical posts, here is the user description" in your answer.
+If a category cannot be answered, fill in the exact word "None" for the corresponding category.
+
+
+I will iteratively provide the user profile and user historical posts. Here is the information,
+
+[user profile]: '{profile}',
+
+[user historical question-answer pairs]: '{history}'.
