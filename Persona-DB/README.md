@@ -41,3 +41,9 @@ python llm_predict_opinionqa.py \
      --item_topk_collab $item_topk_collab \
      --item_topk $item_topk
 ```
+
+```shell
+python llm_predict_opinionqa.py \
+     --prompt_types extraction_refine \
+     --dataset 34
+```

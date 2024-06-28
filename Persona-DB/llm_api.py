@@ -1,37 +1,38 @@
-import openai
 import time
-from openai import OpenAI
+import boto3
+import json
 from utils.utils import batchify
-# make the above into a function
-def chatbot(input, model="gpt-3.5-turbo-0613", response_format="text", batch_size=1500, seed=42):
+
+brt = boto3.client(service_name='bedrock-runtime')
 
 
-    openai.organization = ""
-    openai.api_key = ""
-    # try until get a response
-    client = OpenAI(
-        api_key="",
-        organization=""
-    )
+def chatbot(input, model="bedrock-runtime", response_format="text", batch_size=1500, seed=42):
+
     output=None
     if "gpt" in model:
 
         while True:
             try:
-                result = client.chat.completions.create(
-                    model=model,
-                    messages=[
-                        {"role": "system", "content": "You are a helpful assistant."},
-                        {"role": "user", "content": input}
-                    ],
-                    response_format={"type": response_format},
-                    seed=seed,
-                    temperature=1,
-                    # max_tokens=4096
-                )
-                # print("waiting half seconds")
-                # time.sleep(1)
-                output = result.choices[0].message.content
+
+                body = json.dumps({
+                    "prompt": f"\n\nHuman: {input}\n\nAssistant:",
+                    "max_tokens_to_sample": 300,
+                    "temperature": 0,
+                    "top_p": 0.9,
+                })
+
+
+                modelId = 'anthropic.claude-3-sonnet-20240229-v1:0'
+                accept = 'application/json'
+                contentType = 'application/json'
+
+                response = brt.invoke_model(body=body, modelId=modelId, accept=accept, contentType=contentType)
+
+                response_body = json.loads(response.get('body').read())
+
+                # text
+                output = response_body.get('completion')
+
                 break
             except Exception as e:  # wait 1 second and try again
                 print(e)
@@ -39,25 +40,5 @@ def chatbot(input, model="gpt-3.5-turbo-0613", response_format="text", batch_siz
                     break
                 time.sleep(2)
                 print("waiting 2 seconds")
-        # output = result['choices'][0]['message']['content']
-
-    else:
-
-        input_batches = batchify(input, batch_size)
-        res=[]
-        while True:
-            try:
-                for ib in input_batches:
-                    result = client.embeddings.create(
-                        model="text-embedding-ada-002",
-                        input=ib,
-                    )
-                    res.append(result)
-                break
-            except Exception as e:  # wait 1 second and try again
-                print(e)
-                print("waiting 1 second")
-                time.sleep(1)
-        output = [dat.embedding for obj in res for dat in obj.data]
 
     return output
