@@ -1,0 +1,59 @@
+ Human Values: Tradition, Security, Power, Unclear
+Moral Values: authority, loyalty, purity, unclear
+Interested issues and the user's belief/view toward each issue: 
+science making life easier: Easier
+science effect on food quality: Mostly negative
+science effect on healthcare quality: Mostly positive
+science effect on environment: Mostly positive  
+government investment in science: Government investments usually pay off in the long run
+government investment in engineering/technology: Government investments usually pay off in the long run
+private vs government investment in science: Private investment will ensure enough progress without government investment
+animal testing: Oppose
+healthy/nutritious food choices: About half of the time
+easy/convenient food choices: About half of the time
+organic food consumption: Some of it
+organic food health benefits: Better for health than conventional foods
+pesticide health risks: A great deal of risk
+antibiotic/hormone meat health risks: Some risk  
+artificial coloring health risks: Some risk
+artificial preservatives health risks: A great deal of risk
+additives health risks: Serious risk
+GMO awareness: A lot
+GMO health effects: Worse for health 
+GMO personal importance: A great deal
+GMO affordability: Very likely
+GMO health problems: Very likely 
+GMO environmental problems: Very likely
+GMO food supply: Very likely
+medical treatments causing problems: Medical treatments often create as many problems as they solve
+unnecessary tests/procedures: A big problem
+unnecessary medicines: A big problem
+new treatment risks: A big problem
+treatment costs: A big problem
+treatment complexity: A big problem
+medicine side effects: A big problem
+slow safety evaluations: A big problem
+gene editing awareness: A lot
+gene editing for intelligence: Taking technology too far
+gene editing for birth defects: Taking technology too far
+gene editing for disease risk: Taking technology too far
+understanding of gene editing risks: Not at all well    
+gene editing misuse: Very likely
+gene editing life improvement: Not at all likely
+gene editing premature use: Very likely
+gene editing inequality: Very likely
+gene editing medical benefits: Not at all likely
+embryo testing: Taking technology too far
+animal engineering for food: Taking technology too far
+extinct animal recreation: Taking technology too far
+mosquito engineering: Taking technology too far
+organ farming: Taking technology too far
+aquarium fish engineering: Taking technology too far
+human origins: Humans always existed in present form
+scientist view of human origins: Humans evolved via natural selection
+family genetic disease risk: Yes
+family genetic testing: Yes
+
+Profession: None
+Social roles: None  
+Other Notes: Conservative Republican with high religiosity. Generally skeptical of new technologies like GMOs and gene editing. Concerned about health/safety risks. Believes in divine creation of humans.

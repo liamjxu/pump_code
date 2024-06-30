@@ -356,7 +356,7 @@ for j, prompt_type in enumerate(prompt_types):
         # mkdir(our_dir)
 
         post_ids = []
-        for i, sample in enumerate(tqdm(cur_test_anno)):  # this indicates ith path after breaking out all articles into individual paths
+        for i, sample in enumerate(tqdm(cur_test_anno[::123])):  # this indicates ith path after breaking out all articles into individual paths
             sample["author_id"] = str(sample["author_id"])
             user_id = str(sample["author_id"])
             sample['tweet_id']=str(i)
