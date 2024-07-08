@@ -55,7 +55,6 @@ def get_file(file_key='info.csv'):
 
     else:
         raise ValueError('unknown file type')
-    
 
 def get_topics(mapping, question):
     for key in mapping.keys():
