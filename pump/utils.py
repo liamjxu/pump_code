@@ -54,7 +54,7 @@ def get_file(file_key='info.csv'):
         return StringIO(s3_data)
 
     else:
-        raise Exception('unknown file type')
+        raise ValueError('unknown file type')
     
 
 def get_topics(mapping, question):
