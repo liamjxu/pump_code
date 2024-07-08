@@ -56,13 +56,13 @@ Options: ['Worry a lot', 'Worry a little', 'Do not worry at all', 'Refused']
         name="Personal Values",
         description="prioritizing safety, security, or freedom from fear",
         level="mid",
-        candidate_values=["safety-focused", "freedom-focused"]
+        candidate_values=["prioritizes safety", "prioritizes freedom"]
     ),
     PersonaDimension(
         name="Worldview and Belief System",
         description="attitudes towards terrorism, political ideologies, or cultural values",
         level="high",
-        candidate_values=["authoritarian", "libertarian"]
+        candidate_values=["conservative worldview", "liberal worldview", "moderate worldview"]
     ),
     PersonaDimension(
         name="Personality Traits",
