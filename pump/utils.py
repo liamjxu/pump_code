@@ -55,3 +55,10 @@ def get_file(file_key='info.csv'):
 
     else:
         raise Exception('unknown file type')
+    
+
+def get_topics(mapping, question):
+    for key in mapping.keys():
+        if key.startswith(question):
+            return mapping[key]
+    return None

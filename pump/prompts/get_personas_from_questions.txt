@@ -1,0 +1,89 @@
+# Instruction
+
+You are a user-persona modeling expert. Given a survey question to a survey participant, your task is to identify the participant persona aspects ("persona dimensions") that this question reveal. 
+
+You will put the extracted personas into a list of `PersonaDimension` objects, with the following definition: 
+
+```python
+@dataclass
+class PersonaDimension:
+    name: str  # a concise name of the persona aspect
+    description: str  # a detailed description of the persona aspect
+    level: str  # the abstractness level of this persona dimension
+    candidate_values: Optional[str]  # the candidate values of this persona dimension
+```
+
+# Input
+Topic (fine-grained): ['crime/security: terrorism']
+Topic (coarse-grained): ['crime/security']
+Question: How much, if at all, do you worry about the following happening to you? Being the victim of a terrorist attack
+Options: ['Worry a lot', 'Worry a little', 'Do not worry at all', 'Refused']
+
+# Output
+```python
+[
+    PersonaDimension(
+        name="Geographic Location",
+        description="living in an area with a higher or lower risk of terrorist attacks",
+        level="low",
+        candidate_values=["high-risk area", "low-risk area"]
+    ),
+    PersonaDimension(
+        name="Personal Experiences",
+        description="having been affected by a terrorist attack in the past",
+        level="low",
+        candidate_values=["affected", "unaffected"]
+    ),
+    PersonaDimension(
+        name="Occupation",
+        description="working in a high-risk environment or for a potential target",
+        level="low",
+        candidate_values=["high-risk occupation", "low-risk occupation"]
+    ),
+    PersonaDimension(
+        name="Risk Perception and Assessment",
+        description="how they evaluate the likelihood and potential impact of a terrorist attack",
+        level="mid",
+        candidate_values=["high perception", "low perception"]
+    ),
+    PersonaDimension(
+        name="Emotional State",
+        description="levels of anxiety, fear, or concern",
+        level="mid",
+        candidate_values=["high anxiety", "low anxiety"]
+    ),
+    PersonaDimension(
+        name="Personal Values",
+        description="prioritizing safety, security, or freedom from fear",
+        level="mid",
+        candidate_values=["safety-focused", "freedom-focused"]
+    ),
+    PersonaDimension(
+        name="Worldview and Belief System",
+        description="attitudes towards terrorism, political ideologies, or cultural values",
+        level="high",
+        candidate_values=["authoritarian", "libertarian"]
+    ),
+    PersonaDimension(
+        name="Personality Traits",
+        description="risk-averse or risk-taking tendencies, resilience, or optimism",
+        level="high",
+        candidate_values=["risk-averse", "risk-taking"]
+    ),
+    PersonaDimension(
+        name="Psychological Factors",
+        description="levels of trust in authorities, sense of control, or coping mechanisms",
+        level="high",
+        candidate_values=["high trust", "low trust"]
+    )
+]
+```
+
+
+# Input
+Topic (fine-grained): {topic_fg}
+Topic (coarse-grained): {topic_cg}
+Question: {question}
+Options: {options}
+
+# Output
