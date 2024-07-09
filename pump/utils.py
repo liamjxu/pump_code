@@ -8,33 +8,51 @@ s3_client = boto3.client('s3')
 bucket_name = 'probabilistic-user-modeling'
 
 
-def get_llm_response(input_text, model_id="anthropic.claude-3-sonnet-20240229-v1:0"):
+def get_llm_response(input_text, model_id = "anthropic.claude-3-sonnet-20240229-v1:0", prefill = None):
     # model_id: https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html#model-ids-arns
-    body = json.dumps({
-        "anthropic_version": "bedrock-2023-05-31",
-        "max_tokens": 1000,
-        "temperature": 0,
-        "messages": [
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": input_text,
-                    }
-                ]
-            },
-            {
-                "role": "assistant",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": "[",
-                    }
-                ]
-            },
-        ]
-    })
+    if prefill is not None:
+        body = json.dumps({
+            "anthropic_version": "bedrock-2023-05-31",
+            "max_tokens": 1000,
+            "temperature": 0,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": input_text,
+                        }
+                    ]
+                },
+                {
+                    "role": "assistant",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": prefill,
+                        }
+                    ]
+                },
+            ]
+        })
+    else:
+        body = json.dumps({
+            "anthropic_version": "bedrock-2023-05-31",
+            "max_tokens": 1000,
+            "temperature": 0,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": input_text,
+                        }
+                    ]
+                }
+            ]
+        })
 
     inputs = {
         "modelId": model_id,
@@ -70,8 +88,6 @@ def get_file(file_key='info.csv'):
 def list_s3(prefix):
     response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
     if 'Contents' in response:
-        # for obj in response['Contents']:
-        #     print(obj['Key'])
         return [obj['Key'] for obj in response['Contents']]
     else:
         raise ValueError("No objects found with the specified prefix.")
