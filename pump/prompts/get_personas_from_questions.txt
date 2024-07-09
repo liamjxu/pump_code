@@ -33,13 +33,13 @@ class PersonaDimension:
     candidate_values: Optional[str]  # the candidate values of this persona dimension
 ```
 
-# Input
+# Input (Example)
 Topic (fine-grained): ['crime/security: terrorism']
 Topic (coarse-grained): ['crime/security']
 Question: How much, if at all, do you worry about the following happening to you? Being the victim of a terrorist attack
 Options: ['Worry a lot', 'Worry a little', 'Do not worry at all', 'Refused']
 
-# Output
+# Output (Example)
 [
     PersonaDimension(
         name="Geographic Location",
@@ -91,13 +91,13 @@ Options: ['Worry a lot', 'Worry a little', 'Do not worry at all', 'Refused']
     )
 ]
 
-# Input
+# Input (Example)
 Topic (fine-grained): ['race']
 Topic (coarse-grained): ['race']
 Question: For each, please indicate if you, personally, think it is acceptable. Casting an actor to play a character of a race or ethnicity other than their own
 Options: [Always acceptable/Sometimes acceptable/Rarely acceptable/Never acceptable/Not sure/Refused]
 
-# Output
+# Output (Example)
 [
     PersonaDimension(
         name="Cultural Sensitivity",
@@ -175,10 +175,10 @@ Options: [Always acceptable/Sometimes acceptable/Rarely acceptable/Never accepta
 
 
 
-# Input
+# Input (Actual Task)
 Topic (fine-grained): {topic_fg}
 Topic (coarse-grained): {topic_cg}
 Question: {question}
 Options: {options}
 
-# Output
+# Output (Actual Task)
