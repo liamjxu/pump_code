@@ -1,5 +1,6 @@
 *.DS_Store
 pump/sm_local/
+pump/outputs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

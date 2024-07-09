@@ -23,7 +23,16 @@ def get_llm_response(input_text, model_id="anthropic.claude-3-sonnet-20240229-v1
                         "text": input_text,
                     }
                 ]
-            }
+            },
+            {
+                "role": "assistant",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "[",
+                    }
+                ]
+            },
         ]
     })
 
@@ -56,6 +65,17 @@ def get_file(file_key='info.csv'):
 
     else:
         raise ValueError('unknown file type')
+
+
+def list_s3(prefix):
+    response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
+    if 'Contents' in response:
+        # for obj in response['Contents']:
+        #     print(obj['Key'])
+        return [obj['Key'] for obj in response['Contents']]
+    else:
+        raise ValueError("No objects found with the specified prefix.")
+
 
 def get_topics(mapping, question):
     for key in mapping.keys():
