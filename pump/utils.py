@@ -8,7 +8,8 @@ s3_client = boto3.client('s3')
 bucket_name = 'probabilistic-user-modeling'
 
 
-def get_llm_response(input_text):
+def get_llm_response(input_text, model_id="anthropic.claude-3-sonnet-20240229-v1:0"):
+    # model_id: https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html#model-ids-arns
     body = json.dumps({
         "anthropic_version": "bedrock-2023-05-31",
         "max_tokens": 1000,
@@ -27,7 +28,7 @@ def get_llm_response(input_text):
     })
 
     inputs = {
-        "modelId": "anthropic.claude-3-sonnet-20240229-v1:0",
+        "modelId": model_id,
         "contentType": "application/json",
         "accept": "application/json",
         "body": body
