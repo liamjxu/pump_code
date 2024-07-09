@@ -2,7 +2,27 @@
 
 You are a user-persona modeling expert. Given a survey question to a survey participant, your task is to identify the participant persona aspects ("persona dimensions") that this question reveal. 
 
-You will put the extracted personas into a list of `PersonaDimension` objects, with the following definition: 
+These persona dimensions can be categorized into three levels based on their abstraction and specificity: low, mid, and high. Here are the criteria for each level:
+
+Low-Level Persona Dimensions: 
+Specificity: Highly specific and detailed, often easily measurable or observable.
+Immediate Relevance: Directly related to the person's current situation or past experiences.
+Tangible: Involves tangible or direct aspects of an individual's life or activities.
+Examples: Geographic location, personal experiences, occupation.
+
+Mid-Level Persona Dimensions: 
+Moderate Abstraction: More abstract than low-level dimensions but still relatively specific.
+Behavioral Patterns: Relates to recurring behaviors or attitudes that are somewhat stable over time.
+Contextual Influence: Influenced by both specific situations and broader contextual factors.
+Examples: Risk perception, emotional state, cultural sensitivity.
+
+High-Level Persona Dimensions: 
+High Abstraction: Highly abstract and broad, encompassing a wide range of behaviors and attitudes.
+Foundational Beliefs: Relates to core beliefs, values, and traits influencing many aspects of the person's life.
+Stable Over Time: Generally stable and less likely to change frequently.
+Examples: Worldview, personality traits, moral values.
+
+You will put the extracted personas into a list of `PersonaDimension` objects of the following definition: 
 
 ```python
 @dataclass
@@ -54,7 +74,7 @@ Options: ['Worry a lot', 'Worry a little', 'Do not worry at all', 'Refused']
     PersonaDimension(
         name="Personal Values",
         description="prioritizing safety, security, or freedom from fear",
-        level="mid",
+        level="high",
         candidate_values=["prioritizes safety", "prioritizes freedom"]
     ),
     PersonaDimension(
@@ -64,18 +84,95 @@ Options: ['Worry a lot', 'Worry a little', 'Do not worry at all', 'Refused']
         candidate_values=["conservative worldview", "liberal worldview", "moderate worldview"]
     ),
     PersonaDimension(
-        name="Personality Traits",
+        name="Risk Attitudes",
         description="risk-averse or risk-taking tendencies, resilience, or optimism",
         level="high",
         candidate_values=["risk-averse", "risk-taking"]
-    ),
-    PersonaDimension(
-        name="Psychological Factors",
-        description="levels of trust in authorities, sense of control, or coping mechanisms",
-        level="high",
-        candidate_values=["high trust", "low trust"]
     )
 ]
+
+# Input
+Topic (fine-grained): ['race']
+Topic (coarse-grained): ['race']
+Question: For each, please indicate if you, personally, think it is acceptable. Casting an actor to play a character of a race or ethnicity other than their own
+Options: [Always acceptable/Sometimes acceptable/Rarely acceptable/Never acceptable/Not sure/Refused]
+
+# Output
+[
+    PersonaDimension(
+        name="Cultural Sensitivity",
+        description="awareness and respect for different cultures and ethnicities",
+        level="mid",
+        candidate_values=["high cultural sensitivity", "low cultural sensitivity"]
+    ),
+    PersonaDimension(
+        name="Beliefs on Representation",
+        description="views on the importance of authentic representation in media",
+        level="mid",
+        candidate_values=["supports authentic representation", "indifferent to representation"]
+    ),
+    PersonaDimension(
+        name="Personal Experiences",
+        description="experiences with discrimination or cultural misrepresentation",
+        level="low",
+        candidate_values=["experienced discrimination", "not experienced discrimination"]
+    ),
+    PersonaDimension(
+        name="Media Consumption",
+        description="habits and preferences in consuming media and entertainment",
+        level="low",
+        candidate_values=["diverse media consumption", "non-diverse media consumption"]
+    ),
+    PersonaDimension(
+        name="Political Ideologies",
+        description="political beliefs influencing views on race and ethnicity",
+        level="high",
+        candidate_values=["conservative", "liberal", "moderate"]
+    ),
+    PersonaDimension(
+        name="Values on Equality",
+        description="prioritization of equality and fairness in society",
+        level="high",
+        candidate_values=["high priority on equality", "low priority on equality"]
+    ),
+    PersonaDimension(
+        name="Racial Identity",
+        description="racial or ethnic identity and its impact on views and opinions",
+        level="low",
+        candidate_values=["strong racial identity", "weak racial identity"]
+    ),
+    PersonaDimension(
+        name="Empathy and Open-mindedness",
+        description="capacity for empathy and willingness to understand different perspectives",
+        level="high",
+        candidate_values=["high empathy", "low empathy"]
+    ),
+    PersonaDimension(
+        name="Perception of Media Influence",
+        description="beliefs about the impact of media representation on societal attitudes",
+        level="mid",
+        candidate_values=["strong influence belief", "weak influence belief"]
+    ),
+    PersonaDimension(
+        name="Personal Values",
+        description="core values related to diversity, inclusion, and social justice",
+        level="high",
+        candidate_values=["values diversity", "indifferent to diversity"]
+    ),
+    PersonaDimension(
+        name="Human Values",
+        description="principles and standards of behavior that are considered important in human interactions and societal functioning",
+        level="high",
+        candidate_values=["Conformity", "Tradition", "Security", "Power", "Achievement", "Hedonism", "Stimulation", "Self-Direction", "Universalism", "Benevolence", "Unclear"]
+    ),
+    PersonaDimension(
+        name="Moral Values",
+        description="beliefs and principles that guide individuals in distinguishing right from wrong and in making ethical decisions",
+        level="mid",
+        candidate_values=["authority", "betrayal", "care", "cheating", "degradation", "fairness", "harm", "loyalty", "purity", "subversion", "unclear"]
+    ),
+]
+
 
 
 # Input
