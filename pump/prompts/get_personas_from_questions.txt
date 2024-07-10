@@ -29,8 +29,8 @@ You will put the extracted personas into a list of `PersonaDimension` objects of
 class PersonaDimension:
     name: str  # a concise name of the persona aspect
     description: str  # a detailed description of the persona aspect
-    level: str  # the abstractness level of this persona dimension
-    candidate_values: Optional[str]  # the candidate values of this persona dimension
+    level: str  # the abstractness level of this persona dimension, choose from ['low', 'mid', 'high']
+    candidate_values: str  # the candidate values of this persona dimension
 ```
 
 # Input (Example)
