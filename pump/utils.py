@@ -4,6 +4,7 @@ import torch
 import torch.nn.functional as F
 from io import StringIO, BytesIO
 from torch import Tensor
+from dataclasses import dataclass
 
 
 brt = boto3.client(service_name='bedrock-runtime')
@@ -11,12 +12,32 @@ s3_client = boto3.client('s3')
 bucket_name = 'probabilistic-user-modeling'
 
 
-def get_llm_response(input_text, model_id = "anthropic.claude-3-sonnet-20240229-v1:0", prefill = None):
+@dataclass
+class PersonaDimension:
+    name: str  # a concise name of the persona aspect
+    description: str  # a detailed description of the persona aspect
+    level: str  # the abstractness level of this persona dimension, choose from ['low', 'mid', 'high']
+    candidate_values: str  # the candidate values of this persona dimension
+    
+    def __repr__(self):
+        return (f'    PersonaDimension(\n'
+                f'        name="{self.name}",\n'
+                f'        description="{self.description}",\n'
+                f'        level="{self.level}",\n'
+                f'        candidate_values={self.candidate_values}\n'
+                f'    )')
+
+def get_llm_response(
+    input_text,
+    model_id = "anthropic.claude-3-sonnet-20240229-v1:0",
+    prefill = None,
+    max_tokens = 1000
+):
     # model_id: https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html#model-ids-arns
     if prefill is not None:
         body = json.dumps({
             "anthropic_version": "bedrock-2023-05-31",
-            "max_tokens": 1000,
+            "max_tokens": max_tokens,
             "temperature": 0,
             "messages": [
                 {
@@ -42,7 +63,7 @@ def get_llm_response(input_text, model_id = "anthropic.claude-3-sonnet-20240229-
     else:
         body = json.dumps({
             "anthropic_version": "bedrock-2023-05-31",
-            "max_tokens": 1000,
+            "max_tokens": max_tokens,
             "temperature": 0,
             "messages": [
                 {

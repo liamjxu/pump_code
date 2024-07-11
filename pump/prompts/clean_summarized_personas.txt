@@ -1,0 +1,299 @@
+# Instruction
+
+You are an expert in user profiling and persona extraction. Your task now is to clean a series of extracted persona dimensions into concise yet comprehensive representations so that they can be used as random variables in a Bayesian Network. 
+
+The persona dimensions are represented by a list of `PersonaDimension` objects of the following definition: 
+
+```python
+@dataclass
+class PersonaDimension:
+    name: str  # a concise name of the persona aspect
+    description: str  # a detailed description of the persona aspect
+    level: str  # the abstractness level of this persona dimension, choose from ['low', 'mid', 'high']
+    candidate_values: str  # the candidate values of this persona dimension
+```
+
+
+# Task
+1. Remove a persona dimension from the list if it any of the following is true: 
+    1) it is semantically a duplicate of another dimension, 
+    2) it is asking about basic demographic background, 
+2. Revise a persona dimension's candidate values if its candidate values are not mutually exclusive.
+3. Keep other aspects of the persona dimensions unchanged.
+4. You will put the merged persona dimension into a list of `PersonaDimension` objects, don't give explanations.
+
+
+# Input (Example)
+[    PersonaDimension(
+         name="Firearm-Related Recreational Interests and Activities",
+         description="The individual's involvement in recreational activities, hobbies, and interests related to firearms, such as hunting, shooting sports, gun collecting, and visiting gun ranges.",
+         level="low",
+         candidate_values=['active participant', 'occasional participant', 'non-participant']
+     ),
+     PersonaDimension(
+         name="Occupational Gun Exposure",
+         description="The extent to which an individual's occupation involves or is affected by guns, hunting, or shooting sports, ranging from high exposure in fields like law enforcement or hunting-related industries, to low exposure in non-gun-related occupations.",
+         level="low",
+         candidate_values=['high gun exposure occupation', 'low gun exposure occupation']
+     ),
+     PersonaDimension(
+         name="Social Circle Gun Ownership",
+         description="The composition and characteristics of the person's friend group, which can shape their exposure to gun ownership.",
+         level="low",
+         candidate_values=['gun-owning friends', 'non-gun-owning friends']
+     ),
+     PersonaDimension(
+         name="Geographic Location",
+         description="The region or area where the person lives or grew up, which may influence their exposure to guns, gun ownership prevalence, attitudes towards guns, and related laws and policies.",
+         level="low",
+         candidate_values=['urban area', 'rural area', 'suburban area']
+     ),
+     PersonaDimension(
+         name="Personal Experiences with Firearms",
+         description="The individual's past experiences, either positive or negative, with firearms, gun ownership, gun violence, or gun-related incidents, which may shape their attitudes, beliefs, and behaviors regarding gun use and storage.",
+         level="low",
+         candidate_values=['positive experiences', 'negative experiences', 'no experiences']
+     ),
+     PersonaDimension(
+         name="Geographic Location and Gun Culture",
+         description="The participant's geographic location and the prevalence of gun ownership, gun culture, gun-related incidents, and attitudes towards gun ownership in that area.",
+         level="low",
+         candidate_values=['high gun ownership area', 'low gun ownership area']
+     ),
+     PersonaDimension(
+         name="Firearm Ownership Status",
+         description="The individual's or household's ownership of firearms, including the number of guns owned, reasons for ownership, and the presence of guns in the childhood household.",
+         level="low",
+         candidate_values=['gun owner', 'non-gun owner', 'multiple gun owner', 'single gun owner']
+     ),
+     PersonaDimension(
+         name="Firearm Storage Practices",
+         description="How firearms in the household are stored, specifically whether they are kept loaded or unloaded.",
+         level="low",
+         candidate_values=['all guns kept loaded', 'some guns kept loaded', 'no guns kept loaded']
+     ),
+     PersonaDimension(
+         name="Experiences with Gun Violence",
+         description="The individual's direct or indirect experiences with gun violence, gun-related incidents, accidents, threats, or illegal gun access, which may shape their perceptions and attitudes towards guns.",
+         level="low",
+         candidate_values=['directly affected', 'indirectly affected', 'not affected']
+     ),
+     PersonaDimension(
+         name="Parental Status",
+         description="Whether the individual has children, particularly those under the age of 18, living in their home.",
+         level="low",
+         candidate_values=['has children under 18', 'no children under 18']
+     ),
+     PersonaDimension(
+         name="Personal Experiences with Firearms",
+         description="The participant's personal experiences, exposure, and familiarity with firearms, including gun ownership, hunting, shooting sports, self-defense situations, and childhood experiences related to guns.",
+         level="low",
+         candidate_values=['extensive experience', 'moderate experience', 'limited experience', 'no experience']
+     ),
+     PersonaDimension(
+         name="Community and Civic Engagement",
+         description="The participant's level of involvement, familiarity, and interest in their local community, as well as issues related to crime, security, and the justice system.",
+         level="low",
+         candidate_values=['high engagement', 'low engagement']
+     ),
+     PersonaDimension(
+         name="Household Composition and Security",
+         description="The presence of children in the home and the associated concerns for their safety, as well as the level of security measures taken to protect the home.",
+         level="low",
+         candidate_values=['has children, high security', 'has children, low security', 'no children, high security', 'no children, low security']
+     ),
+     PersonaDimension(
+         name="Household Composition and Vulnerability",
+         description="The makeup of the participant's household, including the presence and ages of children, elderly, or other vulnerable individuals, as well as the number and types of people living in the home.",
+         level="low",
+         candidate_values=['household with vulnerable individuals', 'household without vulnerable individuals', 'single-person household', 'multi-person household with no vulnerable individuals']
+     ),
+     PersonaDimension(
+         name="Occupational Risk",
+         description="The person's occupation and its potential risk of being targeted by violence, terrorism, or mass shootings, as well as the stability and job security of the field.",
+         level="low",
+         candidate_values=['high-risk occupation', 'low-risk occupation']
+     ),
+     PersonaDimension(
+         name="Financial Stability",
+         description="The individual's current financial status, ability to pay bills, and overall financial stability.",
+         level="low",
+         candidate_values=['financially stable', 'financially unstable']
+     ),
+     PersonaDimension(
+         name="Health and Healthcare",
+         description="The person's current health condition, medical history, and type and extent of health insurance coverage.",
+         level="low",
+         candidate_values=['good health with comprehensive coverage', 'poor health with limited coverage']
+     ),
+     PersonaDimension(
+         name="Socioeconomic and Demographic Factors",
+         description="The individual's economic and social position, as well as demographic characteristics such as age, gender, and geographic location, which may influence their perspectives and attitudes towards gun ownership and its relationship with economic opportunities and gun violence.",
+         level="low",
+         candidate_values=['high socioeconomic status', 'low socioeconomic status', 'urban', 'rural', 'male', 'female', 'young', 'old']
+     ),
+     PersonaDimension(
+         name="Crime and Safety Media Consumption",
+         description="The person's habits and preferences in consuming media related to crime and safety topics.",
+         level="low",
+         candidate_values=['high consumption', 'low consumption']
+     ),
+     PersonaDimension(
+         name="Gun-Related Media Consumption",
+         description="The frequency and intensity of consuming various forms of media related to guns, gun culture, and gun violence, including news, entertainment, online forums, and video games.",
+         level="low",
+         candidate_values=['high consumption', 'moderate consumption', 'low consumption']
+     ),
+     PersonaDimension(
+         name="Occupational Requirement for Gun Ownership",
+         description="The participant's job or profession, which may require or encourage gun ownership and usage for safety, security, or job-related purposes.",
+         level="low",
+         candidate_values=['law enforcement', 'military', 'security', 'high-risk occupation', 'job requires gun ownership', 'job does not require gun ownership']
+     ),
+     PersonaDimension(
+         name="Firearm-Related Lifestyle and Hobbies",
+         description="The individual's daily activities, routines, hobbies, and leisure pursuits that involve or are related to firearms, such as hunting, sport shooting, collecting guns, or occupations that necessitate gun ownership.",
+         level="low",
+         candidate_values=['firearm-centric lifestyle', 'non-firearm-centric lifestyle']
+     ),
+     PersonaDimension(
+         name="Perceived Risk in Geographic Location",
+         description="The perceived level of risk or safety from various threats such as crime, violence, gun incidents, terrorist attacks, and economic instability in the area where the person currently lives or grew up.",
+         level="low",
+         candidate_values=['high-risk area', 'low-risk area']
+     ),
+     PersonaDimension(
+         name="Personal Experiences with Crime and Safety",
+         description="The participant's direct experiences as a victim of crime, violence, or safety issues, such as violent crimes, burglaries, or feeling unsafe in their community, which may influence their views on gun ownership for protection.",
+         level="low",
+         candidate_values=['victim of violent crime', 'victim of burglary', 'felt unsafe due to crime', 'no personal experience with crime/safety issues']
+     )]
+
+
+# Output (Example)
+[    PersonaDimension(
+         name="Firearm-Related Recreational Interests and Activities",
+         description="The individual's involvement in recreational activities, hobbies, and interests related to firearms, such as hunting, shooting sports, gun collecting, and visiting gun ranges.",
+         level="low",
+         candidate_values=['active participant', 'occasional participant', 'non-participant']
+     ),
+     PersonaDimension(
+         name="Occupational Gun Exposure",
+         description="The extent to which an individual's occupation involves or is affected by guns, hunting, or shooting sports, ranging from high exposure in fields like law enforcement or hunting-related industries, to low exposure in non-gun-related occupations.",
+         level="low",
+         candidate_values=['high gun exposure occupation', 'low gun exposure occupation']
+     ),
+     PersonaDimension(
+         name="Social Circle Gun Ownership",
+         description="The composition and characteristics of the person's friend group, which can shape their exposure to gun ownership.",
+         level="low",
+         candidate_values=['gun-owning friends', 'non-gun-owning friends']
+     ),
+     PersonaDimension(
+         name="Geographic Location",
+         description="The region or area where the person lives or grew up, which may influence their exposure to guns, gun ownership prevalence, attitudes towards guns, and related laws and policies.",
+         level="low",
+         candidate_values=['urban area', 'rural area', 'suburban area']
+     ),
+     PersonaDimension(
+         name="Personal Experiences with Firearms",
+         description="The individual's past experiences, either positive or negative, with firearms, gun ownership, gun violence, or gun-related incidents, which may shape their attitudes, beliefs, and behaviors regarding gun use and storage.",
+         level="low",
+         candidate_values=['positive experiences', 'negative experiences', 'no experiences']
+     ),
+     PersonaDimension(
+         name="Geographic Location and Gun Culture",
+         description="The participant's geographic location and the prevalence of gun ownership, gun culture, gun-related incidents, and attitudes towards gun ownership in that area.",
+         level="low",
+         candidate_values=['high gun ownership area', 'low gun ownership area']
+     ),
+     PersonaDimension(
+         name="Firearm Ownership Status",
+         description="The individual's or household's ownership of firearms, including the number of guns owned, reasons for ownership, and the presence of guns in the childhood household.",
+         level="low",
+         candidate_values=['gun owner', 'non-gun owner', 'multiple gun owner', 'single gun owner']
+     ),
+     PersonaDimension(
+         name="Firearm Storage Practices",
+         description="How firearms in the household are stored, specifically whether they are kept loaded or unloaded.",
+         level="low",
+         candidate_values=['all guns kept loaded', 'some guns kept loaded', 'no guns kept loaded']
+     ),
+     PersonaDimension(
+         name="Experiences with Gun Violence",
+         description="The individual's direct or indirect experiences with gun violence, gun-related incidents, accidents, threats, or illegal gun access, which may shape their perceptions and attitudes towards guns.",
+         level="low",
+         candidate_values=['directly affected', 'indirectly affected', 'not affected']
+     ),
+     PersonaDimension(
+         name="Parental Status",
+         description="Whether the individual has children, particularly those under the age of 18, living in their home.",
+         level="low",
+         candidate_values=['has children under 18', 'no children under 18']
+     ),
+     PersonaDimension(
+         name="Personal Experiences with Firearms",
+         description="The participant's personal experiences, exposure, and familiarity with firearms, including gun ownership, hunting, shooting sports, self-defense situations, and childhood experiences related to guns.",
+         level="low",
+         candidate_values=['extensive experience', 'moderate experience', 'limited experience', 'no experience']
+     ),
+     PersonaDimension(
+         name="Community and Civic Engagement",
+         description="The participant's level of involvement, familiarity, and interest in their local community, as well as issues related to crime, security, and the justice system.",
+         level="low",
+         candidate_values=['high engagement', 'low engagement']
+     ),
+     PersonaDimension(
+         name="Household Composition and Security",
+         description="The presence of children in the home and the associated concerns for their safety, as well as the level of security measures taken to protect the home.",
+         level="low",
+         candidate_values=['has children, high security', 'has children, low security', 'no children, high security', 'no children, low security']
+     ),
+     PersonaDimension(
+         name="Household Composition and Vulnerability",
+         description="The makeup of the participant's household, including the presence and ages of children, elderly, or other vulnerable individuals, as well as the number and types of people living in the home.",
+         level="low",
+         candidate_values=['household with vulnerable individuals', 'household without vulnerable individuals', 'single-person household', 'multi-person household with no vulnerable individuals']
+     ),
+     PersonaDimension(
+         name="Occupational Risk",
+         description="The person's occupation and its potential risk of being targeted by violence, terrorism, or mass shootings, as well as the stability and job security of the field.",
+         level="low",
+         candidate_values=['high-risk occupation', 'low-risk occupation']
+     ),
+     PersonaDimension(
+         name="Financial Stability",
+         description="The individual's current financial status, ability to pay bills, and overall financial stability.",
+         level="low",
+         candidate_values=['financially stable', 'financially unstable']
+     ),
+     PersonaDimension(
+         name="Health and Healthcare",
+         description="The person's current health condition, medical history, and type and extent of health insurance coverage.",
+         level="low",
+         candidate_values=['good health with comprehensive coverage', 'poor health with limited coverage']
+     ),
+     PersonaDimension(
+         name="Gun-Related Media Consumption",
+         description="The frequency and intensity of consuming various forms of media related to guns, gun culture, and gun violence, including news, entertainment, online forums, and video games.",
+         level="low",
+         candidate_values=['high consumption', 'moderate consumption', 'low consumption']
+     ),
+     PersonaDimension(
+         name="Occupational Requirement for Gun Ownership",
+         description="The participant's job or profession, which may require or encourage gun ownership and usage for safety, security, or job-related purposes.",
+         level="low",
+         candidate_values=['law enforcement', 'military', 'security', 'high-risk occupation', 'job requires gun ownership', 'job does not require gun ownership']
+     ),
+     PersonaDimension(
+         name="Perceived Risk in Geographic Location",
+         description="The perceived level of risk or safety from various threats such as crime, violence, gun incidents, terrorist attacks, and economic instability in the area where the person currently lives or grew up.",
+         level="low",
+         candidate_values=['high-risk area', 'low-risk area']
+     )]
+
+# Input (Actual Task)
+{persona_dimensions}
+
+
+# Output (Actual Task)

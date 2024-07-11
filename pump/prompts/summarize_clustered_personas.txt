@@ -1,0 +1,92 @@
+# Instruction
+
+You are an expert in user profiling and persona extraction. Your task is to summarize and merge a series of extracted and clustered persona dimensions into concise yet comprehensive representations so that they can be used as random variables in a Bayesian Network. Each cluster of dimensions is semantically close, and your goal is to create a unified persona dimension for each cluster, by merging the name, description, and candidate values of the dimensions in that cluster.
+
+Each cluster is represented by a list of `PersonaDimension` objects of the following definition: 
+
+```python
+@dataclass
+class PersonaDimension:
+    name: str  # a concise name of the persona aspect
+    description: str  # a detailed description of the persona aspect
+    level: str  # the abstractness level of this persona dimension, choose from ["low", "mid", "high"]
+    candidate_values: str  # the candidate values of this persona dimension
+```
+
+
+# Task
+1. Summarize and merge the given persona dimensions into a single, comprehensive dimension.
+2. Ensure that the new dimension covers the important aspects and maintains clarity and conciseness.
+3. Provide a concise set of candidate values that accurately reflect the merged dimension, by merging similar candidate values. Keep in mind that these candidate values are for random variables in a Bayesian Network so they should be mutually exclusive. You don't need to include all candidate values, just keep the most valueable ones for predicting user behavior.
+4. You will put the merged persona dimension into a list of `PersonaDimension` objects, don't give explanations.
+
+
+# Input (Example)
+[
+    PersonaDimension(
+        name="Recreational Interests",
+        description="the person's hobbies and leisure activities, which may have included the use of air guns",
+        level="low",
+        candidate_values=["active participation", "occasional participation", "no participation"]
+    ),
+    PersonaDimension(
+        name="Recreational Interests",
+        description="the person's personal interests and hobbies, such as target shooting, hunting, or other sport-related activities involving guns",
+        level="low",
+        candidate_values=["enjoys sport shooting", "does not enjoy sport shooting"]
+    ),
+    PersonaDimension(
+        name="Hobby and Leisure Interests",
+        description="whether the person views gun ownership and shooting as a hobby or leisure activity, which could influence the importance they place on maintaining skills",
+        level="low",
+        candidate_values=["gun ownership as a hobby", "gun ownership not as a hobby"]
+    ),
+    PersonaDimension(
+        name="Recreational Interests",
+        description="whether the person has a hobby or interest in shooting sports",
+        level="low",
+        candidate_values=["has shooting interest", "lacks shooting interest"]
+    ),
+    PersonaDimension(
+        name="Hobbies and Interests",
+        description="involvement in recreational activities related to guns, such as shooting sports or hunting",
+        level="low",
+        candidate_values=["active in gun-related hobbies", "not involved in gun-related hobbies"]
+    ),
+    PersonaDimension(
+        name="Hobby and Interests",
+        description="having a personal interest in collecting guns or participating in shooting sports",
+        level="low",
+        candidate_values=["gun collector", "shooting sports enthusiast", "not interested in guns"]
+    ),
+    PersonaDimension(
+        name="Collector Mentality",
+        description="the individual's interest in accumulating and maintaining a collection of firearms as a hobby",
+        level="low",
+        candidate_values=["active collector", "not a collector"]
+    ),
+    PersonaDimension(
+        name="Recreational Interests",
+        description="the individual's engagement in outdoor activities and sports that involve the use of firearms",
+        level="low",
+        candidate_values=["active in hunting/shooting sports", "not active in hunting/shooting sports"]
+    )
+]
+
+
+# Output (Example)
+[
+    PersonaDimension(
+        name="Firearm-Related Recreational Interests",
+        description="The participant’s hobbies, leisure activities, and personal interests related to firearms, such as shooting sports, hunting, and collecting guns.",
+        level="low",
+        candidate_values=["active participant", "occasional participant", "no participation"]
+    )
+]
+
+
+# Input (Actual Task)
+{persona_dimensions}
+
+
+# Output (Actual Task)
