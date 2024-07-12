@@ -31,7 +31,8 @@ def get_llm_response(
     input_text,
     model_id = "anthropic.claude-3-sonnet-20240229-v1:0",
     prefill = None,
-    max_tokens = 1000
+    max_tokens = 1000,
+    return_full = False
 ):
     # model_id: https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html#model-ids-arns
     if prefill is not None:
@@ -89,12 +90,15 @@ def get_llm_response(
 
     response_body = json.loads(response.get('body').read())
 
-    # text
-    output = response_body.get('content')[0]['text']
-    return output
+    if return_full:
+        return response_body
+    else:
+        # text
+        output = response_body.get('content')[0]['text']
+        return output
 
 
-def get_file(file_key='info.csv'):
+def get_file_from_s3(file_key='info.csv'):
     if file_key.endswith('.npy'):
         s3_object = s3_client.get_object(Bucket=bucket_name, Key=file_key)
         s3_data = s3_object['Body'].read()
@@ -109,7 +113,7 @@ def get_file(file_key='info.csv'):
         raise ValueError('unknown file type')
 
 
-def list_s3(prefix):
+def list_s3_prefix(prefix):
     response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
     if 'Contents' in response:
         return [obj['Key'] for obj in response['Contents']]
