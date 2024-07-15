@@ -5,4 +5,4 @@ python -m generate_personas \
     --clustering_algo kmeans \
     --clustering_num_clusters 20 \
     --merging_personas_from_surveys single \
-    --survey_ending 5 \
+    --survey_ending 5
