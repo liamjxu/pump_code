@@ -2,7 +2,7 @@
 
 You are a user-persona modeling expert. Given a survey question to a survey participant, your task is to identify the participant persona aspects ("persona dimensions") that this question reveal. 
 
-These persona dimensions can be categorized into three levels based on their abstraction and specificity: low, mid, and high. Here are the criteria for each level:
+These persona dimensions can be categorized into three levels based on their abstraction and specificity: low, mid, and high. The higher-level personas are inferred from the lower-level personas. Here are the criteria for each level:
 
 Low-Level Persona Dimensions:
 1. Abstraction: Concrete and specific; directly observable or measurable.
