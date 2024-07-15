@@ -7,6 +7,7 @@ import pandas as pd
 import json
 import numpy as np
 import argparse
+import time
 from tqdm import trange, tqdm
 from sklearn.cluster import KMeans
 from utils import last_token_pool, get_detailed_instruct, get_llm_response, PersonaDimension, list_s3_prefix, get_file_from_s3, get_topics
@@ -66,8 +67,10 @@ def extract_personas_from_survey(info_df, survey, extraction_prompt_type, output
 
         with open(f'{output_dir}/personas_extracted_from_question_{survey}.json', 'w') as f:
             json.dump(res, f, indent=4)
+        print(f"Saved to {output_dir}/personas_extracted_from_question_{survey}.json")
         with open(f'{output_dir}/logs_{survey}.json', 'w') as f:
             json.dump(logs, f, indent=4)
+        print(f"Logs at: {output_dir}/logs_{survey}.json")
 
 
 def get_personas_extracted_from_questions_df(personas_from_questions_filename):
@@ -230,6 +233,7 @@ def clean_summarized_personas(prompt_name, survey, level, summarizing_dir, outpu
 
 
 def main(args):
+    loggings = []
     surveys = set()
     for path in list_s3_prefix("human_resp/"):
         if path.startswith("human_resp/American_Trends_Panel"):
@@ -240,15 +244,28 @@ def main(args):
     mapping = np.load(get_file_from_s3('human_resp/topic_mapping.npy'), allow_pickle=True)
     mapping = mapping.item()
 
+    # Extracting
+    loggings_extraction = []
+    print(f"Starting extraction for {len(surveys)} surveys.")
     for survey in surveys:
+        print(f"Extracting from {survey}")
         file_key = f"human_resp/{survey}/info.csv"
         info_df = pd.read_csv(get_file_from_s3(file_key))
+        tic = time.time()
         extract_personas_from_survey(info_df,
                                      survey,
                                      extraction_prompt_type=args.extraction_prompt_type,
                                      output_dir=f'{args.output_dir_root}/extraction',
                                      debug=args.debug,
                                      model_id=args.model_id)
+        toc = time.time()
+        loggings_extraction.append({
+            'survey': survey,
+            'extraction_time': toc - tic,
+        })
+    loggings['extraction'] = loggings_extraction
+    with open(f"{args.output_dir_root}/loggings.json", 'w') as f:
+        json.dump(loggings, f, indent=4)
 
     # Load tokenizer and model
     tokenizer = AutoTokenizer.from_pretrained('Salesforce/SFR-Embedding-2_R')
@@ -256,6 +273,7 @@ def main(args):
 
     # Clustering
     for survey in tqdm(surveys):
+        # print(f"Clustering {survey}")
         cluster_extracted_personas(survey,
                                    extraction_dir=f"{args.output_dir_root}/extraction",
                                    output_dir=f'{args.output_dir_root}/clustering',
