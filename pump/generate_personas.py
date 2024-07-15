@@ -240,7 +240,7 @@ def main(args):
             # Extract the folder name
             folder = path.split("/")[1]
             surveys.add(folder)
-    surveys = sorted(list(surveys))
+    surveys = sorted(list(surveys))[args.survey_starting:args.survey_ending]
     mapping = np.load(get_file_from_s3('human_resp/topic_mapping.npy'), allow_pickle=True)
     mapping = mapping.item()
 
@@ -345,5 +345,7 @@ if __name__ == '__main__':
     argparser.add_argument('--extraction_prompt_type', type=str, choices=['description', 'example'])
     argparser.add_argument('--clustering_num_clusters', type=int)
     argparser.add_argument('--merging_personas_from_surveys', type=str, choices=['single', 'same_topic'])
+    argparser.add_argument('--survey_starting', type=int, default=None)
+    argparser.add_argument('--survey_ending', type=int, default=None)
     args = argparser.parse_args()
     main(args)
