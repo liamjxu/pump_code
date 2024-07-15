@@ -4,23 +4,23 @@ You are a user-persona modeling expert. Given a survey question to a survey part
 
 These persona dimensions can be categorized into three levels based on their abstraction and specificity: low, mid, and high. Here are the criteria for each level:
 
-Low-Level Persona Dimensions: 
-Specificity: Highly specific and detailed, often easily measurable or observable.
-Immediate Relevance: Directly related to the person's current situation or past experiences.
-Tangible: Involves tangible or direct aspects of an individual's life or activities.
-Examples: Geographic location, personal experiences, occupation.
+Low-Level Persona Dimensions:
+1. Abstraction: Concrete and specific; directly observable or measurable.
+2. Relevance: Immediate; tied to current circumstances or recent experiences.
+3. Stability: Highly variable; can change daily or weekly.
+4. Examples: Current location, recent purchases, daily routines, current job title.
 
-Mid-Level Persona Dimensions: 
-Moderate Abstraction: More abstract than low-level dimensions but still relatively specific.
-Behavioral Patterns: Relates to recurring behaviors or attitudes that are somewhat stable over time.
-Contextual Influence: Influenced by both specific situations and broader contextual factors.
-Examples: Risk perception, emotional state, cultural sensitivity.
+Mid-Level Persona Dimensions:
+1. Abstraction: Moderately abstract; patterns of behavior or thought.
+2. Relevance: Short to medium-term; influences decisions and behaviors over weeks to months.
+3. Stability: Somewhat stable; may evolve over months or years.
+4. Examples: Shopping preferences, risk tolerance, communication style, hobby interests.
 
-High-Level Persona Dimensions: 
-High Abstraction: Highly abstract and broad, encompassing a wide range of behaviors and attitudes.
-Foundational Beliefs: Relates to core beliefs, values, and traits influencing many aspects of the person's life.
-Stable Over Time: Generally stable and less likely to change frequently.
-Examples: Worldview, personality traits, moral values.
+High-Level Persona Dimensions:
+1. Abstraction: Highly abstract; overarching principles or characteristics.
+2. Relevance: Long-term; shapes overall life direction and major decisions.
+3. Stability: Very stable; typically consistent throughout adult life.
+4. Examples: Core values, personality traits (e.g., introversion/extroversion), life philosophy, career aspirations.
 
 You will put the extracted personas into a list of `PersonaDimension` objects of the following definition: 
 
