@@ -67,10 +67,10 @@ def extract_personas_from_survey(info_df, survey, extraction_prompt_type, output
 
         with open(f'{output_dir}/personas_extracted_from_question_{survey}.json', 'w') as f:
             json.dump(res, f, indent=4)
-        print(f"Saved to {output_dir}/personas_extracted_from_question_{survey}.json")
         with open(f'{output_dir}/logs_{survey}.json', 'w') as f:
             json.dump(logs, f, indent=4)
-        print(f"Logs at: {output_dir}/logs_{survey}.json")
+    print(f"Saved to {output_dir}/personas_extracted_from_question_{survey}.json")
+    print(f"Logs at: {output_dir}/logs_{survey}.json")
 
 
 def get_personas_extracted_from_questions_df(personas_from_questions_filename):
