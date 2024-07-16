@@ -308,6 +308,7 @@ def main(args):
                     continue
 
             failure = 0
+            response_record = None
             while failure < 3:
                 try:
                     status, response = clean_summarized_personas(prompt_name="clean_summarized_personas",
@@ -317,6 +318,7 @@ def main(args):
                                                          output_dir=f'{args.output_dir_root}/cleaned',
                                                          debug=args.debug,
                                                          model_id=args.model_id)
+                    response_record = response
                     if status:
                         logs.append({
                             'survey': survey,
@@ -334,7 +336,7 @@ def main(args):
                 'survey': survey,
                 'level': level,
                 'is_successful': False,
-                'response': response
+                'response': response_record
             })
 
     with open(f"{args.output_dir_root}/cleaned/logs.json", 'w') as f:
