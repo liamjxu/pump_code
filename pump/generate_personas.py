@@ -245,56 +245,56 @@ def main(args):
     mapping = np.load(get_file_from_s3('human_resp/topic_mapping.npy'), allow_pickle=True)
     mapping = mapping.item()
 
-    # # Extracting
-    # loggings_extraction = []
-    # print(f"Starting extraction for {len(surveys)} surveys.")
-    # for survey in surveys:
-    #     print(f"Extracting from {survey}")
-    #     file_key = f"human_resp/{survey}/info.csv"
-    #     info_df = pd.read_csv(get_file_from_s3(file_key))
-    #     tic = time.time()
-    #     extract_personas_from_survey(info_df,
-    #                                  survey,
-    #                                  extraction_prompt_type=args.extraction_prompt_type,
-    #                                  output_dir=f'{args.output_dir_root}/extraction',
-    #                                  debug=args.debug,
-    #                                  model_id=args.model_id)
-    #     toc = time.time()
-    #     loggings_extraction.append({
-    #         'survey': survey,
-    #         'extraction_time': toc - tic,
-    #     })
-    # loggings['extraction'] = loggings_extraction
-    # with open(f"{args.output_dir_root}/loggings.json", 'w') as f:
-    #     json.dump(loggings, f, indent=4)
+    # Extracting
+    loggings_extraction = []
+    print(f"Starting extraction for {len(surveys)} surveys.")
+    for survey in surveys:
+        print(f"Extracting from {survey}")
+        file_key = f"human_resp/{survey}/info.csv"
+        info_df = pd.read_csv(get_file_from_s3(file_key))
+        tic = time.time()
+        extract_personas_from_survey(info_df,
+                                     survey,
+                                     extraction_prompt_type=args.extraction_prompt_type,
+                                     output_dir=f'{args.output_dir_root}/extraction',
+                                     debug=args.debug,
+                                     model_id=args.model_id)
+        toc = time.time()
+        loggings_extraction.append({
+            'survey': survey,
+            'extraction_time': toc - tic,
+        })
+    loggings['extraction'] = loggings_extraction
+    with open(f"{args.output_dir_root}/loggings.json", 'w') as f:
+        json.dump(loggings, f, indent=4)
 
-    # # Load tokenizer and model
-    # tokenizer = AutoTokenizer.from_pretrained('Salesforce/SFR-Embedding-2_R')
-    # model = AutoModel.from_pretrained('Salesforce/SFR-Embedding-2_R', device_map='auto')
+    # Load tokenizer and model
+    tokenizer = AutoTokenizer.from_pretrained('Salesforce/SFR-Embedding-2_R')
+    model = AutoModel.from_pretrained('Salesforce/SFR-Embedding-2_R', device_map='auto')
 
-    # # Clustering
-    # for survey in tqdm(surveys):
-    #     # print(f"Clustering {survey}")
-    #     cluster_extracted_personas(survey,
-    #                                extraction_dir=f"{args.output_dir_root}/extraction",
-    #                                output_dir=f'{args.output_dir_root}/clustering',
-    #                                debug=args.debug,
-    #                                tokenizer=tokenizer,
-    #                                model=model,
-    #                                clustering_algo=args.clustering_algo,
-    #                                clustering_num_clusters=args.clustering_num_clusters)
+    # Clustering
+    for survey in tqdm(surveys):
+        # print(f"Clustering {survey}")
+        cluster_extracted_personas(survey,
+                                   extraction_dir=f"{args.output_dir_root}/extraction",
+                                   output_dir=f'{args.output_dir_root}/clustering',
+                                   debug=args.debug,
+                                   tokenizer=tokenizer,
+                                   model=model,
+                                   clustering_algo=args.clustering_algo,
+                                   clustering_num_clusters=args.clustering_num_clusters)
 
-    # # Summarize
-    # for survey in surveys:
-    #     for level in ['low', 'mid', 'high']:
-    #         summarize_clustered_personas(prompt_name="summarize_clustered_personas",
-    #                                      survey=survey,
-    #                                      level=level,
-    #                                      clustering_dir=f'{args.output_dir_root}/clustering',
-    #                                      output_dir=f'{args.output_dir_root}/summarizing',
-    #                                      clustering_num_clusters=args.clustering_num_clusters,
-    #                                      debug=args.debug,
-    #                                      model_id=args.model_id)
+    # Summarize
+    for survey in surveys:
+        for level in ['low', 'mid', 'high']:
+            summarize_clustered_personas(prompt_name="summarize_clustered_personas",
+                                         survey=survey,
+                                         level=level,
+                                         clustering_dir=f'{args.output_dir_root}/clustering',
+                                         output_dir=f'{args.output_dir_root}/summarizing',
+                                         clustering_num_clusters=args.clustering_num_clusters,
+                                         debug=args.debug,
+                                         model_id=args.model_id)
 
     # Cleaning
     logs = []
@@ -366,5 +366,6 @@ if __name__ == '__main__':
     argparser.add_argument('--merging_personas_from_surveys', type=str, choices=['single', 'same_topic'])
     argparser.add_argument('--survey_starting', type=int, default=None)
     argparser.add_argument('--survey_ending', type=int, default=None)
+    # argparser.add_argument('--phases', nargs='+', choices=['extraction', 'clustering', 'summarizing', 'cleaning'], required=True)
     args = argparser.parse_args()
     main(args)
