@@ -265,16 +265,16 @@ def main(args):
             'extraction_time': toc - tic,
         })
     loggings['extraction'] = loggings_extraction
-    with open(f"{args.output_dir_root}/loggings.json", 'w') as f:
-        json.dump(loggings, f, indent=4)
 
     # Load tokenizer and model
     tokenizer = AutoTokenizer.from_pretrained('Salesforce/SFR-Embedding-2_R')
     model = AutoModel.from_pretrained('Salesforce/SFR-Embedding-2_R', device_map='auto')
 
     # Clustering
+    loggings_clustering = []
     for survey in tqdm(surveys):
-        # print(f"Clustering {survey}")
+        print(f"Clustering {survey}")
+        tic = time.time()
         cluster_extracted_personas(survey,
                                    extraction_dir=f"{args.output_dir_root}/extraction",
                                    output_dir=f'{args.output_dir_root}/clustering',
@@ -283,10 +283,19 @@ def main(args):
                                    model=model,
                                    clustering_algo=args.clustering_algo,
                                    clustering_num_clusters=args.clustering_num_clusters)
+        toc = time.time()
+        loggings_clustering.append({
+            'survey': survey,
+            'clustering_time': toc - tic,
+        })
+    loggings['clustering'] = loggings_clustering
+
 
     # Summarize
+    loggings_summarizing = []
     for survey in surveys:
         for level in ['low', 'mid', 'high']:
+            tic = time.time()
             summarize_clustered_personas(prompt_name="summarize_clustered_personas",
                                          survey=survey,
                                          level=level,
@@ -295,6 +304,13 @@ def main(args):
                                          clustering_num_clusters=args.clustering_num_clusters,
                                          debug=args.debug,
                                          model_id=args.model_id)
+            toc = time.time()
+            loggings_summarizing.append({
+                'survey': survey,
+                'level': level,
+                'summarizing_time': toc - tic,
+            })
+    loggings['summarizing'] = loggings_summarizing
 
     # Cleaning
     logs = []
@@ -306,7 +322,7 @@ def main(args):
                 if os.path.exists(cleaned_summarized_personas_filename):
                     print(f"Skipping {survey} {level}")
                     continue
-
+            tic = time.time()
             failure = 0
             response_record = None
             while failure < 3:
@@ -331,16 +347,19 @@ def main(args):
                     time.sleep(10)
                 failure += 1
                 print(f"Failed {failure}/3 times")
-
+            
+            toc = time.time()
             logs.append({
                 'survey': survey,
                 'level': level,
+                'cleaning_time': toc - tic,
                 'is_successful': False,
                 'response': response_record
             })
 
-    with open(f"{args.output_dir_root}/cleaned/logs.json", 'w') as f:
-        json.dump(logs, f, indent=4)
+    loggings['cleaning'] = logs
+    with open(f"{args.output_dir_root}/loggings.json", 'w') as f:
+        json.dump(loggings, f, indent=4)
 
 
 if __name__ == '__main__':
