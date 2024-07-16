@@ -201,6 +201,7 @@ def summarize_clustered_personas(prompt_name, survey, level, clustering_dir, out
 
 
 def clean_summarized_personas(prompt_name, survey, level, summarizing_dir, output_dir, debug, model_id):
+    
     os.makedirs(output_dir, exist_ok=True)
 
     # Get data
@@ -216,7 +217,7 @@ def clean_summarized_personas(prompt_name, survey, level, summarizing_dir, outpu
     response = ''.join(['[', response])
     
     if debug:
-        print(response)
+        print("Response from cleaning:", response)
 
     # validate
     try:
@@ -300,6 +301,12 @@ def main(args):
     for survey in surveys:
         print(f"Survey: {survey}")
         for level in tqdm(['low', 'mid', 'high']):
+            if args.skip_existing:
+                cleaned_summarized_personas_filename = f"{args.output_dir_root}/cleaned/cleaned_{level}_level_personas_{survey}.json"
+                if os.path.exists(cleaned_summarized_personas_filename):
+                    print(f"Skipping {survey} {level}")
+                    continue
+
             failure = 0
             while failure < 3:
                 try:
@@ -348,6 +355,7 @@ if __name__ == '__main__':
 
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--debug', action='store_true')
+    argparser.add_argument('--skip_existing', action='store_true')
     argparser.add_argument('--output_dir_root', type=str, default="sm_local/outputs")
     argparser.add_argument('--model_id', type=str, choices=["anthropic.claude-3-haiku-20240307-v1:0", "anthropic.claude-3-sonnet-20240229-v1:0"])
     argparser.add_argument('--clustering_algo', type=str, choices=['kmeans'])
