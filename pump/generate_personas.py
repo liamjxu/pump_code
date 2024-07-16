@@ -265,6 +265,8 @@ def main(args):
             'extraction_time': toc - tic,
         })
     loggings['extraction'] = loggings_extraction
+    with open(f"{args.output_dir_root}/loggings.json", 'w') as f:
+        json.dump(loggings, f, indent=4)
 
     # Load tokenizer and model
     tokenizer = AutoTokenizer.from_pretrained('Salesforce/SFR-Embedding-2_R')
@@ -289,7 +291,8 @@ def main(args):
             'clustering_time': toc - tic,
         })
     loggings['clustering'] = loggings_clustering
-
+    with open(f"{args.output_dir_root}/loggings.json", 'w') as f:
+        json.dump(loggings, f, indent=4)
 
     # Summarize
     loggings_summarizing = []
@@ -311,6 +314,8 @@ def main(args):
                 'summarizing_time': toc - tic,
             })
     loggings['summarizing'] = loggings_summarizing
+    with open(f"{args.output_dir_root}/loggings.json", 'w') as f:
+        json.dump(loggings, f, indent=4)
 
     # Cleaning
     logs = []
