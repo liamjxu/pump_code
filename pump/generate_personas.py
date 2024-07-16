@@ -224,12 +224,12 @@ def clean_summarized_personas(prompt_name, survey, level, summarizing_dir, outpu
         cleaned_summarized_personas_filename = f"{output_dir}/cleaned_{level}_level_personas_{survey}.json"
         with open(cleaned_summarized_personas_filename, 'w') as f:
             json.dump(response, f, indent=4)
-        return True
+        return True, response
     except:
         print(f'Cleaned result is not valid. Survey: {survey}, Level: {level}.')
         if debug:
             print(f"Response: {response}")
-        return False
+        return False, response
 
 
 def main(args):
@@ -303,7 +303,7 @@ def main(args):
             failure = 0
             while failure < 3:
                 try:
-                    status = clean_summarized_personas(prompt_name="clean_summarized_personas",
+                    status, response = clean_summarized_personas(prompt_name="clean_summarized_personas",
                                                          survey=survey,
                                                          level=level,
                                                          summarizing_dir=f'{args.output_dir_root}/summarizing',
@@ -314,7 +314,8 @@ def main(args):
                         logs.append({
                             'survey': survey,
                             'level': level,
-                            'is_successful': True
+                            'is_successful': True,
+                            'response': response
                         })
                         break
                 except:
@@ -325,7 +326,8 @@ def main(args):
             logs.append({
                 'survey': survey,
                 'level': level,
-                'is_successful': False
+                'is_successful': False,
+                'response': response
             })
 
     with open(f"{args.output_dir_root}/cleaned/logs.json", 'w') as f:
