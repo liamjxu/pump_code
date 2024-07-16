@@ -300,25 +300,33 @@ def main(args):
     for survey in surveys:
         print(f"Survey: {survey}")
         for level in tqdm(['low', 'mid', 'high']):
-            status = clean_summarized_personas(prompt_name="clean_summarized_personas",
+            failure = 0
+            while failure < 3:
+                try:
+                    status = clean_summarized_personas(prompt_name="clean_summarized_personas",
                                                          survey=survey,
                                                          level=level,
                                                          summarizing_dir=f'{args.output_dir_root}/summarizing',
                                                          output_dir=f'{args.output_dir_root}/cleaned',
                                                          debug=args.debug,
                                                          model_id=args.model_id)
-            if status:
-                logs.append({
-                    'survey': survey,
-                    'level': level,
-                    'is_successful': True
-                })
-            else:
-                logs.append({
-                    'survey': survey,
-                    'level': level,
-                    'is_successful': False
-                })
+                    if status:
+                        logs.append({
+                            'survey': survey,
+                            'level': level,
+                            'is_successful': True
+                        })
+                    break
+                except:
+                    time.sleep(10)
+                    failure += 1
+                    print(f"Failed {failure}/3 times")
+                    continue
+            logs.append({
+                'survey': survey,
+                'level': level,
+                'is_successful': False
+            })
 
     with open(f"{args.output_dir_root}/cleaned/logs.json", 'w') as f:
         json.dump(logs, f, indent=4)
