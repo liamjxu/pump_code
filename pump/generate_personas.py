@@ -233,7 +233,7 @@ def clean_summarized_personas(prompt_name, survey, level, summarizing_dir, outpu
 
 
 def main(args):
-    loggings = []
+    loggings = {}
     surveys = set()
     for path in list_s3_prefix("human_resp/"):
         if path.startswith("human_resp/American_Trends_Panel"):
@@ -305,7 +305,6 @@ def main(args):
                                                          level=level,
                                                          summarizing_dir=f'{args.output_dir_root}/summarizing',
                                                          output_dir=f'{args.output_dir_root}/cleaned',
-                                                         clustering_num_clusters=args.clustering_num_clusters,
                                                          debug=args.debug,
                                                          model_id=args.model_id)
             if status:
