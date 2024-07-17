@@ -330,6 +330,7 @@ def main(args):
             tic = time.time()
             failure = 0
             response_record = None
+            status = False
             while failure < 3:
                 try:
                     status, response = clean_summarized_personas(prompt_name="clean_summarized_personas",
@@ -341,9 +342,11 @@ def main(args):
                                                          model_id=args.model_id)
                     response_record = response
                     if status:
+                        toc = time.time()
                         logs.append({
                             'survey': survey,
                             'level': level,
+                            'cleaning_time': toc - tic,
                             'is_successful': True,
                             'response': response
                         })
@@ -353,14 +356,15 @@ def main(args):
                 failure += 1
                 print(f"Failed {failure}/3 times")
             
-            toc = time.time()
-            logs.append({
-                'survey': survey,
-                'level': level,
-                'cleaning_time': toc - tic,
-                'is_successful': False,
-                'response': response_record
-            })
+            if not status:
+                toc = time.time()
+                logs.append({
+                    'survey': survey,
+                    'level': level,
+                    'cleaning_time': toc - tic,
+                    'is_successful': False,
+                    'response': response_record
+                })
 
     loggings['cleaning'] = logs
     with open(f"{args.output_dir_root}/loggings.json", 'w') as f:
@@ -390,6 +394,6 @@ if __name__ == '__main__':
     argparser.add_argument('--merging_personas_from_surveys', type=str, choices=['single', 'same_topic'])
     argparser.add_argument('--survey_starting', type=int, default=None)
     argparser.add_argument('--survey_ending', type=int, default=None)
-    # argparser.add_argument('--phases', nargs='+', choices=['extraction', 'clustering', 'summarizing', 'cleaning'], required=True)
+    argparser.add_argument('--phases', nargs='+', choices=['extraction', 'clustering', 'summarizing', 'cleaning'], required=True)
     args = argparser.parse_args()
     main(args)
