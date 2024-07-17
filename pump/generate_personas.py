@@ -396,7 +396,6 @@ if __name__ == '__main__':
     argparser.add_argument('--survey_ending', type=int, default=None)
     argparser.add_argument('--phases', nargs='+',
                                        choices=['extraction', 'clustering', 'summarizing', 'cleaning'],  
-                                       default=['extraction', 'clustering', 'summarizing', 'cleaning'],
-                                       required=True)
+                                       default=['extraction', 'clustering', 'summarizing', 'cleaning'])
     args = argparser.parse_args()
     main(args)
