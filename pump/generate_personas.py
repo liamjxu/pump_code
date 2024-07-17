@@ -394,6 +394,9 @@ if __name__ == '__main__':
     argparser.add_argument('--merging_personas_from_surveys', type=str, choices=['single', 'same_topic'])
     argparser.add_argument('--survey_starting', type=int, default=None)
     argparser.add_argument('--survey_ending', type=int, default=None)
-    argparser.add_argument('--phases', nargs='+', choices=['extraction', 'clustering', 'summarizing', 'cleaning'], required=True)
+    argparser.add_argument('--phases', nargs='+',
+                                       choices=['extraction', 'clustering', 'summarizing', 'cleaning'],  
+                                       default=['extraction', 'clustering', 'summarizing', 'cleaning'],
+                                       required=True)
     args = argparser.parse_args()
     main(args)
