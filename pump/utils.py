@@ -5,9 +5,10 @@ import torch.nn.functional as F
 from io import StringIO, BytesIO
 from torch import Tensor
 from dataclasses import dataclass
+from botocore.config import Config
 
 
-brt = boto3.client(service_name='bedrock-runtime')
+brt = boto3.client(service_name='bedrock-runtime', config=Config(read_timeout=120))
 s3_client = boto3.client('s3')
 bucket_name = 'probabilistic-user-modeling'
 
