@@ -4,8 +4,9 @@ import torch
 import torch.nn.functional as F
 from io import StringIO, BytesIO
 from torch import Tensor
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict
 from botocore.config import Config
+from typing import List, Dict
 
 
 brt = boto3.client(service_name='bedrock-runtime', config=Config(read_timeout=120))
@@ -27,6 +28,31 @@ class PersonaDimension:
                 f'        level="{self.level}",\n'
                 f'        candidate_values={self.candidate_values}\n'
                 f'    )')
+    
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "description": self.description,
+            "level": self.level,
+            "candidate_values": self.candidate_values
+        }
+
+
+def persona_dim_object_to_dict(persona_object: PersonaDimension) -> Dict:
+    return asdict(persona_object)
+
+
+def persona_dim_dict_to_object(persona_dict: Dict) -> PersonaDimension:
+    return PersonaDimension(**persona_dict)
+
+
+def persona_dim_object_list_to_dict_list(persona_object_list: List[PersonaDimension]) -> List[Dict]:
+    return [persona_dim_object_to_dict(entry) for entry in persona_object_list]
+
+
+def persona_dim_dict_list_to_object_list(persona_dict_list: List[Dict]) -> List[PersonaDimension]:
+    return [persona_dim_dict_to_object(persona) for persona in persona_dict_list]
+
 
 def get_llm_response(
     input_text,
