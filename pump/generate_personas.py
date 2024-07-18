@@ -8,7 +8,8 @@ import numpy as np
 import argparse
 import time
 from tqdm import trange, tqdm
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans, DBSCAN, MeanShift, estimate_bandwidth
+from sklearn.mixture import GaussianMixture
 from utils import last_token_pool, get_detailed_instruct, get_llm_response, list_s3_prefix, get_file_from_s3, get_topics, PersonaDimension
 from utils import persona_dim_object_list_to_dict_list, persona_dim_dict_to_object, persona_dim_dict_list_to_object_list
 from transformers import AutoTokenizer, AutoModel
@@ -134,13 +135,24 @@ def cluster_extracted_personas(survey, extraction_dir, output_dir, debug, tokeni
             clustering_model = KMeans(n_clusters=clustering_num_clusters)
             clustering_model.fit(embeddings)
             level_df['cluster'] = clustering_model.labels_
+        elif clustering_algo == 'gmm':
+            clustering_model = GaussianMixture(n_components=clustering_num_clusters)
+            clustering_model.fit(embeddings)
+            level_df['cluster'] = clustering_model.predict(embeddings)
+        elif clustering_algo == 'dbscan':
+            clustering_model = DBSCAN(eps=0.5, min_samples=5)  # default values
+            level_df['cluster'] = clustering_model.fit_predict(embeddings)
+        elif clustering_algo == 'mean_shift':
+            bandwidth = estimate_bandwidth(embeddings, quantile=0.3)  # default value
+            mean_shift = MeanShift(bandwidth=bandwidth)
+            level_df['cluster'] = mean_shift.fit_predict(embeddings)
         else:
             raise ValueError("unknown clustering algorithm")
         level_df = level_df.sort_values(by='cluster')
         level_df.to_csv(f'{output_dir}/clustered_{level}_level_personas_{survey}.csv')
 
         if debug:
-            for idx in range(clustering_num_clusters):
+            for idx in range(max(level_df['cluster'].astype(int)) + 1):
                 print(idx)
                 for _, row in enumerate(level_df[level_df['cluster'] == idx]['formatted']):
                     print(row.split('\n')[1])
@@ -159,7 +171,7 @@ def summarize_clustered_personas(prompt_name, survey, level, clustering_dir, out
     # summarizing
     logs = []
     res = []
-    for idx in trange(clustering_num_clusters):
+    for idx in trange(max(data['cluster'].astype(int)) + 1):
         persona_cluster = []
         for _, row in data[data['cluster'].astype(str) == str(idx)].iterrows():
             persona = persona_dim_dict_to_object(row[['name', 'description', 'level', 'candidate_values']].to_dict())
@@ -412,7 +424,7 @@ if __name__ == '__main__':
     argparser.add_argument('--debug', action='store_true')
     argparser.add_argument('--output_dir_root', type=str, default="sm_local/outputs")
     argparser.add_argument('--model_id', type=str, choices=["anthropic.claude-3-haiku-20240307-v1:0", "anthropic.claude-3-sonnet-20240229-v1:0"])
-    argparser.add_argument('--clustering_algo', type=str, choices=['kmeans'])
+    argparser.add_argument('--clustering_algo', type=str, choices=['kmeans', 'gmm', 'dbscan', 'mean_shift'])
     argparser.add_argument('--extraction_prompt_type', type=str, choices=['description', 'example'])
     argparser.add_argument('--clustering_num_clusters', type=int)
     argparser.add_argument('--merging_personas_from_surveys', type=str, choices=['single', 'same_topic'])
