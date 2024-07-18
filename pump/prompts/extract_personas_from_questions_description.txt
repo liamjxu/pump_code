@@ -22,14 +22,14 @@ High-Level Persona Dimensions:
 3. Stability: Very stable; typically consistent throughout adult life.
 4. Examples: Core values, personality traits (e.g., introversion/extroversion), life philosophy, career aspirations.
 
-You will put the extracted personas into a list of `PersonaDimension` objects of the following definition: 
+You will put the extracted personas into a list of `PersonaDimension` objects of the following definition. Use double quotes for strings.
 
 ```python
 @dataclass
 class PersonaDimension:
     name: str  # a concise name of the persona aspect
     description: str  # a detailed description of the persona aspect
-    level: str  # the abstractness level of this persona dimension, choose from ['low', 'mid', 'high']
+    level: str  # the abstractness level of this persona dimension, choose from ["low", "mid", "high"]
     candidate_values: str  # the candidate values of this persona dimension
 ```
 

@@ -112,8 +112,15 @@ def get_llm_response(
         "accept": "application/json",
         "body": body
     }
-
-    response = brt.invoke_model(**inputs)
+    failure = 0
+    while failure < 3:
+        try:
+            response = brt.invoke_model(**inputs)
+            break
+        except Exception as e:
+            print(f"Failure {(failure/3)}: brt.invoke_model(**inputs) failed. Error Message: {e}.")
+            print("Retrying.")
+            failure += 1
 
     response_body = json.loads(response.get('body').read())
 

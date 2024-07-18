@@ -51,10 +51,9 @@ def extract_personas_from_survey(info_df, survey, extraction_prompt_type, output
             num_persona = len(persona_json)
             valid = True
             valid_cnt += 1
-            if debug:
-                print(response)
         except Exception as e:
             print(f"Exception during extraction. Error Message:\n{e}")
+            print(f"Response:\n{response}")
             valid = False
             error_msg = str(e)
             persona_json = None
@@ -202,7 +201,7 @@ def summarize_clustered_personas(prompt_name, survey, level, clustering_dir, out
             with open(logs_filename, 'w') as f:
                 json.dump(logs, f, indent=4)
     
-    return logs
+    return logs, len(res)
 
 
 def clean_summarized_personas(prompt_name, survey, level, summarizing_dir, output_dir, debug, model_id):
@@ -321,7 +320,7 @@ def main(args):
             for level in ['low', 'mid', 'high']:
                 print(f"Survey: {survey}, level: {level}")
                 tic = time.time()
-                clusters_logs = summarize_clustered_personas(prompt_name="summarize_clustered_personas",
+                clusters_logs, num_personas = summarize_clustered_personas(prompt_name="summarize_clustered_personas",
                                             survey=survey,
                                             level=level,
                                             clustering_dir=f'{args.output_dir_root}/clustering',
@@ -334,6 +333,7 @@ def main(args):
                     'survey': survey,
                     'level': level,
                     'num_of_clusters': len(clusters_logs),
+                    'num_of_personas': num_personas,
                     'summarizing_time': toc - tic,
                     'clusters': clusters_logs,
                     'valid_ratio': sum([entry['is_successful'] for entry in clusters_logs]) / len(clusters_logs)
