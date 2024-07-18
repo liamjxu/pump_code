@@ -16,12 +16,15 @@ import argparse
 
 
 def extract_personas_from_survey(info_df, survey, extraction_prompt_type, output_dir, debug, model_id):
-    if extraction_prompt_type == 'example':
-        prompt_name = 'get_personas_from_questions'
-    elif extraction_prompt_type == 'description':
-        prompt_name = 'get_personas_from_questions_simple'
-    else:
+    prompt_name_mapping = {
+        'example': 'extract_personas_from_questions_example',
+        'description': 'extract_personas_from_questions_description'
+    }
+    if extraction_prompt_type not in prompt_name_mapping:
         raise ValueError(f'Invalid extraction_prompt_type: {extraction_prompt_type}')
+    else:
+        prompt_name = prompt_name_mapping[extraction_prompt_type]
+
     with open(f'prompts/{prompt_name}.txt') as f:
         prompt_template = f.read()
 
@@ -154,8 +157,9 @@ def summarize_clustered_personas(prompt_name, survey, level, clustering_dir, out
     with open(f'prompts/{prompt_name}.txt') as f:
         prompt_template = f.read()
 
-    # summarize
+    # summarizing
     logs = []
+    res = []
     for idx in trange(clustering_num_clusters):
         persona_cluster = []
         for _, row in data[data['cluster'].astype(str) == str(idx)].iterrows():
@@ -168,9 +172,10 @@ def summarize_clustered_personas(prompt_name, survey, level, clustering_dir, out
         
         try:
             record_res = persona_dim_object_list_to_dict_list(eval(response))
+            res += record_res
             summarized_clustered_personas_filename = f"{output_dir}/summarized_{level}_level_personas_{survey}.json"
             with open(summarized_clustered_personas_filename, 'w') as f:
-                json.dump(record_res, f, indent=4)
+                json.dump(res, f, indent=4)
 
             logs.append({
                 # 'survey': survey,
@@ -306,7 +311,7 @@ def main(args):
         with open(f"{args.output_dir_root}/loggings.json", 'w') as f:
             json.dump(loggings, f, indent=4)
 
-    # Summarize
+    # Summarizing
     if 'summarizing' not in args.phases:
         print('Skipping summarizing')
     else:
@@ -314,6 +319,7 @@ def main(args):
         loggings_summarizing = []
         for survey in surveys:
             for level in ['low', 'mid', 'high']:
+                print(f"Survey: {survey}, level: {level}")
                 tic = time.time()
                 clusters_logs = summarize_clustered_personas(prompt_name="summarize_clustered_personas",
                                             survey=survey,

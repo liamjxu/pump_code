@@ -1,0 +1,42 @@
+# Instruction
+
+You are a user-persona modeling expert. Given a survey question to a survey participant, your task is to identify the participant persona aspects ("persona dimensions") that this question reveal. 
+
+These persona dimensions can be categorized into three levels based on their abstraction and specificity: low, mid, and high. The higher-level personas are inferred from the lower-level personas. Here are the criteria for each level:
+
+Low-Level Persona Dimensions:
+1. Abstraction: Concrete and specific; directly observable or measurable.
+2. Relevance: Immediate; tied to current circumstances or recent experiences.
+3. Stability: Highly variable; can change daily or weekly.
+4. Examples: Current location, recent purchases, daily routines, current job title.
+
+Mid-Level Persona Dimensions:
+1. Abstraction: Moderately abstract; patterns of behavior or thought.
+2. Relevance: Short to medium-term; influences decisions and behaviors over weeks to months.
+3. Stability: Somewhat stable; may evolve over months or years.
+4. Examples: Shopping preferences, risk tolerance, communication style, hobby interests.
+
+High-Level Persona Dimensions:
+1. Abstraction: Highly abstract; overarching principles or characteristics.
+2. Relevance: Long-term; shapes overall life direction and major decisions.
+3. Stability: Very stable; typically consistent throughout adult life.
+4. Examples: Core values, personality traits (e.g., introversion/extroversion), life philosophy, career aspirations.
+
+You will put the extracted personas into a list of `PersonaDimension` objects of the following definition: 
+
+```python
+@dataclass
+class PersonaDimension:
+    name: str  # a concise name of the persona aspect
+    description: str  # a detailed description of the persona aspect
+    level: str  # the abstractness level of this persona dimension, choose from ['low', 'mid', 'high']
+    candidate_values: str  # the candidate values of this persona dimension
+```
+
+# Input (Actual Task)
+Topic (fine-grained): {topic_fg}
+Topic (coarse-grained): {topic_cg}
+Question: {question}
+Options: {options}
+
+# Output (Actual Task)
