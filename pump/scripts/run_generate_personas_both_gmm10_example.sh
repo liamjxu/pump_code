@@ -6,7 +6,8 @@ python -m generate_personas \
     --clustering_algo gmm \
     --clustering_num_clusters 10 \
     --merging_personas_from_surveys single \
-    --survey_ending 5
+    --survey_ending 5 \
+    --phases summarizing cleaning
 
 python -m generate_personas \
     --debug \
@@ -16,4 +17,5 @@ python -m generate_personas \
     --clustering_algo gmm \
     --clustering_num_clusters 10 \
     --merging_personas_from_surveys single \
-    --survey_ending 5
+    --survey_ending 5 \
+    --phases summarizing cleaning

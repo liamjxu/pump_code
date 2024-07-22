@@ -1,6 +1,4 @@
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
-
 import torch
 import pandas as pd
 import json
@@ -128,7 +126,7 @@ def cluster_extracted_personas(survey, extraction_dir, output_dir, debug, tokeni
                 embed = last_token_pool(outputs.last_hidden_state, batch_dict['attention_mask'])[0]
             embeddings.append(embed)
         embeddings = torch.stack(embeddings, axis=0)
-        print(embeddings.shape, len(input_texts))
+        print(f"Embedding for survey {survey}, level {level} finished. Shape: {embeddings.shape}")
         
         # Clustering the embeddings and save artifacts
         if clustering_algo == 'kmeans':
@@ -140,12 +138,12 @@ def cluster_extracted_personas(survey, extraction_dir, output_dir, debug, tokeni
             clustering_model.fit(embeddings)
             level_df['cluster'] = clustering_model.predict(embeddings)
         elif clustering_algo == 'dbscan':
-            clustering_model = DBSCAN(eps=0.5, min_samples=5)  # default values
+            clustering_model = DBSCAN(eps=100, min_samples=5)  # default values
             level_df['cluster'] = clustering_model.fit_predict(embeddings)
-        elif clustering_algo == 'mean_shift':
-            bandwidth = estimate_bandwidth(embeddings, quantile=0.3)  # default value
-            mean_shift = MeanShift(bandwidth=bandwidth)
-            level_df['cluster'] = mean_shift.fit_predict(embeddings)
+        elif clustering_algo == 'meanshift':
+            bandwidth = estimate_bandwidth(embeddings, quantile=0.05)  # default value
+            meanshift = MeanShift(bandwidth=bandwidth)
+            level_df['cluster'] = meanshift.fit_predict(embeddings)
         else:
             raise ValueError("unknown clustering algorithm")
         level_df = level_df.sort_values(by='cluster')
@@ -260,7 +258,11 @@ def main(args):
             # Extract the folder name
             folder = path.split("/")[1]
             surveys.add(folder)
-    surveys = sorted(list(surveys))[args.survey_starting:args.survey_ending]
+    if args.merging_personas_from_surveys == 'same_topic':
+        sorted_surveys = sorted(list(surveys))
+        surveys = [sorted_surveys[0]]
+    else:
+        surveys = sorted(list(surveys))[args.survey_starting:args.survey_ending]
     mapping = np.load(get_file_from_s3('human_resp/topic_mapping.npy'), allow_pickle=True)
     mapping = mapping.item()
 
@@ -272,15 +274,25 @@ def main(args):
         print(f"Starting extraction for {len(surveys)} surveys.")
         for survey in surveys:
             print(f"Extracting from {survey}")
-            file_key = f"human_resp/{survey}/info.csv"
-            info_df = pd.read_csv(get_file_from_s3(file_key))
+            if args.merging_personas_from_surveys == 'same_topic':
+                relevant_surveys = ['American_Trends_Panel_W26', 'American_Trends_Panel_W54', 'American_Trends_Panel_W43']  # jaccard_similarity
+                dfs = []
+                for survey_name in relevant_surveys:
+                    file_key = f"human_resp/{survey_name}/info.csv"
+                    info_df = pd.read_csv(get_file_from_s3(file_key))
+                    dfs.append(info_df)
+                info_df = pd.concat(dfs, axis=0, ignore_index=True)
+            else:
+                file_key = f"human_resp/{survey_name}/info.csv"
+                info_df = pd.read_csv(get_file_from_s3(file_key))
+            
             tic = time.time()
             logs = extract_personas_from_survey(info_df,
-                                        survey,
-                                        extraction_prompt_type=args.extraction_prompt_type,
-                                        output_dir=f'{args.output_dir_root}/extraction',
-                                        debug=args.debug,
-                                        model_id=args.model_id)
+                                                survey,
+                                                extraction_prompt_type=args.extraction_prompt_type,
+                                                output_dir=f'{args.output_dir_root}/extraction',
+                                                debug=args.debug,
+                                                model_id=args.model_id)
             toc = time.time()
             loggings_extraction.append({
                 'survey': survey,
@@ -303,7 +315,7 @@ def main(args):
         # Clustering
         loggings_clustering = []
         for survey in tqdm(surveys):
-            print(f"Clustering {survey}")
+            print(f"Clustering {survey} with algorithm {args.clustering_algo}")
             tic = time.time()
             cluster_extracted_personas(survey,
                                     extraction_dir=f"{args.output_dir_root}/extraction",
@@ -341,14 +353,15 @@ def main(args):
                                             debug=args.debug,
                                             model_id=args.model_id)
                 toc = time.time()
+                num_of_clusters = len(clusters_logs)
                 loggings_summarizing.append({
                     'survey': survey,
                     'level': level,
-                    'num_of_clusters': len(clusters_logs),
+                    'num_of_clusters': num_of_clusters,
                     'num_of_personas': num_personas,
                     'summarizing_time': toc - tic,
                     'clusters': clusters_logs,
-                    'valid_ratio': sum([entry['is_successful'] for entry in clusters_logs]) / len(clusters_logs)
+                    'valid_ratio': sum([entry['is_successful'] for entry in clusters_logs]) / num_of_clusters if num_of_clusters > 0 else 0
                 })
         loggings['summarizing'] = loggings_summarizing
         with open(f"{args.output_dir_root}/loggings.json", 'w') as f:
@@ -410,13 +423,13 @@ def main(args):
 
 if __name__ == '__main__':
 
-    surveys = set()
-    for path in list_s3_prefix("human_resp/"):
-        if path.startswith("human_resp/American_Trends_Panel"):
-            # Extract the folder name
-            folder = path.split("/")[1]
-            surveys.add(folder)
-    surveys = sorted(list(surveys))
+    # surveys = set()
+    # for path in list_s3_prefix("human_resp/"):
+    #     if path.startswith("human_resp/American_Trends_Panel"):
+    #         # Extract the folder name
+    #         folder = path.split("/")[1]
+    #         surveys.add(folder)
+    # surveys = sorted(list(surveys))
     mapping = np.load(get_file_from_s3('human_resp/topic_mapping.npy'), allow_pickle=True)
     mapping = mapping.item()
 
@@ -424,7 +437,7 @@ if __name__ == '__main__':
     argparser.add_argument('--debug', action='store_true')
     argparser.add_argument('--output_dir_root', type=str, default="sm_local/outputs")
     argparser.add_argument('--model_id', type=str, choices=["anthropic.claude-3-haiku-20240307-v1:0", "anthropic.claude-3-sonnet-20240229-v1:0"])
-    argparser.add_argument('--clustering_algo', type=str, choices=['kmeans', 'gmm', 'dbscan', 'mean_shift'])
+    argparser.add_argument('--clustering_algo', type=str, choices=['kmeans', 'gmm', 'dbscan', 'meanshift'])
     argparser.add_argument('--extraction_prompt_type', type=str, choices=['description', 'example'])
     argparser.add_argument('--clustering_num_clusters', type=int)
     argparser.add_argument('--merging_personas_from_surveys', type=str, choices=['single', 'same_topic'])
