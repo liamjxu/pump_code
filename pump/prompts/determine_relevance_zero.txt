@@ -1,0 +1,25 @@
+# Instruction
+
+You are an expert in user profiling. Your task now is to determine whether a persona dimension is relevant for a survey topic set. We say a persona dimension is relevant for a survey topic set if knowing a participant's persona value for this persona dimension will be helpful for predicting their response to a question in a survey consisting of questions of the given topics. In that case you should say "yes". If you think knowing a participant's persona value for the dimension is unlikely to help predicting their response to questions of the topics in the survey topic set, say "no". 
+
+The persona dimensions are represented by a list of `PersonaDimension` objects of the following definition: 
+
+```python
+@dataclass
+class PersonaDimension:
+    name: str  # a concise name of the persona aspect
+    description: str  # a detailed description of the persona aspect
+    level: str  # the abstractness level of this persona dimension, choose from ['low', 'mid', 'high']
+    candidate_values: str  # the candidate values of this persona dimension
+```
+
+# Task
+Output "yes" if the persona dimension is relevant for the survey topic set, and "no" othewise. Respond with either "yes" or "no" and nothing else.
+
+# Input (Actual Task)
+{persona_dimensions}
+
+Survey topic set: {survey_topics}
+
+# Output (Actual Task)
+(yes/no): 

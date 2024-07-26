@@ -1,0 +1,100 @@
+# Instruction
+
+You are an expert in user profiling and persona extraction. Your task now is to determine whether a persona dimension is relevant for predicting a user's response to a survey topic. Respond with either "yes" or "no" and nothing else.
+
+The persona dimensions are represented by a list of `PersonaDimension` objects of the following definition: 
+
+```python
+@dataclass
+class PersonaDimension:
+    name: str  # a concise name of the persona aspect
+    description: str  # a detailed description of the persona aspect
+    level: str  # the abstractness level of this persona dimension, choose from ['low', 'mid', 'high']
+    candidate_values: str  # the candidate values of this persona dimension
+```
+
+# Task
+Output "yes" if the persona dimension is relevant, and "no" othewise. Respond with either "yes" or "no" and nothing else.
+
+# Input (Example)
+[
+    PersonaDimension(
+        name="Firearm-Related Recreational Interests and Activities",
+        description="The individual's involvement in recreational activities, hobbies, and interests related to firearms, such as hunting, shooting sports, gun collecting, and visiting gun ranges.",
+        level="low",
+        candidate_values=["active participant", "occasional participant", "non-participant"]
+    )
+]
+
+Survey topics: {{'job/career', 'personal finance', 'crime/security', 'healthcare system', 'community health'}}
+
+# Output (Example)
+yes
+
+# Input (Example)
+[
+    PersonaDimension(
+        name="Personal Experiences with Firearms",
+        description="The individual's past experiences, either positive or negative, with firearms, gun ownership, gun violence, or gun-related incidents, which may shape their attitudes, beliefs, and behaviors regarding gun use and storage.",
+        level="low",
+        candidate_values=["positive experiences", "negative experiences", "no experiences"]
+    )
+]
+
+Survey topics: {{'healthcare system', 'political issues', 'personal health', 'science'}}
+
+# Output (Example)
+(yes/no): no
+
+# Input (Example)
+[
+    PersonaDimension(
+        name="Health and Healthcare",
+        description="The person's current health condition, medical history, and type and extent of health insurance coverage.",
+        level="low",
+        candidate_values=["good health with comprehensive coverage", "poor health with limited coverage"]
+    )
+]
+
+Survey topics: {{'political issues', 'job/career', 'future', 'corporations, banks, technology and automation', 'healthcare system'}}
+
+# Output (Example)
+(yes/no): yes
+
+# Input (Example)
+[
+    PersonaDimension(
+        name="Community and Civic Engagement",
+        description="The participant's level of involvement, familiarity, and interest in their local community, as well as issues related to crime, security, and the justice system.",
+        level="low",
+        candidate_values=["high engagement", "low engagement"]
+    )
+]
+
+Survey topics: {{'political issues', 'job/career', 'future', 'corporations, banks, technology and automation', 'healthcare system'}}
+
+# Output (Example)
+(yes/no): no
+
+# Input (Example)
+[
+    PersonaDimension(
+        name="Resilience, Perseverance, and Life Philosophy",
+        description="The individual's ability to cope with adversity, maintain a positive outlook, and persist in the face of challenges, as well as their overall life philosophy and approach to achieving goals.",
+        level="high",
+        candidate_values=["high resilience and optimism", "low resilience and pessimism"]
+    )
+]
+
+Survey topics: {'crime/security: terrorism', 'personal finance', 'crime/security: crime', 'job/career', 'crime/security: guns', 'community health', 'healthcare system: healthcare system other', 'crime/security: justice system'}
+
+# Output (Example)
+(yes/no): no
+
+# Input (Actual Task)
+{persona_dimensions}
+
+Survey topics: {survey_topics}
+
+# Output (Actual Task)
+(yes/no): 

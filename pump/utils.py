@@ -1,12 +1,17 @@
 import boto3
 import json
 import torch
+import os
 import torch.nn.functional as F
+import pandas as pd
+import re
 from io import StringIO, BytesIO
 from torch import Tensor
 from dataclasses import dataclass, asdict
 from botocore.config import Config
 from typing import List, Dict
+from tqdm import tqdm
+import numpy as np
 
 
 brt = boto3.client(service_name='bedrock-runtime', config=Config(read_timeout=120))
@@ -36,6 +41,9 @@ class PersonaDimension:
             "level": self.level,
             "candidate_values": self.candidate_values
         }
+
+    def linearize(self):
+        return f"{self.name}: {self.description}. Candidate values: {self.candidate_values}"
 
 
 def persona_dim_object_to_dict(persona_object: PersonaDimension) -> Dict:
@@ -177,3 +185,74 @@ def get_detailed_instruct(task_description: str, query: str) -> str:
     return f'Instruct: {task_description}\n{query}'
 
 
+def get_cosine_similarity_metrics(root_dir, tokenizer, model):
+    root_dir = os.path.join(root_dir, 'cleaned')
+    res = []
+    for file_name in [_ for _ in os.listdir(root_dir) if not _.startswith('judged')]:
+        with open(os.path.join(root_dir, file_name)) as f:
+            data = json.load(f)
+        data = [_.linearize() for _ in persona_dim_dict_list_to_object_list(data)]
+        batch_dict = tokenizer(data, max_length=4096, padding=True, truncation=True, return_tensors="pt")
+        with torch.inference_mode():
+            outputs = model(**batch_dict)
+            embeddings = last_token_pool(outputs.last_hidden_state, batch_dict['attention_mask'])
+
+        normalized_embeddings = F.normalize(embeddings, p=2, dim=1)
+
+        # Calculate pairwise cosine similarity
+        cosine_similarity_matrix = torch.mm(normalized_embeddings, normalized_embeddings.t())
+
+        # Extract upper triangle without diagonal
+        triu_indices = torch.triu_indices(cosine_similarity_matrix.size(0), cosine_similarity_matrix.size(1), offset=1)
+        pairwise_cosine_similarities = cosine_similarity_matrix[triu_indices[0], triu_indices[1]]
+
+        # Define thresholds
+        thresholds = [50, 70, 90]
+
+        percentiles = np.percentile(pairwise_cosine_similarities.numpy(), thresholds)
+
+        percentile_dict = {
+            "low": percentiles[0],
+            "mid": percentiles[1],
+            "high": percentiles[2]
+        }
+
+        res.append(percentile_dict)
+
+        df = pd.DataFrame(res)
+
+        return df.mean().to_dict()
+    
+
+def get_relevant_ratio(root_dir, survey_topics_mapping):
+    root_dir = os.path.join(root_dir, 'cleaned')
+
+    with open(f'prompts/determine_relevance_zero.txt') as f:
+        prompt_template = f.read()
+
+    res = []
+    for file_name in tqdm([_ for _ in os.listdir(root_dir) if not _.startswith('judged')]):
+        with open(os.path.join(root_dir, file_name)) as f:
+            data = json.load(f)
+        persona_dimensions = ['[\n' + repr(dim) + '\n]' for dim in persona_dim_dict_list_to_object_list(data)]
+        for dim_idx, dim in enumerate(persona_dimensions):
+            pattern = re.compile(r'American_Trends_Panel_W\d{2}')
+            survey_name = pattern.findall(file_name)[0]
+            topics = survey_topics_mapping[survey_name]
+            input_dict = {
+                "persona_dimensions": dim,
+                "survey_topics": topics
+            }
+            prompt = prompt_template.format(**input_dict)
+            response = get_llm_response(prompt, max_tokens=2)
+            if response.lower().startswith('yes'):
+                res.append(1)
+            else:
+                res.append(0)
+            data[dim_idx]['relevancy_judgement'] = response
+
+        # print(os.path.join(root_dir, f"judged_{file_name}"))
+        with open(os.path.join(root_dir, f"judged_{file_name}"), 'w') as f:
+            json.dump(data, f, indent=4)
+    
+    return sum(res) / len(res)
