@@ -112,6 +112,7 @@ def main(args):
             demo = row[meta_keys].to_dict()
         if use_persona:
             all_personas = persona_mapping[str(user_idx)]
+            all_personas = {_['name']: _['inferred_value'] for _ in all_personas if _['level'] in ['high']}
 
         # for each legal test question, predict
         for q_idx, q_key in enumerate(test_q_keys):
@@ -130,6 +131,7 @@ def main(args):
                     input_dict["personas"] = all_personas
                 prompt = pred_prompt_template.format(**input_dict)
                 # raise Exception(prompt)
+                print(prompt)
                 response = get_llm_response(prompt, model_id="anthropic.claude-3-sonnet-20240229-v1:0")
                 
                 is_correct = response == gold_answer
@@ -145,7 +147,7 @@ def main(args):
                     "prediction": response,
                     "gold_answer": gold_answer
                 })
-                with open(args.log_name, 'w') as f:
+                with open(f"opinions_qa/output/{args.log_name}", 'w') as f:
                     json.dump(logs, f, indent=4)
 
 
