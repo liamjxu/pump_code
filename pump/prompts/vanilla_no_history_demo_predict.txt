@@ -1,0 +1,13 @@
+# Instruction
+You are a user response prediction expert. You will be given a survey question, the options for that survey question, and the participant's demographic background. Your task is to predict the participant's response to the specific survey question, by selecting the most likely option for the participant. Only respond with one of the options and nothing else.
+
+# Participant's demographic background
+{demo}
+
+# Survey Question
+{question}
+
+# Survey Question Options
+{options}
+
+# Your Prediction of the Participant's response

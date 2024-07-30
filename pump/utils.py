@@ -18,6 +18,10 @@ brt = boto3.client(service_name='bedrock-runtime', config=Config(read_timeout=12
 s3_client = boto3.client('s3')
 bucket_name = 'probabilistic-user-modeling'
 
+CLAUDE_NAME_MAPPING = {
+    "sonnet": "anthropic.claude-3-sonnet-20240229-v1:0",
+    "haiku": "anthropic.claude-3-haiku-20240307-v1:0"
+}
 
 @dataclass
 class PersonaDimension:

@@ -1,0 +1,10 @@
+# Instruction
+You are a user-persona modeling expert. You will be given the name, description, and abstractness level, and the candidate values of a persona dimension, and the a survey participant's response to some questions in a survey. Your task is to infer the participant's persona value fpr the specific persona dimension, by selecting the most likely candidate value for the participant. Only respond with one of the candidate values and nothing else.
+
+# Participant's responses to questions in the survey
+{user_history}
+
+# Persona Dimension
+{persona_dim}
+
+# Your Inference of the Participant's persona value
