@@ -150,6 +150,10 @@ def main(args):
             with open(args.query_to_persona_idx_mapping_filename, 'w') as f:
                 json.dump(query_to_persona_idx_mapping, f, indent=4)
 
+    with open(f"opinions_qa/output/{args.log_name}", 'r') as f:
+        logs = json.load(f)
+        logs = pd.DataFrame(logs)
+
     # main loop
     for user_idx, row in tqdm(test_resp_df.iterrows(), total=len(test_resp_df)):
         # construct user history
@@ -174,9 +178,7 @@ def main(args):
             gold_answer = row[q_key]
             if pd.notna(gold_answer):
                 question = question_key_mapping[q_key]['question']
-                options = eval(question_key_mapping[q_key]['references'])
-                random.shuffle(options)
-                references = str(options)
+                references = question_key_mapping[q_key]['references']
                 input_dict = {
                     "user_history": user_history,
                     "question": question,
@@ -188,30 +190,31 @@ def main(args):
                     all_personas = persona_mapping[str(user_idx)]
                     if args.use_only_relevant_persona:
                         relevant_idx = query_to_persona_idx_mapping[q_key]
-                        filtered_personas = {_['name']: _['inferred_value'] for idx, _ in enumerate(all_personas) if idx in relevant_idx and _['level'] in ['low']}
+                        filtered_personas = {_['name']: _['inferred_value'] for idx, _ in enumerate(all_personas) if idx in relevant_idx and _['level'] in ['low', 'mid', 'high']}
                     else:
                         filtered_personas = {_['name']: _['inferred_value'] for _ in all_personas if _['level'] in ['low']}
                     input_dict["personas"] = filtered_personas
                 prompt = pred_prompt_template.format(**input_dict)
-                # raise Exception(prompt)
-                print(prompt)
-                response = get_llm_response(prompt, model_id="anthropic.claude-3-sonnet-20240229-v1:0")
                 
-                is_correct = response == gold_answer
-                if is_correct:
-                    correct += 1
-                cnt += 1
-                logs.append({
-                    "user_idx": user_idx,
-                    "q_idx": q_idx,
-                    "is_correct": is_correct,
-                    "question": question,
-                    "references": references,
-                    "prediction": response,
-                    "gold_answer": gold_answer
-                })
-                with open(f"opinions_qa/output/{args.log_name}", 'w') as f:
-                    json.dump(logs, f, indent=4)
+                pred = logs[(logs['user_idx'] == user_idx) & (logs['q_idx'] == q_idx)].iloc[0]['prediction']
+                prompt += f"\nPrediction: {pred}\nGold: {gold_answer}"
+
+                with open(f'opinions_qa/review/{user_idx}_{q_idx}.txt', 'w') as f:
+                    f.write(prompt)
+                # is_correct = response == gold_answer
+                # if is_correct:
+                #     correct += 1
+                # cnt += 1
+                # logs.append({
+                #     "user_idx": user_idx,
+                #     "q_idx": q_idx,
+                #     "is_correct": is_correct,
+                #     "question": question,
+                #     "references": references,
+                #     "prediction": response,
+                #     "gold_answer": gold_answer
+                # })
+
 
 
 

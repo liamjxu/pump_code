@@ -189,6 +189,12 @@ def get_detailed_instruct(task_description: str, query: str) -> str:
     return f'Instruct: {task_description}\n{query}'
 
 
+def get_formatted_persona_dim(row):
+    task = 'Given a persona dimension description, retrieve semantically similar persona dimension descriptions.'
+    persona = f"{row['name']}: {row['description']}. Candidate values: {row['candidate_values']}"
+    return get_detailed_instruct(task, persona)
+
+
 def get_cosine_similarity_metrics(root_dir, tokenizer, model):
     root_dir = os.path.join(root_dir, 'cleaned')
     res = []
@@ -260,3 +266,4 @@ def get_relevant_ratio(root_dir, survey_topics_mapping):
             json.dump(data, f, indent=4)
     
     return sum(res) / len(res)
+
