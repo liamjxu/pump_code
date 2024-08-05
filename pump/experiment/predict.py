@@ -93,7 +93,7 @@ def main(args):
     assert len([_ for _ in meta_keys if _ in q_keys]) == 0
 
     # divide questions
-    test_q_keys = random.choices(q_keys, k=5)
+    test_q_keys = random.choices(q_keys, k=5)  # monkey patch
     train_q_keys = [_ for _ in q_keys if _ not in test_q_keys]
 
     # divide users
@@ -150,17 +150,43 @@ def main(args):
             with open(args.query_to_persona_idx_mapping_filename, 'w') as f:
                 json.dump(query_to_persona_idx_mapping, f, indent=4)
 
+    # for representing personas
+    format_strings = {
+        'desccandvalue': "{description} ({candidate_values}): {inferred_value}",
+        'descvalue': "{description}: {inferred_value}",
+        'value': "{inferred_value}",
+        'namedescvalue': "{name} ({description}): {inferred_value}",
+        'namedesccandvalue': "{name} ({description}) ({candidate_values}): {inferred_value}",
+        'namevalue': "{name}: {inferred_value}",
+    }
+
+    # for reviewing
+    review_path = f'opinions_qa/review/{args.log_name[:-5]}'
+    os.makedirs(review_path, exist_ok=True)
+    print(f"\n\nReview at path: {review_path}\n\n")
+
     # main loop
     for user_idx, row in tqdm(test_resp_df.iterrows(), total=len(test_resp_df)):
         # construct user history
-        user_history = {}
+        user_history = []
         for q_key in train_q_keys:
             question = question_key_mapping[q_key]['question']
             references = question_key_mapping[q_key]['references']
-            user_history[f"Question: {question}; Reference: {references}"] = test_resp_df.at[user_idx, q_key]
+            # user_history[f"Question: {question}; Reference: {references}"] = test_resp_df.at[user_idx, q_key]
+            user_answer = test_resp_df.at[user_idx, q_key]
+            if isinstance(user_answer, pd.Series):
+                user_answer = user_answer.iloc[0]
+
+            # from IPython import embed; embed()
+            if pd.isna(user_answer):
+                continue
+            user_history.append(
+                f"Question: {question} ({'/'.join(eval(references))}): {user_answer}"
+            )
+        user_history = '\n'.join(user_history)
 
         if persona_infer:
-            all_personas = get_persona_values(file_key, user_history, model_name=args.persona_inference_model_name, persona_num=persona_num)
+            all_personas = get_persona_values(file_key, user_history, model_name=args.persona_inference_model_name, persona_num=persona_num)  # TODO: the personas neede to be re-generated
             persona_mapping[user_idx] = all_personas
             with open(args.persona_filename, 'w') as f:
                 json.dump(persona_mapping, f, indent=4)
@@ -168,6 +194,24 @@ def main(args):
 
         if use_demo:
             demo = row[meta_keys].to_dict()
+            key_mappings = {
+                'CREGION': 'Region Where The Participant Lives',
+                'AGE': 'Age Range Of The Participant',
+                'SEX': 'Gender Of The Participant',
+                'EDUCATION': 'Educational Attainment Of The Participant',
+                'CITIZEN': 'Citizenship Status Of The Partic·ipant',
+                'MARITAL': 'Marital Status Of The Participant',
+                'RELIG': 'Religious Affiliation Of The Participant',
+                'RELIGATTEND': 'Frequency Of Religious Service Attendance',
+                'POLPARTY': 'Political Party Affiliation',
+                'INCOME': 'Annual Income Range',
+                'POLIDEOLOGY': 'Political Ideology',
+                'RACE': 'Racial Background'
+            }
+            demo = {key_mappings[k]: v for k, v in demo.items()}
+            demo = [f"{k}: {v}" for k, v in demo.items()]
+            demo = '\n'.join(demo)
+
 
         # for each legal test question, predict
         for q_idx, q_key in enumerate(test_q_keys):
@@ -176,7 +220,7 @@ def main(args):
                 question = question_key_mapping[q_key]['question']
                 options = eval(question_key_mapping[q_key]['references'])
                 random.shuffle(options)
-                references = str(options)
+                references = "/".join(options)
                 input_dict = {
                     "user_history": user_history,
                     "question": question,
@@ -186,15 +230,34 @@ def main(args):
                     input_dict["demo"] = demo
                 if use_persona:
                     all_personas = persona_mapping[str(user_idx)]
+                    format_string = format_strings[args.persona_repr]
                     if args.use_only_relevant_persona:
                         relevant_idx = query_to_persona_idx_mapping[q_key]
-                        filtered_personas = {_['name']: _['inferred_value'] for idx, _ in enumerate(all_personas) if idx in relevant_idx and _['level'] in ['low']}
+                        filtered_personas = [
+                            format_string.format(**{
+                                'description': _['description'],
+                                'candidate_values': '/'.join(_['candidate_values']),
+                                'inferred_value': _['inferred_value'],
+                                'name': _['name']
+                            }) for idx, _ in enumerate(all_personas)
+                            if idx in relevant_idx and _['level'] in args.persona_levels
+                        ]
                     else:
-                        filtered_personas = {_['name']: _['inferred_value'] for _ in all_personas if _['level'] in ['low']}
+                        # filtered_personas = [f"{_['name']} ({_['description']}): {_['inferred_value']}" for _ in all_personas if _['level'] in args.persona_levels]
+                        filtered_personas = [
+                            format_string.format(**{
+                                'description': _['description'],
+                                'candidate_values': '/'.join(_['candidate_values']),
+                                'inferred_value': _['inferred_value'],
+                                'name': _['name']
+                            }) for _ in all_personas
+                            if _['level'] in args.persona_levels
+                        ]
+                    filtered_personas = '\n'.join(filtered_personas)
                     input_dict["personas"] = filtered_personas
                 prompt = pred_prompt_template.format(**input_dict)
                 # raise Exception(prompt)
-                print(prompt)
+                # print(prompt)
                 response = get_llm_response(prompt, model_id="anthropic.claude-3-sonnet-20240229-v1:0")
                 
                 is_correct = response == gold_answer
@@ -213,6 +276,9 @@ def main(args):
                 with open(f"opinions_qa/output/{args.log_name}", 'w') as f:
                     json.dump(logs, f, indent=4)
 
+                record = prompt + f"\nPrediction: {response}\nGold: {gold_answer}"
+                with open(f'{review_path}/user_{user_idx}_question_{q_idx}_{q_key}.txt', 'w') as f:
+                    f.write(record)
 
 
 if __name__ == '__main__':
@@ -220,6 +286,15 @@ if __name__ == '__main__':
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--use_only_relevant_persona', action='store_true')
     argparser.add_argument('--query_to_persona_idx_mapping_filename', type=str, default=None)
+    argparser.add_argument('--persona_levels', nargs='+',
+                                               choices=['low', 'mid', 'high'])
+    argparser.add_argument('--persona_repr', choices = ['namedescvalue',
+                                                        'descvalue',
+                                                        'namevalue',
+                                                        'value',
+                                                        'namedesccandvalue',
+                                                        'desccandvalue'
+                                                        ])
     argparser.add_argument('--exp_setting', choices = ['persona_infer',
                                                        'persona_infer_full',
                                                        'vanilla',
@@ -234,8 +309,5 @@ if __name__ == '__main__':
     argparser.add_argument('--log_name', required=True)
     argparser.add_argument('--persona_filename', type=str, default=None)
     argparser.add_argument('--persona_inference_model_name', type=str, default="sonnet")
-    # argparser.add_argument('--phases', nargs='+',
-    #                                     choices=['relevance', 'diversity'],  
-    #                                     default=['diversity'])
     args = argparser.parse_args()
     main(args)
