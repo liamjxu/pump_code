@@ -100,6 +100,6 @@ python -m experiment.predict \
     --persona_filename opinions_qa/persona/date0729_midterm_personas_full_sonnet.json \
     --persona_level low mid high \
     --persona_repr namedesccandvalue \
-    --log_name date0804_v7_vanilla_demo_persona_alllevels_allpersonas_namedesccandvalue_sonnetinfer_American_Trends_Panel_W26.json
+    --log_name date0804_v7_vanilla_demo_persona_alllevels_allpersonas_namedesccandvalue_sonnetinfer_American_Trends_Panel_W26_run2.json
 
 

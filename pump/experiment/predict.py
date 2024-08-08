@@ -1,3 +1,4 @@
+import re
 import os
 import argparse
 import json
@@ -79,6 +80,24 @@ def get_query_to_persona_idx_mapping(test_q_keys, survey_df):
     return key_to_clean_idx
 
 
+def extract_cot_prediction(text):
+    """
+    Extracts text between <prediction> and </prediction> tags.
+    
+    Args:
+    text (str): The input string containing the text with <prediction> tags.
+    
+    Returns:
+    str: The extracted text between the tags. If no tags are found, returns an empty string.
+    """
+    pattern = re.compile(r'<prediction>(.*?)</prediction>', re.DOTALL)
+    match = pattern.search(text)
+    if match:
+        return match.group(1)
+    else:
+        return ""
+
+
 def main(args):
     random.seed(42)
     print(args)
@@ -93,7 +112,7 @@ def main(args):
     assert len([_ for _ in meta_keys if _ in q_keys]) == 0
 
     # divide questions
-    test_q_keys = random.choices(q_keys, k=5)  # monkey patch
+    test_q_keys = random.choices(q_keys, k=5)  # monkey patch, ['GUNRESPNOKIDSB_W26', 'WORLDDANGER_W26', 'GUNIDENTITY_W26', 'REASONGUNC_W26', 'GUNRESPKIDSC_W26'] for random seed 42
     train_q_keys = [_ for _ in q_keys if _ not in test_q_keys]
 
     # divide users
@@ -113,6 +132,8 @@ def main(args):
         "vanilla_no_history_demo": 'prompts/vanilla_no_history_demo_predict.txt',
         "vanilla_no_history_persona": 'prompts/vanilla_no_history_persona_predict.txt',
         "vanilla_no_history_demo_persona": 'prompts/vanilla_no_history_demo_persona_predict.txt',
+        "vanilla_cot": 'prompts/vanilla_predict_cot.txt',
+        "vanilla_demo_persona_cot": 'prompts/vanilla_demo_persona_predict_cot.txt',
     }
     pred_prompt_name = prompt_name_mapping[args.exp_setting]
     with open(pred_prompt_name) as f:
@@ -121,8 +142,8 @@ def main(args):
     # get flags
     persona_infer = args.exp_setting in ["persona_infer", "persona_infer_full"]
     persona_infer_full = args.exp_setting == "persona_infer_full"
-    use_demo = args.exp_setting in ["vanilla_demo", "vanilla_demo_persona", "vanilla_no_history_demo", "vanilla_no_history_demo_persona"]
-    use_persona = args.exp_setting in ["vanilla_persona", "vanilla_demo_persona", "vanilla_no_history_persona", "vanilla_no_history_demo_persona"]
+    use_demo = args.exp_setting in ["vanilla_demo", "vanilla_demo_persona", "vanilla_no_history_demo", "vanilla_no_history_demo_persona", "vanilla_demo_persona_cot"]
+    use_persona = args.exp_setting in ["vanilla_persona", "vanilla_demo_persona", "vanilla_no_history_persona", "vanilla_no_history_demo_persona", "vanilla_demo_persona_cot"]
 
     # preparing
     cnt = 0
@@ -199,7 +220,7 @@ def main(args):
                 'AGE': 'Age Range Of The Participant',
                 'SEX': 'Gender Of The Participant',
                 'EDUCATION': 'Educational Attainment Of The Participant',
-                'CITIZEN': 'Citizenship Status Of The Partic·ipant',
+                'CITIZEN': 'Citizenship Status Of The Participant',
                 'MARITAL': 'Marital Status Of The Participant',
                 'RELIG': 'Religious Affiliation Of The Participant',
                 'RELIGATTEND': 'Frequency Of Religious Service Attendance',
@@ -260,7 +281,11 @@ def main(args):
                 # print(prompt)
                 response = get_llm_response(prompt, model_id="anthropic.claude-3-sonnet-20240229-v1:0")
                 
-                is_correct = response == gold_answer
+                if args.use_cot:
+                    pred = extract_cot_prediction(response)
+                    is_correct = pred == gold_answer
+                else:
+                    is_correct = response == gold_answer
                 if is_correct:
                     correct += 1
                 cnt += 1
@@ -285,6 +310,7 @@ if __name__ == '__main__':
 
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--use_only_relevant_persona', action='store_true')
+    argparser.add_argument('--use_cot', action='store_true')
     argparser.add_argument('--query_to_persona_idx_mapping_filename', type=str, default=None)
     argparser.add_argument('--persona_levels', nargs='+',
                                                choices=['low', 'mid', 'high'])
@@ -298,9 +324,11 @@ if __name__ == '__main__':
     argparser.add_argument('--exp_setting', choices = ['persona_infer',
                                                        'persona_infer_full',
                                                        'vanilla',
+                                                       'vanilla_cot',
                                                        'vanilla_demo',
                                                        'vanilla_persona',
                                                        'vanilla_demo_persona',
+                                                       'vanilla_demo_persona_cot',
                                                        'vanilla_no_history_demo',
                                                        'vanilla_no_history_persona',
                                                        'vanilla_no_history_demo_persona',
