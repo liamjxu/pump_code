@@ -6,8 +6,8 @@ import random
 import torch
 import numpy as np
 import pandas as pd
-from pump.src.utils import list_s3_prefix, get_file_from_s3, get_formatted_persona_dim, last_token_pool
-from pump.src.utils import get_llm_response, CLAUDE_NAME_MAPPING
+from src.utils import list_s3_prefix, get_file_from_s3, get_formatted_persona_dim, last_token_pool
+from src.utils import get_llm_response, CLAUDE_NAME_MAPPING
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModel
 from scipy.spatial.distance import cdist
@@ -140,8 +140,8 @@ def main(args):
     # get flags
     persona_infer = args.exp_setting in ["persona_infer", "persona_infer_full"]
     persona_infer_full = args.exp_setting == "persona_infer_full"
-    use_demo = args.exp_setting in ["vanilla_demo", "vanilla_demo_persona", "vanilla_no_history_demo", "vanilla_no_history_demo_persona", "vanilla_demo_persona_cot"]
-    use_persona = args.exp_setting in ["vanilla_persona", "vanilla_demo_persona", "vanilla_no_history_persona", "vanilla_no_history_demo_persona", "vanilla_demo_persona_cot"]
+    use_demo = args.exp_setting in ["history_demo", "history_demo_persona", "demo", "demo_persona", "history_demo_persona_cot"]
+    use_persona = args.exp_setting in ["history_persona", "history_demo_persona", "persona", "demo_persona", "history_demo_persona_cot"]
 
     # preparing
     cnt = 0
@@ -296,6 +296,7 @@ def main(args):
                     "prediction": response,
                     "gold_answer": gold_answer
                 })
+                os.makedirs("opinions_qa/output/", exist_ok=True)
                 with open(f"opinions_qa/output/{args.log_name}", 'w') as f:
                     json.dump(logs, f, indent=4)
 
