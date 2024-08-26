@@ -15,7 +15,7 @@ from scipy.spatial.distance import cdist
 
 def get_persona_values(file_key, user_history, model_name="sonnet", persona_num=5):
 
-    prompt_name = 'prompts/infer_persona_from_user_history.txt'
+    prompt_name = 'experiment/prompts/persona_inference/infer_persona_from_user_history.txt'
     with open(prompt_name) as f:
         prompt_template = f.read()
 
@@ -123,17 +123,15 @@ def main(args):
 
     # get prompt
     prompt_name_mapping = {
-        "persona_infer": 'prompts/vanilla_predict.txt',  # this won't be used
-        "persona_infer_full": 'prompts/vanilla_predict.txt',  # this won't be used
-        "vanilla": 'prompts/vanilla_predict.txt',
-        "vanilla_demo": 'prompts/vanilla_demo_predict.txt',
-        "vanilla_persona": 'prompts/vanilla_persona_predict.txt',
-        "vanilla_demo_persona": 'prompts/vanilla_demo_persona_predict.txt',
-        "vanilla_no_history_demo": 'prompts/vanilla_no_history_demo_predict.txt',
-        "vanilla_no_history_persona": 'prompts/vanilla_no_history_persona_predict.txt',
-        "vanilla_no_history_demo_persona": 'prompts/vanilla_no_history_demo_persona_predict.txt',
-        "vanilla_cot": 'prompts/vanilla_predict_cot.txt',
-        "vanilla_demo_persona_cot": 'prompts/vanilla_demo_persona_predict_cot.txt',
+        "persona_infer": '_not_used',  # this won't be used
+        "persona_infer_full": '_not_used',  # this won't be used
+        "history": 'experiment/prompts/prediction/predict_history.txt',
+        "history_demo": 'experiment/prompts/prediction/predict_history_demo.txt',
+        "history_persona": 'experiment/prompts/prediction/predict_history_persona.txt',
+        "history_demo_persona": 'experiment/prompts/prediction/predict_history_demo_persona.txt',
+        "demo": 'experiment/prompts/prediction/predict_demo.txt',
+        "persona": 'experiment/prompts/prediction/predict_persona.txt',
+        "demo_persona": 'experiment/prompts/prediction/predict_demo_persona.txt',
     }
     pred_prompt_name = prompt_name_mapping[args.exp_setting]
     with open(pred_prompt_name) as f:
@@ -323,15 +321,13 @@ if __name__ == '__main__':
                                                         ])
     argparser.add_argument('--exp_setting', choices = ['persona_infer',
                                                        'persona_infer_full',
-                                                       'vanilla',
-                                                       'vanilla_cot',
-                                                       'vanilla_demo',
-                                                       'vanilla_persona',
-                                                       'vanilla_demo_persona',
-                                                       'vanilla_demo_persona_cot',
-                                                       'vanilla_no_history_demo',
-                                                       'vanilla_no_history_persona',
-                                                       'vanilla_no_history_demo_persona',
+                                                       'history',
+                                                       'history_demo',
+                                                       'history_persona',
+                                                       'history_demo_persona',
+                                                       'demo',
+                                                       'persona',
+                                                       'demo_persona',
                                                        ])
     argparser.add_argument('--survey_name', default='American_Trends_Panel_W26')
     argparser.add_argument('--log_name', required=True)
