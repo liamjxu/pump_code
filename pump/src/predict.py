@@ -113,7 +113,8 @@ def main(args):
     assert len([_ for _ in meta_keys if _ in q_keys]) == 0
 
     # divide questions
-    test_q_keys = random.choices(q_keys, k=5)  # monkey patch, ['GUNRESPNOKIDSB_W26', 'WORLDDANGER_W26', 'GUNIDENTITY_W26', 'REASONGUNC_W26', 'GUNRESPKIDSC_W26'] for random seed 42
+    test_q_keys = random.choices(q_keys, k=5)  # monkey patch, ['GUNRESPNOKIDSB_W26', 'WORLDDANGER_W26', 'GUNIDENTITY_W26', 'REASONGUNC_W26', 'GUNRESPKIDSC_W26'] for random seed 42, survey W26
+    print('Using test_q_keys: ', test_q_keys)
     train_q_keys = [_ for _ in q_keys if _ not in test_q_keys]
 
     # divide users
@@ -193,12 +194,10 @@ def main(args):
         for q_key in train_q_keys:
             question = question_key_mapping[q_key]['question']
             references = question_key_mapping[q_key]['references']
-            # user_history[f"Question: {question}; Reference: {references}"] = test_resp_df.at[user_idx, q_key]
             user_answer = test_resp_df.at[user_idx, q_key]
             if isinstance(user_answer, pd.Series):
                 user_answer = user_answer.iloc[0]
 
-            # from IPython import embed; embed()
             if pd.isna(user_answer):
                 continue
             user_history.append(
