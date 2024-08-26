@@ -8,8 +8,8 @@ import time
 from tqdm import trange, tqdm
 from sklearn.cluster import KMeans, DBSCAN, MeanShift, estimate_bandwidth
 from sklearn.mixture import GaussianMixture
-from utils import last_token_pool, get_detailed_instruct, get_llm_response, list_s3_prefix, get_file_from_s3, get_topics, PersonaDimension
-from utils import persona_dim_object_list_to_dict_list, persona_dim_dict_to_object, persona_dim_dict_list_to_object_list
+from pump.src.utils import last_token_pool, get_detailed_instruct, get_llm_response, list_s3_prefix, get_file_from_s3, get_topics, PersonaDimension
+from pump.src.utils import persona_dim_object_list_to_dict_list, persona_dim_dict_to_object, persona_dim_dict_list_to_object_list
 from transformers import AutoTokenizer, AutoModel
 import argparse
 

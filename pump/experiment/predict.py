@@ -6,8 +6,8 @@ import random
 import torch
 import numpy as np
 import pandas as pd
-from utils import list_s3_prefix, get_file_from_s3, get_formatted_persona_dim, last_token_pool
-from utils import get_llm_response, CLAUDE_NAME_MAPPING
+from pump.src.utils import list_s3_prefix, get_file_from_s3, get_formatted_persona_dim, last_token_pool
+from pump.src.utils import get_llm_response, CLAUDE_NAME_MAPPING
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModel
 from scipy.spatial.distance import cdist
