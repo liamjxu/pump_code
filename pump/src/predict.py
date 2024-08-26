@@ -21,7 +21,7 @@ def get_persona_values(file_key, user_history, model_name="sonnet", persona_num=
 
     ret_personas = []
     for level in ['high', 'mid', 'low']:
-        persona_path = f"sm_local/outputs_sonnet_kmeans10_single_example/cleaned/cleaned_{level}_level_personas_{file_key}.json"
+        persona_path = f"opinions_qa/persona_dim/outputs_sonnet_kmeans10_single_example/cleaned/cleaned_{level}_level_personas_{file_key}.json"
         with open(persona_path, 'r') as f:
             all_personas = json.load(f)
 
@@ -51,11 +51,12 @@ def get_embeddings(input_texts, tokenizer, model, max_length=4096):
 
 
 def get_query_to_persona_idx_mapping(test_q_keys, survey_df):
+    raise Exception("This file path likely needs to be updated")
     tokenizer = AutoTokenizer.from_pretrained('Salesforce/SFR-Embedding-2_R')
     model = AutoModel.from_pretrained('Salesforce/SFR-Embedding-2_R', device_map='auto')
 
     q_indices = [survey_df.index[survey_df['key'] == key].tolist()[0] for key in test_q_keys]  # This has to be done this way because test_q_keys can be not in order
-    with open("sm_local/outputs_sonnet_kmeans10_single_example/extraction/personas_extracted_from_question_American_Trends_Panel_W26.json", "r") as f:
+    with open("opinions_qa/persona_dim/outputs_sonnet_kmeans10_single_example/extraction/personas_extracted_from_question_American_Trends_Panel_W26.json", "r") as f:
         extraction = json.load(f)
     original_extraction = [extraction[idx]['response'] for idx in q_indices]
     original_extraction = [[get_formatted_persona_dim(persona_dim) for persona_dim in _] for _ in original_extraction]
@@ -63,7 +64,7 @@ def get_query_to_persona_idx_mapping(test_q_keys, survey_df):
 
     clean = []
     for level in ['high', 'mid', 'low']:
-        with open(f"sm_local/outputs_sonnet_kmeans10_single_example/cleaned/cleaned_{level}_level_personas_American_Trends_Panel_W26.json", 'r') as f:
+        with open(f"opinions_qa/persona_dim/outputs_sonnet_kmeans10_single_example/cleaned/cleaned_{level}_level_personas_American_Trends_Panel_W26.json", 'r') as f:
             clean += json.load(f)
     clean = [get_formatted_persona_dim(_) for _ in clean]
     clean_embeddings = get_embeddings(clean, tokenizer, model)
@@ -123,8 +124,8 @@ def main(args):
 
     # get prompt
     prompt_name_mapping = {
-        "persona_infer": '_not_used',  # this won't be used
-        "persona_infer_full": '_not_used',  # this won't be used
+        "persona_infer": 'experiment/prompts/prediction/predict_history.txt',  # this won't be used, but has to be readable.
+        "persona_infer_full": 'experiment/prompts/prediction/predict_history.txt',  # this won't be used, but has to be readable.
         "history": 'experiment/prompts/prediction/predict_history.txt',
         "history_demo": 'experiment/prompts/prediction/predict_history_demo.txt',
         "history_persona": 'experiment/prompts/prediction/predict_history_persona.txt',
@@ -179,10 +180,11 @@ def main(args):
         'namevalue': "{name}: {inferred_value}",
     }
 
-    # for reviewing
-    review_path = f'opinions_qa/review/{args.log_name[:-5]}'
-    os.makedirs(review_path, exist_ok=True)
-    print(f"\n\nReview at path: {review_path}\n\n")
+    if not persona_infer:
+        # for reviewing
+        review_path = f'opinions_qa/review/{args.log_name[:-5]}'
+        os.makedirs(review_path, exist_ok=True)
+        print(f"\n\nReview at path: {review_path}\n\n")
 
     # main loop
     for user_idx, row in tqdm(test_resp_df.iterrows(), total=len(test_resp_df)):
