@@ -335,6 +335,6 @@ if __name__ == '__main__':
     argparser.add_argument('--survey_name', default='American_Trends_Panel_W26')
     argparser.add_argument('--log_name', required=True)
     argparser.add_argument('--persona_filename', type=str, default=None)
-    argparser.add_argument('--persona_inference_model_name', type=str, default="sonnet")
+    argparser.add_argument('--persona_inference_model_name', type=str, default="sonnet", help="If inferring persona values, use this for model name", choices=['sonnet', 'haiku'])
     args = argparser.parse_args()
     main(args)
