@@ -151,7 +151,7 @@ def main(args):
     logs = []
     if persona_infer:
         persona_mapping = {}
-        persona_num = 5
+        persona_num = None  # used to be 5, but turns out we should do all personas
         if persona_infer_full:
             train_user_idx = [i for i in range(len(resp_df)) if i not in test_user_idx]
             train_resp_df = resp_df.iloc[train_user_idx]
