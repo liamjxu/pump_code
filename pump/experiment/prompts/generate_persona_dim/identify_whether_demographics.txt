@@ -1,0 +1,45 @@
+# Instruction
+You are an expert in user profiling and persona extraction. You are provided with a persona dimension, including its name, description, level of abstractness, and candidate values, represented with the following `PersonaDimension` python data class. Your task is to determine whether this persona dimension corresponds to any of the known user demographic categories listed below. If it does, return "yes". If it does not match any category, return "no". Return only either "yes" or "no" and nothing else.
+
+
+# Persona Dimension Format
+```python
+@dataclass
+class PersonaDimension:
+    name: str  # a concise name of the persona aspect
+    description: str  # a detailed description of the persona aspect
+    level: str  # the abstractness level of this persona dimension, choose from ["low", "mid", "high"]
+    candidate_values: str  # the candidate values of this persona dimension
+```
+
+# Known User Demographics
+Region: Northeast/Midwest/South/West
+Age: 18-29/30-49/50-64/65+
+Gender: Male/Female
+Education Level: Less than high school/High school graduate/Some college, no degree/Associate's degree/College graduate/some postgrad/Postgraduate
+Citizenship Status: Yes/No
+Marital Status: Married/Divorced/Separated/Widowed/Never been married
+Religion: Protestant/Roman Catholic/Mormon/Orthodox/Jewish/Muslim/Buddhist/Hindu/Atheist/Agnostic/Other/Nothing in particular
+Religious Attendance: More than once a week/Once a week/Once or twice a month/A few times a year/Seldom/Never
+Political Party Affiliation: Republican/Democrat/Independent/Other
+Income Level: Less than $30,000/$30,000-$50,000/$50,000-$75,000/$75,000-$100,000/$100,000 or more
+Political Ideology: Very conservative/Conservative/Moderate/Liberal/Very liberal
+Race/Ethnicity: White/Black/Asian/Hispanic/Other
+
+
+# Persona Dimension
+```python
+@dataclass
+class PersonaDimension:
+    name: {name}
+    description: {description}
+    level: {level}
+    candidate_values: {candidate_values}
+```
+
+
+# Question
+Does this persona dimension match any of the known user demographics listed above? (yes/no)
+
+
+# Your Prediction
