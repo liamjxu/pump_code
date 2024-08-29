@@ -8,10 +8,10 @@ import time
 from tqdm import trange, tqdm
 from sklearn.cluster import KMeans, DBSCAN, MeanShift, estimate_bandwidth
 from sklearn.mixture import GaussianMixture
-from pump.src.utils import last_token_pool, get_detailed_instruct, get_llm_response, list_s3_prefix, get_file_from_s3, get_topics, PersonaDimension
-from pump.src.utils import persona_dim_object_list_to_dict_list, persona_dim_dict_to_object, persona_dim_dict_list_to_object_list
+from src.utils import last_token_pool, get_detailed_instruct, get_llm_response, list_s3_prefix, get_file_from_s3, get_topics
+from src.utils import persona_dim_object_list_to_dict_list, persona_dim_dict_to_object, persona_dim_dict_list_to_object_list
+from src.utils import CLAUDE_NAME_MAPPING, PersonaDimension  # the PersonaDimension class is necessary, otherwise extraction fails during eval.
 from transformers import AutoTokenizer, AutoModel
-import argparse
 
 
 def extract_personas_from_survey(info_df, survey, extraction_prompt_type, output_dir, debug, model_id):
@@ -24,7 +24,7 @@ def extract_personas_from_survey(info_df, survey, extraction_prompt_type, output
     else:
         prompt_name = prompt_name_mapping[extraction_prompt_type]
 
-    with open(f'prompts/{prompt_name}.txt') as f:
+    with open(f'experiment/prompts/generate_persona_dim/{prompt_name}.txt') as f:
         prompt_template = f.read()
 
     res = []
@@ -163,7 +163,7 @@ def summarize_clustered_personas(prompt_name, survey, level, clustering_dir, out
     # Get data
     clustered_persona_filename = f"{clustering_dir}/clustered_{level}_level_personas_{survey}.csv"
     data = pd.read_csv(clustered_persona_filename)
-    with open(f'prompts/{prompt_name}.txt') as f:
+    with open(f'experiment/prompts/generate_persona_dim/{prompt_name}.txt') as f:
         prompt_template = f.read()
 
     # summarizing
@@ -222,8 +222,9 @@ def clean_summarized_personas(prompt_name, survey, level, summarizing_dir, outpu
     summarized_persona_filename = f"{summarizing_dir}/summarized_{level}_level_personas_{survey}.json"
     with open(summarized_persona_filename, 'r') as f:
         data = json.load(f)
+        data = [persona_dim_dict for persona_dim_dict in data if filter_demo_from_personas(persona_dim_dict, model_id=model_id)]  # remove the demographics
         data = persona_dim_dict_list_to_object_list(data)
-    with open(f'prompts/{prompt_name}.txt') as f:
+    with open(f'experiment/prompts/generate_persona_dim/{prompt_name}.txt') as f:
         prompt_template = f.read()
 
     # summarize
@@ -244,6 +245,28 @@ def clean_summarized_personas(prompt_name, survey, level, summarizing_dir, outpu
         if debug:
             print(f"Response: {response}")
         return False, response
+
+
+def filter_demo_from_personas(persona_dim_dict, model_id) -> bool:
+    
+    prompt_name = "identify_whether_demographics"
+    with open(f'experiment/prompts/generate_persona_dim/{prompt_name}.txt') as f:
+        prompt_template = f.read()
+    prompt = prompt_template.format(**persona_dim_dict)
+
+    fail_cnt = 0
+    while fail_cnt < 3:
+        response = get_llm_response(prompt, max_tokens=10, model_id=model_id)
+        response = response.lower()
+        if response.startswith('y'): return True
+        elif response.startswith('n'): return False
+        else:
+            fail_cnt += 1
+            print(f"Identifying whether a persona is demographics failed ({fail_cnt+1}/3). Response:")
+            print(response)
+    raise Exception("Identifying whether a persona is demographics failed")
+    
+
 
 
 def main(args):
@@ -275,15 +298,15 @@ def main(args):
         for survey in surveys:
             print(f"Extracting from {survey}")
             if args.merging_personas_from_surveys == 'same_topic':
-                relevant_surveys = ['American_Trends_Panel_W26', 'American_Trends_Panel_W54', 'American_Trends_Panel_W43']  # jaccard_similarity
+                relevant_surveys = ['American_Trends_Panel_W26', 'American_Trends_Panel_W54', 'American_Trends_Panel_W43']  # jaccard_similarity, ad hoc for 26
                 dfs = []
-                for survey_name in relevant_surveys:
-                    file_key = f"human_resp/{survey_name}/info.csv"
+                for relevant_survey in relevant_surveys:
+                    file_key = f"human_resp/{relevant_survey}/info.csv"
                     info_df = pd.read_csv(get_file_from_s3(file_key))
                     dfs.append(info_df)
                 info_df = pd.concat(dfs, axis=0, ignore_index=True)
             else:
-                file_key = f"human_resp/{survey_name}/info.csv"
+                file_key = f"human_resp/{survey}/info.csv"
                 info_df = pd.read_csv(get_file_from_s3(file_key))
             
             tic = time.time()
@@ -292,7 +315,7 @@ def main(args):
                                                 extraction_prompt_type=args.extraction_prompt_type,
                                                 output_dir=f'{args.output_dir_root}/extraction',
                                                 debug=args.debug,
-                                                model_id=args.model_id)
+                                                model_id=CLAUDE_NAME_MAPPING[args.model_name])
             toc = time.time()
             loggings_extraction.append({
                 'survey': survey,
@@ -351,7 +374,7 @@ def main(args):
                                             output_dir=f'{args.output_dir_root}/summarizing',
                                             clustering_num_clusters=args.clustering_num_clusters,
                                             debug=args.debug,
-                                            model_id=args.model_id)
+                                            model_id=CLAUDE_NAME_MAPPING[args.model_name])
                 toc = time.time()
                 num_of_clusters = len(clusters_logs)
                 loggings_summarizing.append({
@@ -388,7 +411,7 @@ def main(args):
                                                             summarizing_dir=f'{args.output_dir_root}/summarizing',
                                                             output_dir=f'{args.output_dir_root}/cleaned',
                                                             debug=args.debug,
-                                                            model_id=args.model_id)
+                                                            model_id=CLAUDE_NAME_MAPPING[args.model_name])
                         if status:
                             toc = time.time()
                             logs.append({
@@ -423,20 +446,13 @@ def main(args):
 
 if __name__ == '__main__':
 
-    # surveys = set()
-    # for path in list_s3_prefix("human_resp/"):
-    #     if path.startswith("human_resp/American_Trends_Panel"):
-    #         # Extract the folder name
-    #         folder = path.split("/")[1]
-    #         surveys.add(folder)
-    # surveys = sorted(list(surveys))
     mapping = np.load(get_file_from_s3('human_resp/topic_mapping.npy'), allow_pickle=True)
     mapping = mapping.item()
 
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--debug', action='store_true')
-    argparser.add_argument('--output_dir_root', type=str, default="sm_local/outputs")
-    argparser.add_argument('--model_id', type=str, choices=["anthropic.claude-3-haiku-20240307-v1:0", "anthropic.claude-3-sonnet-20240229-v1:0"])
+    argparser.add_argument('--output_dir_root', type=str, default="opinions_qa/persona_dim")
+    argparser.add_argument('--model_name', type=str, choices=["sonnet", "haiku"])
     argparser.add_argument('--clustering_algo', type=str, choices=['kmeans', 'gmm', 'dbscan', 'meanshift'])
     argparser.add_argument('--extraction_prompt_type', type=str, choices=['description', 'example'])
     argparser.add_argument('--clustering_num_clusters', type=int)
