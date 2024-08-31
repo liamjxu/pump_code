@@ -7,6 +7,6 @@ python -m src.generate_personas \
     --clustering_algo kmeans \
     --clustering_num_clusters 20 \
     --merging_personas_from_surveys single \
-    --survey_starting 1 \
+    --survey_starting 0 \
     --survey_ending 5 \
-    --phases extraction clustering summarizing cleaning
+    --phases cleaning

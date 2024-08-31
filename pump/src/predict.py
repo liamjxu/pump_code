@@ -15,13 +15,13 @@ from scipy.spatial.distance import cdist
 
 def get_persona_values(file_key, user_history, model_name="sonnet", persona_num=5):
 
-    prompt_name = 'experiment/prompts/persona_inference/infer_persona_from_user_history.txt'
+    prompt_name = 'experiment/prompts/infer_persona_val/infer_persona_from_user_history.txt'
     with open(prompt_name) as f:
         prompt_template = f.read()
 
     ret_personas = []
     for level in ['high', 'mid', 'low']:
-        persona_path = f"opinions_qa/persona_dim/outputs_sonnet_kmeans10_single_example/cleaned/cleaned_{level}_level_personas_{file_key}.json"
+        persona_path = f"opinions_qa/persona_dim/date0828_haiku_kmeans20_single_example/cleaned/cleaned_{level}_level_personas_{file_key}.json"
         with open(persona_path, 'r') as f:
             all_personas = json.load(f)
 
@@ -125,15 +125,15 @@ def main(args):
 
     # get prompt
     prompt_name_mapping = {
-        "persona_infer": 'experiment/prompts/prediction/predict_history.txt',  # this won't be used, but has to be readable.
-        "persona_infer_full": 'experiment/prompts/prediction/predict_history.txt',  # this won't be used, but has to be readable.
-        "history": 'experiment/prompts/prediction/predict_history.txt',
-        "history_demo": 'experiment/prompts/prediction/predict_history_demo.txt',
-        "history_persona": 'experiment/prompts/prediction/predict_history_persona.txt',
-        "history_demo_persona": 'experiment/prompts/prediction/predict_history_demo_persona.txt',
-        "demo": 'experiment/prompts/prediction/predict_demo.txt',
-        "persona": 'experiment/prompts/prediction/predict_persona.txt',
-        "demo_persona": 'experiment/prompts/prediction/predict_demo_persona.txt',
+        "persona_infer": 'experiment/prompts/predict_response/predict_history.txt',  # this won't be used, but has to be readable.
+        "persona_infer_full": 'experiment/prompts/predict_response/predict_history.txt',  # this won't be used, but has to be readable.
+        "history": 'experiment/prompts/predict_response/predict_history.txt',
+        "history_demo": 'experiment/prompts/predict_response/predict_history_demo.txt',
+        "history_persona": 'experiment/prompts/predict_response/predict_history_persona.txt',
+        "history_demo_persona": 'experiment/prompts/predict_response/predict_history_demo_persona.txt',
+        "demo": 'experiment/prompts/predict_response/predict_demo.txt',
+        "persona": 'experiment/prompts/predict_response/predict_persona.txt',
+        "demo_persona": 'experiment/prompts/predict_response/predict_demo_persona.txt',
     }
     pred_prompt_name = prompt_name_mapping[args.exp_setting]
     with open(pred_prompt_name) as f:
@@ -239,8 +239,8 @@ def main(args):
             if pd.notna(gold_answer):
                 question = question_key_mapping[q_key]['question']
                 options = eval(question_key_mapping[q_key]['references'])
-                random.shuffle(options)
-                references = "/".join(options)
+                # random.shuffle(options)
+                references = "\n".join(options)
                 input_dict = {
                     "user_history": user_history,
                     "question": question,
@@ -278,13 +278,15 @@ def main(args):
                 prompt = pred_prompt_template.format(**input_dict)
                 # raise Exception(prompt)
                 # print(prompt)
-                response = get_llm_response(prompt, model_id="anthropic.claude-3-sonnet-20240229-v1:0")
+                response = get_llm_response(prompt, model_id=CLAUDE_NAME_MAPPING[args.response_prediction_model_name])
                 
                 if args.use_cot:
                     pred = extract_cot_prediction(response)
-                    is_correct = pred == gold_answer
+                    is_correct = pred.lower() == gold_answer.lower()
+                    is_in_options = pred.lower() in [_.lower() for _ in options]
                 else:
-                    is_correct = response == gold_answer
+                    is_correct = response.lower() == gold_answer.lower()
+                    is_in_options = response.lower() in [_.lower() for _ in options]
                 if is_correct:
                     correct += 1
                 cnt += 1
@@ -292,6 +294,7 @@ def main(args):
                     "user_idx": user_idx,
                     "q_idx": q_idx,
                     "is_correct": is_correct,
+                    "is_in_options": is_in_options,
                     "question": question,
                     "references": references,
                     "prediction": response,
@@ -335,5 +338,6 @@ if __name__ == '__main__':
     argparser.add_argument('--log_name', required=True)
     argparser.add_argument('--persona_filename', type=str, default=None)
     argparser.add_argument('--persona_inference_model_name', type=str, default="sonnet", help="If inferring persona values, use this for model name", choices=['sonnet', 'haiku'])
+    argparser.add_argument('--response_prediction_model_name', type=str, default="sonnet", help="If predicting user responses, use this for model name", choices=['sonnet', 'haiku'])
     args = argparser.parse_args()
     main(args)

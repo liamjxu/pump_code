@@ -1,4 +1,4 @@
-export DATE=0826
+export DATE=0828
 export SURVEY_NAME="American_Trends_Panel_W32"
 export PERSONA_VAL_FILENAME=opinions_qa/persona_val/${SURVEY_NAME}/date${DATE}_personas_${SURVEY_NAME}_testonly_haiku.json
 
@@ -11,7 +11,7 @@ python -m src.predict \
     --survey_name ${SURVEY_NAME} \
     --persona_level low mid high \
     --persona_repr namedescvalue \
-    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_history_demo_persona_run${i}.json \
+    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_haikupred_history_demo_persona_run${i}.json \
     --persona_filename ${PERSONA_VAL_FILENAME} 
 done
 
@@ -23,7 +23,7 @@ python -m src.predict \
     --survey_name ${SURVEY_NAME} \
     --persona_level low mid high \
     --persona_repr namedescvalue \
-    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_history_run${i}.json \
+    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_haikupred_history_run${i}.json \
     --persona_filename ${PERSONA_VAL_FILENAME} 
 done
 
@@ -35,7 +35,7 @@ python -m src.predict \
     --survey_name ${SURVEY_NAME} \
     --persona_level low mid high \
     --persona_repr namedescvalue \
-    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_demo_run${i}.json \
+    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_haikupred_demo_run${i}.json \
     --persona_filename ${PERSONA_VAL_FILENAME} 
 done
 
@@ -47,7 +47,7 @@ python -m src.predict \
     --survey_name ${SURVEY_NAME} \
     --persona_level low mid high \
     --persona_repr namedescvalue \
-    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_history_demo_run${i}.json \
+    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_haikupred_history_demo_run${i}.json \
     --persona_filename ${PERSONA_VAL_FILENAME} 
 done
 
@@ -59,7 +59,7 @@ python -m src.predict \
     --survey_name ${SURVEY_NAME} \
     --persona_level low mid high \
     --persona_repr namedescvalue \
-    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_persona_run${i}.json \
+    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_haikupred_persona_run${i}.json \
     --persona_filename ${PERSONA_VAL_FILENAME} 
 done
 
@@ -71,7 +71,7 @@ python -m src.predict \
     --survey_name ${SURVEY_NAME} \
     --persona_level low mid high \
     --persona_repr namedescvalue \
-    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_history_persona_run${i}.json \
+    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_haikupred_history_persona_run${i}.json \
     --persona_filename ${PERSONA_VAL_FILENAME} 
 done
 
@@ -83,6 +83,6 @@ python -m src.predict \
     --survey_name ${SURVEY_NAME} \
     --persona_level low mid high \
     --persona_repr namedescvalue \
-    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_demo_persona_run${i}.json \
+    --log_name ${SURVEY_NAME}/date${DATE}_v10post_midterm_${SURVEY_NAME}_haikupred_demo_persona_run${i}.json \
     --persona_filename ${PERSONA_VAL_FILENAME} 
 done

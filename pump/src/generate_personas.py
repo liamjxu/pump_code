@@ -222,19 +222,24 @@ def clean_summarized_personas(prompt_name, survey, level, summarizing_dir, outpu
     summarized_persona_filename = f"{summarizing_dir}/summarized_{level}_level_personas_{survey}.json"
     with open(summarized_persona_filename, 'r') as f:
         data = json.load(f)
-        data = [persona_dim_dict for persona_dim_dict in data if filter_demo_from_personas(persona_dim_dict, model_id=model_id)]  # remove the demographics
+        # discard the personas that are demographics
+        data = [persona_dim_dict for persona_dim_dict in data if not filter_persona_is_in_demo(persona_dim_dict, model_id=model_id)]  # remove the demographics
         data = persona_dim_dict_list_to_object_list(data)
     with open(f'experiment/prompts/generate_persona_dim/{prompt_name}.txt') as f:
         prompt_template = f.read()
 
     # summarize
+    # from IPython import embed; embed()
     prompt = prompt_template.format(persona_dimensions='[\n' + ',\n'.join(repr(dim) for dim in data) + '\n]')
     response = get_llm_response(prompt, prefill='[', max_tokens=4096, model_id=model_id)
     response = ''.join(['[', response])
+    name_to_persona_dim_mapping = {persona.name: persona for persona in data}
 
     # validate
     try:
-        response = persona_dim_object_list_to_dict_list(eval(response))
+        response = eval(response)
+        res = [name_to_persona_dim_mapping[name] for name in response if name in name_to_persona_dim_mapping]
+        response = persona_dim_object_list_to_dict_list(res)
         cleaned_summarized_personas_filename = f"{output_dir}/cleaned_{level}_level_personas_{survey}.json"
         with open(cleaned_summarized_personas_filename, 'w') as f:
             json.dump(response, f, indent=4)
@@ -247,7 +252,7 @@ def clean_summarized_personas(prompt_name, survey, level, summarizing_dir, outpu
         return False, response
 
 
-def filter_demo_from_personas(persona_dim_dict, model_id) -> bool:
+def filter_persona_is_in_demo(persona_dim_dict, model_id) -> bool:
     
     prompt_name = "identify_whether_demographics"
     with open(f'experiment/prompts/generate_persona_dim/{prompt_name}.txt') as f:
@@ -423,8 +428,9 @@ def main(args):
                                 'response (when failing)': None  # only recording when failing, successful ones are stored separately
                             })
                             break
-                    except:
-                        time.sleep(10)
+                    except Exception as e:
+                        time.sleep(3)
+                        print("Error Message: ", e)
                     failure += 1
                     print(f"Failed {failure}/3 times")
                 

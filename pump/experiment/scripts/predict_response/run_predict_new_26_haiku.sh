@@ -1,5 +1,5 @@
 export DATE=0828
-export SURVEY_NAME="American_Trends_Panel_W27"
+export SURVEY_NAME="American_Trends_Panel_W26"
 export PERSONA_VAL_FILENAME=opinions_qa/persona_val/${SURVEY_NAME}/date${DATE}_personas_${SURVEY_NAME}_testonly_haiku.json
 
 

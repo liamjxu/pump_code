@@ -16,4 +16,4 @@ You are a user response prediction expert. You will be given a survey question, 
 # Survey Question Options
 {options}
 
-# Your Prediction of the Participant's response
+# Your Prediction of the Participant's Response (answer with given options verbatim, no formatting, no punctuations or linebreaks at the end, don't explain)
