@@ -6,7 +6,7 @@ export PREDICT_MODEL="haiku"
 
 
 # history + demo + persona
-for i in 1
+for i in 1 2 3
 do
 python -m src.predict \
     --exp_setting history_demo_persona \
@@ -14,7 +14,7 @@ python -m src.predict \
     --persona_level low mid high \
     --response_prediction_model_name ${PREDICT_MODEL} \
     --persona_repr namedescvalue \
-    --log_name ${SURVEY_NAME}/date${DATE}_v11_bn_hcbds_${SURVEY_NAME}_${PREDICT_MODEL}pred_prompt4_ordering_history_demo_persona_run${i}.json \
+    --log_name ${SURVEY_NAME}/date${DATE}_v11_bn_hcbds_${SURVEY_NAME}_${PREDICT_MODEL}pred_prompt3_ordering_history_demo_persona_run${i}.json \
     --persona_filename ${PERSONA_VAL_FILENAME} 
 done
 
