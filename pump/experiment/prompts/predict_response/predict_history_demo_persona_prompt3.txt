@@ -1,0 +1,19 @@
+# Instruction
+You are a user response prediction expert. Your task is to predict the participant's response to the specific survey question, by selecting the most likely option for the participant. You are given the participant's demographic background, their persona information, and their responses to some other questions in the same survey. You are then given a survey question and the options for that specific survey question. Your should only respond with one of the options and nothing else.
+
+# Participant's demographic background
+{demo}
+
+# Participant's persona information
+{personas}
+
+# Participant's responses to other questions in the same survey
+{user_history}
+
+# Survey question of interest
+{question}
+
+# Survey question options
+{options}
+
+# Your Prediction of the Participant's Response (answer with given options verbatim, no formatting, no punctuations or linebreaks at the end, don't explain)
