@@ -7,13 +7,13 @@ import torch
 import numpy as np
 import pandas as pd
 from src.utils import list_s3_prefix, get_file_from_s3, get_formatted_persona_dim, last_token_pool
-from src.utils import get_llm_response, CLAUDE_NAME_MAPPING
+from src.utils import get_llm_response, CLAUDE_NAME_MAPPING, TEST_KEY_MAPPING
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModel
 from scipy.spatial.distance import cdist
 
 
-def get_persona_values(file_key, user_history, model_name="sonnet", persona_num=5):
+def get_persona_values(file_key, user_history, persona_path_name, model_name="sonnet", persona_num=5):
 
     prompt_name = 'experiment/prompts/infer_persona_val/infer_persona_from_user_history.txt'
     with open(prompt_name) as f:
@@ -21,7 +21,8 @@ def get_persona_values(file_key, user_history, model_name="sonnet", persona_num=
 
     ret_personas = []
     for level in ['high', 'mid', 'low']:
-        persona_path = f"opinions_qa/persona_dim/date0828_haiku_kmeans20_single_example/cleaned/cleaned_{level}_level_personas_{file_key}.json"
+        # persona_path = f"opinions_qa/persona_dim/date0828_haiku_kmeans20_single_example/cleaned/cleaned_{level}_level_personas_{file_key}.json"
+        persona_path = f"opinions_qa/persona_dim/{persona_path_name}/cleaned/cleaned_{level}_level_personas_{file_key}.json"
         with open(persona_path, 'r') as f:
             all_personas = json.load(f)
 
@@ -113,7 +114,8 @@ def main(args):
     assert len([_ for _ in meta_keys if _ in q_keys]) == 0
 
     # divide questions
-    test_q_keys = random.choices(q_keys, k=5)  # monkey patch, ['GUNRESPNOKIDSB_W26', 'WORLDDANGER_W26', 'GUNIDENTITY_W26', 'REASONGUNC_W26', 'GUNRESPKIDSC_W26'] for random seed 42, survey W26
+    # test_q_keys = random.choices(q_keys, k=5)  # monkey patch, ['GUNRESPNOKIDSB_W26', 'WORLDDANGER_W26', 'GUNIDENTITY_W26', 'REASONGUNC_W26', 'GUNRESPKIDSC_W26'] for random seed 42, survey W26
+    test_q_keys = TEST_KEY_MAPPING[args.survey_name]
     print('Using test_q_keys: ', test_q_keys)
     train_q_keys = [_ for _ in q_keys if _ not in test_q_keys]
 
@@ -208,7 +210,7 @@ def main(args):
         user_history = '\n'.join(user_history)
 
         if persona_infer:
-            all_personas = get_persona_values(file_key, user_history, model_name=args.persona_inference_model_name, persona_num=persona_num)  # TODO: the personas neede to be re-generated
+            all_personas = get_persona_values(file_key, user_history, persona_path_name=args.persona_path_name, model_name=args.persona_inference_model_name, persona_num=persona_num)  # TODO: the personas neede to be re-generated
             persona_mapping[user_idx] = all_personas
             with open(args.persona_filename, 'w') as f:
                 json.dump(persona_mapping, f, indent=4)
@@ -338,6 +340,7 @@ if __name__ == '__main__':
                                                        ])
     argparser.add_argument('--survey_name', default='American_Trends_Panel_W26')
     argparser.add_argument('--log_name', required=True)
+    argparser.add_argument('--persona_path_name', type=str, default=None)
     argparser.add_argument('--persona_filename', type=str, default=None)
     argparser.add_argument('--persona_inference_model_name', type=str, default="sonnet", help="If inferring persona values, use this for model name", choices=['sonnet', 'haiku'])
     argparser.add_argument('--response_prediction_model_name', type=str, default="sonnet", help="If predicting user responses, use this for model name", choices=['sonnet', 'haiku'])

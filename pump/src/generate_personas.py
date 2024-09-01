@@ -10,7 +10,7 @@ from sklearn.cluster import KMeans, DBSCAN, MeanShift, estimate_bandwidth
 from sklearn.mixture import GaussianMixture
 from src.utils import last_token_pool, get_detailed_instruct, get_llm_response, list_s3_prefix, get_file_from_s3, get_topics
 from src.utils import persona_dim_object_list_to_dict_list, persona_dim_dict_to_object, persona_dim_dict_list_to_object_list
-from src.utils import CLAUDE_NAME_MAPPING, PersonaDimension  # the PersonaDimension class is necessary, otherwise extraction fails during eval.
+from src.utils import TEST_KEY_MAPPING, CLAUDE_NAME_MAPPING, PersonaDimension  # the PersonaDimension class is necessary, otherwise extraction fails during eval.
 from transformers import AutoTokenizer, AutoModel
 
 
@@ -33,6 +33,10 @@ def extract_personas_from_survey(info_df, survey, extraction_prompt_type, output
     }
     valid_cnt = 0
     for idx, row in tqdm(info_df.iterrows(), total=len(info_df)):
+
+        if row['key'] not in TEST_KEY_MAPPING[survey]:
+            continue
+
         topics = get_topics(mapping, row['question'])
         input_dict = {
             "topic_fg": topics['fg'],
@@ -113,6 +117,7 @@ def cluster_extracted_personas(survey, extraction_dir, output_dir, debug, tokeni
         # Get subset and save artifacts
         level_df = data[data['level']==level]
         level_df.to_csv(f"{output_dir}/{level}-level_personas_{survey}.csv")
+        persona_num = len(level_df)
         
         # Get the embeddings
         max_length = 4096
@@ -130,11 +135,11 @@ def cluster_extracted_personas(survey, extraction_dir, output_dir, debug, tokeni
         
         # Clustering the embeddings and save artifacts
         if clustering_algo == 'kmeans':
-            clustering_model = KMeans(n_clusters=clustering_num_clusters)
+            clustering_model = KMeans(n_clusters=min(persona_num, clustering_num_clusters))
             clustering_model.fit(embeddings)
             level_df['cluster'] = clustering_model.labels_
         elif clustering_algo == 'gmm':
-            clustering_model = GaussianMixture(n_components=clustering_num_clusters)
+            clustering_model = GaussianMixture(n_components=min(persona_num, clustering_num_clusters))
             clustering_model.fit(embeddings)
             level_df['cluster'] = clustering_model.predict(embeddings)
         elif clustering_algo == 'dbscan':

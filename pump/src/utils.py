@@ -18,6 +18,14 @@ brt = boto3.client(service_name='bedrock-runtime', config=Config(read_timeout=12
 s3_client = boto3.client('s3')
 bucket_name = 'probabilistic-user-modeling'
 
+TEST_KEY_MAPPING = {
+    "American_Trends_Panel_W26": ["WORLDDANGER_W26", "WORRYE_W26", "GUN_W26", "GUNIDENTITY_W26", "GUNSOCIETY_W26", "GUNCOMMUNITY_W26", "GUNRESPKIDSC_W26"],
+    "American_Trends_Panel_W27": ["WORK4A_W27", "WORK4B_W27", "WORK4C_W27", "ROBJOB2_W27", "ROBJOB3A_W27", "ROBJOB3B_W27", "ROBJOB4C_W27", "ROBJOB5B_W27", "ROBJOB5D_W27"],
+    "American_Trends_Panel_W29": ["MASC2AF1_W29", "SEENMASC_W29", "SEENFEM_W29", "MAN1E_W29", "BOYSF1A_W29", "BOYSF1B_W29", "GIRLSF2A_W29"],
+    "American_Trends_Panel_W32": ["SOCTRUST_W32", "COMATTACH_W32", "JOBSFUTURE_W32", "NEIGHKEYS_W32", "IMMIMPACT_W32", "ETHNCMAJ_W32", "WHADVANT_W32", "GAYMARR2_W32", "ABORTION_W32"],
+    "American_Trends_Panel_W34": ["SCI1_W34", "EAT1_W34", "FUD35_W34", "MED2G_W34", "MED6D_W34", "MED6E_W34"],
+}
+
 CLAUDE_NAME_MAPPING = {
     "sonnet": "anthropic.claude-3-sonnet-20240229-v1:0",
     "haiku": "anthropic.claude-3-haiku-20240307-v1:0"
