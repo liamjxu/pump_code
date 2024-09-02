@@ -122,8 +122,8 @@ def main(args):
     # divide users
     test_user_idx = random.choices(range(len(resp_df)), k=int(len(resp_df)*0.1))
     test_resp_df = resp_df.iloc[test_user_idx]
-    # train_user_idx = [i for i in range(len(resp_df)) if i not in test_user_idx]
-    # train_resp_df = resp_df.iloc[train_user_idx]
+    train_user_idx = [i for i in range(len(resp_df)) if i not in test_user_idx]
+    train_resp_df = resp_df.iloc[train_user_idx]
 
     # get prompt
     prompt_name_mapping = {
@@ -136,6 +136,7 @@ def main(args):
         # "history_demo_persona": 'experiment/prompts/predict_response/predict_history_demo_persona.txt',
         "history_demo_persona": 'experiment/prompts/predict_response/predict_history_demo_persona_prompt3.txt',
         # "history_demo_persona": 'experiment/prompts/predict_response/predict_history_demo_persona_prompt4.txt',
+        "history_demo_persona_rag": 'experiment/prompts/predict_response/predict_history_demo_persona_rag_prompt3.txt',
         "demo": 'experiment/prompts/predict_response/predict_demo.txt',
         "persona": 'experiment/prompts/predict_response/predict_persona.txt',
         "demo_persona": 'experiment/prompts/predict_response/predict_demo_persona.txt',
@@ -148,8 +149,9 @@ def main(args):
     persona_infer = args.exp_setting in ["persona_infer", "persona_infer_full", "persona_infer_train"]
     persona_infer_full = args.exp_setting == "persona_infer_full"
     persona_infer_train = args.exp_setting == "persona_infer_train"
-    use_demo = args.exp_setting in ["history_demo", "history_demo_persona", "demo", "demo_persona", "history_demo_persona_cot"]
-    use_persona = args.exp_setting in ["history_persona", "history_demo_persona", "persona", "demo_persona", "history_demo_persona_cot"]
+    use_demo = args.exp_setting in ["history_demo", "history_demo_persona", "demo", "demo_persona", "history_demo_persona_cot", "history_demo_persona_rag"]
+    use_persona = args.exp_setting in ["history_persona", "history_demo_persona", "persona", "demo_persona", "history_demo_persona_cot", "history_demo_persona_rag"]
+    use_rag = args.exp_setting in ["history_demo_persona_rag"]
 
     # preparing
     cnt = 0
@@ -159,12 +161,8 @@ def main(args):
         persona_mapping = {}
         persona_num = None  # used to be 5, but turns out we should do all personas
         if persona_infer_train:
-            train_user_idx = [i for i in range(len(resp_df)) if i not in test_user_idx]
-            train_resp_df = resp_df.iloc[train_user_idx]
             test_resp_df = train_resp_df
         if persona_infer_full:
-            train_user_idx = [i for i in range(len(resp_df)) if i not in test_user_idx]
-            train_resp_df = resp_df.iloc[train_user_idx]
             test_resp_df = pd.concat((test_resp_df, train_resp_df), axis=0)
     if not persona_infer and use_persona:
         with open(args.persona_filename, 'r') as f:
@@ -196,8 +194,13 @@ def main(args):
         os.makedirs(review_path, exist_ok=True)
         print(f"\n\nReview at path: {review_path}\n\n")
 
+    if use_rag:
+        with open(args.rag_similar_user_mapping ,'r') as f:
+            rag_similar_user_mapping = json.load(f)
+
     # main loop
     for user_idx, row in tqdm(test_resp_df.iterrows(), total=len(test_resp_df)):
+        assert user_idx == row['index']
         # construct user history
         user_history = []
         for q_key in train_q_keys:
@@ -284,6 +287,14 @@ def main(args):
                         ]
                     filtered_personas = '\n'.join(filtered_personas)
                     input_dict["personas"] = filtered_personas
+
+                    if use_rag:
+                        similar_user_name = [int(_) for _ in rag_similar_user_mapping[str(user_idx)]]
+                        filtered_df = train_resp_df[train_resp_df['index'].isin(similar_user_name)]
+                        similar_answers = filtered_df[q_key].tolist()
+                        # print(similar_answers)
+                        input_dict["rag_similar_answer"] = '\n'.join(similar_answers)
+
                 prompt = pred_prompt_template.format(**input_dict)
                 # raise Exception(prompt)
                 # print(prompt)
@@ -313,7 +324,7 @@ def main(args):
                 with open(f"opinions_qa/output/{args.log_name}", 'w') as f:
                     json.dump(logs, f, indent=4)
 
-                record = prompt + f"\nPrediction: {response}\nGold: {gold_answer}"
+                record = prompt + f"\n---\nPrediction: {response}\nGold: {gold_answer}"
                 with open(f'{review_path}/user_{user_idx}_question_{q_idx}_{q_key}.txt', 'w') as f:
                     f.write(record)
 
@@ -324,6 +335,7 @@ if __name__ == '__main__':
     argparser.add_argument('--use_only_relevant_persona', action='store_true')
     argparser.add_argument('--use_cot', action='store_true')
     argparser.add_argument('--query_to_persona_idx_mapping_filename', type=str, default=None)
+    argparser.add_argument('--rag_similar_user_mapping', type=str, default=None)
     argparser.add_argument('--persona_levels', nargs='+',
                                                choices=['low', 'mid', 'high'])
     argparser.add_argument('--persona_repr', choices = ['namedescvalue',
@@ -340,6 +352,7 @@ if __name__ == '__main__':
                                                        'history_demo',
                                                        'history_persona',
                                                        'history_demo_persona',
+                                                       'history_demo_persona_rag',
                                                        'demo',
                                                        'persona',
                                                        'demo_persona',
