@@ -131,7 +131,9 @@ def main(args):
         "persona_infer_full": 'experiment/prompts/predict_response/predict_history.txt',  # this won't be used, but has to be readable.
         "persona_infer_train": 'experiment/prompts/predict_response/predict_history.txt',  # this won't be used, but has to be readable.
         "history": 'experiment/prompts/predict_response/predict_history.txt',
+        "history_rag": 'experiment/prompts/predict_response/predict_history_rag_prompt3.txt',
         "history_demo": 'experiment/prompts/predict_response/predict_history_demo.txt',
+        "history_demo_rag": 'experiment/prompts/predict_response/predict_history_demo_rag_prompt3.txt',
         "history_persona": 'experiment/prompts/predict_response/predict_history_persona.txt',
         # "history_demo_persona": 'experiment/prompts/predict_response/predict_history_demo_persona.txt',
         "history_demo_persona": 'experiment/prompts/predict_response/predict_history_demo_persona_prompt3.txt',
@@ -149,9 +151,9 @@ def main(args):
     persona_infer = args.exp_setting in ["persona_infer", "persona_infer_full", "persona_infer_train"]
     persona_infer_full = args.exp_setting == "persona_infer_full"
     persona_infer_train = args.exp_setting == "persona_infer_train"
-    use_demo = args.exp_setting in ["history_demo", "history_demo_persona", "demo", "demo_persona", "history_demo_persona_cot", "history_demo_persona_rag"]
+    use_demo = args.exp_setting in ["history_demo", "history_demo_persona", "demo", "demo_persona", "history_demo_persona_cot", "history_demo_persona_rag", "history_demo_rag"]
     use_persona = args.exp_setting in ["history_persona", "history_demo_persona", "persona", "demo_persona", "history_demo_persona_cot", "history_demo_persona_rag"]
-    use_rag = args.exp_setting in ["history_demo_persona_rag"]
+    use_rag = args.exp_setting in ["history_demo_persona_rag", "history_demo_rag", "history_rag"]
 
     # preparing
     cnt = 0
@@ -288,12 +290,12 @@ def main(args):
                     filtered_personas = '\n'.join(filtered_personas)
                     input_dict["personas"] = filtered_personas
 
-                    if use_rag:
-                        similar_user_name = [int(_) for _ in rag_similar_user_mapping[str(user_idx)]]
-                        filtered_df = train_resp_df[train_resp_df['index'].isin(similar_user_name)]
-                        similar_answers = filtered_df[q_key].tolist()
-                        # print(similar_answers)
-                        input_dict["rag_similar_answer"] = '\n'.join(similar_answers)
+                if use_rag:
+                    similar_user_name = [int(_) for _ in rag_similar_user_mapping[str(user_idx)]]
+                    filtered_df = train_resp_df[train_resp_df['index'].isin(similar_user_name)]
+                    similar_answers = filtered_df[q_key].tolist()
+                    # print(similar_answers)
+                    input_dict["rag_similar_answer"] = '\n'.join(similar_answers)
 
                 prompt = pred_prompt_template.format(**input_dict)
                 # raise Exception(prompt)
@@ -349,7 +351,9 @@ if __name__ == '__main__':
                                                        'persona_infer_full',
                                                        'persona_infer_train',
                                                        'history',
+                                                       'history_rag',
                                                        'history_demo',
+                                                       'history_demo_rag',
                                                        'history_persona',
                                                        'history_demo_persona',
                                                        'history_demo_persona_rag',

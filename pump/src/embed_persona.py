@@ -25,29 +25,28 @@ def main(args):
     print('test:', len(test_user_list))
     print('train:', len(train_user_list))
 
+    if args.use_demo:
+        # get demo mapping
+        meta_df = pd.read_csv(get_file_from_s3(f"human_resp/{args.survey_name}/metadata.csv"))
+        meta_keys = list(meta_df['key'])
 
-    def get_user_pval_df(pvals, user_list, use_demo):
-        if use_demo:
-            # get demo mapping
-            meta_df = pd.read_csv(get_file_from_s3(f"human_resp/{args.survey_name}/metadata.csv"))
-            meta_keys = list(meta_df['key'])
 
+    def get_user_pval_df(pvals, user_list):
+        
         records = []
         for user in user_list:
             personas = pvals[user]
             entry = {'user': user}
             for p in personas:
                 entry[p['name']] = p['inferred_value']
+
             records.append(entry)
 
         df = pd.DataFrame(records)
         return df
 
 
-    df = get_user_pval_df(p_vals, train_user_list, args.use_demo)
-    df[:3]
-
-
+    df = get_user_pval_df(p_vals, train_user_list)
 
     from collections import Counter
 
@@ -75,11 +74,37 @@ def main(args):
 
     su = test_user_list[0]
 
-    def get_user_persona_repr(personas):
+    def get_user_persona_repr(user, use_demo):
+        personas = p_vals[user]
+        if use_demo:
+            row = resp_df.iloc[int(user)]
+            # get demo
+            demo = row[meta_keys].to_dict()
+            key_mappings = {
+                'CREGION': 'Region Where The Participant Lives',
+                'AGE': 'Age Range Of The Participant',
+                'SEX': 'Gender Of The Participant',
+                'EDUCATION': 'Educational Attainment Of The Participant',
+                'CITIZEN': 'Citizenship Status Of The Participant',
+                'MARITAL': 'Marital Status Of The Participant',
+                'RELIG': 'Religious Affiliation Of The Participant',
+                'RELIGATTEND': 'Frequency Of Religious Service Attendance',
+                'POLPARTY': 'Political Party Affiliation',
+                'INCOME': 'Annual Income Range',
+                'POLIDEOLOGY': 'Political Ideology',
+                'RACE': 'Racial Background'
+            }
+            demo = {key_mappings[k]: v for k, v in demo.items()}
+            for k, v in demo.items():
+                personas.append({
+                    'name': k,
+                    'inferred_value': v
+                })
+
         # return '; '.join(f"{p['name']}: {p['inferred_value']}" for p in personas)
         return '; '.join(f"{p['name']}: {p['inferred_value']}" for p in personas if p['name'] not in skew_personas)
 
-    get_user_persona_repr(p_vals[su])
+    print(get_user_persona_repr(su, args.use_demo))
 
 
 
@@ -93,13 +118,13 @@ def main(args):
 
     query_prefix = "Instruct: "+task_name_to_instruct["retrieve_user_personas"]+"\nQuery: "
     queries = [
-        get_user_persona_repr(p_vals[user]) for user in test_user_list
+        get_user_persona_repr(user, args.use_demo) for user in test_user_list
     ]
 
     # No instruction needed for retrieval passages
     passage_prefix = ""
     passages = [
-        get_user_persona_repr(p_vals[user]) for user in train_user_list[:args.train_size]
+        get_user_persona_repr(user, args.use_demo) for user in train_user_list[:args.train_size]
     ]
 
     # load model with tokenizer
