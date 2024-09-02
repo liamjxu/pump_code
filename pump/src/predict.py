@@ -129,6 +129,7 @@ def main(args):
     prompt_name_mapping = {
         "persona_infer": 'experiment/prompts/predict_response/predict_history.txt',  # this won't be used, but has to be readable.
         "persona_infer_full": 'experiment/prompts/predict_response/predict_history.txt',  # this won't be used, but has to be readable.
+        "persona_infer_train": 'experiment/prompts/predict_response/predict_history.txt',  # this won't be used, but has to be readable.
         "history": 'experiment/prompts/predict_response/predict_history.txt',
         "history_demo": 'experiment/prompts/predict_response/predict_history_demo.txt',
         "history_persona": 'experiment/prompts/predict_response/predict_history_persona.txt',
@@ -144,8 +145,9 @@ def main(args):
         pred_prompt_template = f.read()
 
     # get flags
-    persona_infer = args.exp_setting in ["persona_infer", "persona_infer_full"]
+    persona_infer = args.exp_setting in ["persona_infer", "persona_infer_full", "persona_infer_train"]
     persona_infer_full = args.exp_setting == "persona_infer_full"
+    persona_infer_train = args.exp_setting == "persona_infer_train"
     use_demo = args.exp_setting in ["history_demo", "history_demo_persona", "demo", "demo_persona", "history_demo_persona_cot"]
     use_persona = args.exp_setting in ["history_persona", "history_demo_persona", "persona", "demo_persona", "history_demo_persona_cot"]
 
@@ -156,11 +158,14 @@ def main(args):
     if persona_infer:
         persona_mapping = {}
         persona_num = None  # used to be 5, but turns out we should do all personas
+        if persona_infer_train:
+            train_user_idx = [i for i in range(len(resp_df)) if i not in test_user_idx]
+            train_resp_df = resp_df.iloc[train_user_idx]
+            test_resp_df = train_resp_df
         if persona_infer_full:
             train_user_idx = [i for i in range(len(resp_df)) if i not in test_user_idx]
             train_resp_df = resp_df.iloc[train_user_idx]
             test_resp_df = pd.concat((test_resp_df, train_resp_df), axis=0)
-            persona_num = None
     if not persona_infer and use_persona:
         with open(args.persona_filename, 'r') as f:
             persona_mapping = json.load(f)
@@ -330,6 +335,7 @@ if __name__ == '__main__':
                                                         ])
     argparser.add_argument('--exp_setting', choices = ['persona_infer',
                                                        'persona_infer_full',
+                                                       'persona_infer_train',
                                                        'history',
                                                        'history_demo',
                                                        'history_persona',

@@ -34,8 +34,8 @@ def extract_personas_from_survey(info_df, survey, extraction_prompt_type, output
     valid_cnt = 0
     for idx, row in tqdm(info_df.iterrows(), total=len(info_df)):
 
-        if row['key'] not in TEST_KEY_MAPPING[survey]:
-            continue
+        # if row['key'] not in TEST_KEY_MAPPING[survey]:
+        #     continue
 
         topics = get_topics(mapping, row['question'])
         input_dict = {

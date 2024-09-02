@@ -1,4 +1,4 @@
-export DATE=0831
+export DATE=0901
 export SURVEY_NAME="American_Trends_Panel_W$1"
 export PERSONA_VAL_FILENAME=opinions_qa/persona_val/${SURVEY_NAME}/date0831_personas_testonly_haiku_known_test.json
 export NEW_PERSONA_VAL_FILENAME=opinions_qa/persona_val/${SURVEY_NAME}/date${DATE}_personas_testonly_haiku_known_test_bn_hcbds.json
