@@ -113,17 +113,32 @@ def main(args):
     q_keys = list(survey_df['key'])
     assert len([_ for _ in meta_keys if _ in q_keys]) == 0
 
-    # divide questions
-    # test_q_keys = random.choices(q_keys, k=5)  # monkey patch, ['GUNRESPNOKIDSB_W26', 'WORLDDANGER_W26', 'GUNIDENTITY_W26', 'REASONGUNC_W26', 'GUNRESPKIDSC_W26'] for random seed 42, survey W26
-    test_q_keys = TEST_KEY_MAPPING[args.survey_name]
-    print('Using test_q_keys: ', test_q_keys)
-    train_q_keys = [_ for _ in q_keys if _ not in test_q_keys]
-
-    # divide users
-    test_user_idx = random.choices(range(len(resp_df)), k=int(len(resp_df)*0.1))
-    test_resp_df = resp_df.iloc[test_user_idx]
-    train_user_idx = [i for i in range(len(resp_df)) if i not in test_user_idx]
-    train_resp_df = resp_df.iloc[train_user_idx]
+    if args.using_personadb_surveys:
+        # set up user to q_key mappings (test and train)
+        with open(f'experiment/data/human_resp/{args.survey_name}/user_test_q_key_mapping.json', 'r') as f:
+            user_test_q_key_mapping = json.load(f)
+        user_train_q_key_mapping = {}
+        for user in user_test_q_key_mapping:
+            user_train_q_key_mapping[user] = [_ for _ in q_keys if _ not in user_test_q_key_mapping[user]]
+        for user in range(len(resp_df)):
+            user = str(user)
+            if user not in user_test_q_key_mapping:
+                user_train_q_key_mapping[user] = q_keys
+        # set up dfs
+        test_user_idx = [int(_) for _ in user_test_q_key_mapping.keys()]
+        train_user_idx = [_ for _ in range(len(resp_df)) if _ not in test_user_idx]
+        test_resp_df = resp_df.iloc[test_user_idx]
+        train_resp_df = resp_df.iloc[train_user_idx]
+    else:
+        # divide questions
+        test_q_keys = TEST_KEY_MAPPING[args.survey_name]
+        print('Using test_q_keys: ', test_q_keys)
+        train_q_keys = [_ for _ in q_keys if _ not in test_q_keys]
+        # divide users
+        test_user_idx = random.choices(range(len(resp_df)), k=int(len(resp_df)*0.1))
+        test_resp_df = resp_df.iloc[test_user_idx]
+        train_user_idx = [i for i in range(len(resp_df)) if i not in test_user_idx]
+        train_resp_df = resp_df.iloc[train_user_idx]
 
     # get prompt
     prompt_name_mapping = {
@@ -171,6 +186,7 @@ def main(args):
             persona_mapping = json.load(f)
 
     if args.use_only_relevant_persona:
+        raise Exception("This is deprecated")
         assert args.query_to_persona_idx_mapping_filename is not None, "You need to provide a filename for query_to_persona_idx_mapping_filename"
         if os.path.exists(args.query_to_persona_idx_mapping_filename):
             with open(args.query_to_persona_idx_mapping_filename, 'r') as f:
@@ -205,6 +221,8 @@ def main(args):
         assert user_idx == row['index']
         # construct user history
         user_history = []
+        if args.using_personadb_surveys:
+            train_q_keys = user_train_q_key_mapping[str(user_idx)]
         for q_key in train_q_keys:
             question = question_key_mapping[q_key]['question']
             references = question_key_mapping[q_key]['references']
@@ -220,7 +238,7 @@ def main(args):
         user_history = '\n'.join(user_history)
 
         if persona_infer:
-            all_personas = get_persona_values(file_key, user_history, persona_path_name=args.persona_path_name, model_name=args.persona_inference_model_name, persona_num=persona_num)  # TODO: the personas neede to be re-generated
+            all_personas = get_persona_values(file_key, user_history, persona_path_name=args.persona_path_name, model_name=args.persona_inference_model_name, persona_num=persona_num)
             persona_mapping[user_idx] = all_personas
             with open(args.persona_filename, 'w') as f:
                 json.dump(persona_mapping, f, indent=4)
@@ -248,6 +266,8 @@ def main(args):
 
 
         # for each legal test question, predict
+        if args.using_personadb_surveys:
+            test_q_keys = user_test_q_key_mapping[str(user_idx)]
         for q_idx, q_key in enumerate(test_q_keys):
             gold_answer = row[q_key]
             if pd.notna(gold_answer):
@@ -266,6 +286,7 @@ def main(args):
                     all_personas = persona_mapping[str(user_idx)]
                     format_string = format_strings[args.persona_repr]
                     if args.use_only_relevant_persona:
+                        raise Exception("This is deprecated")
                         relevant_idx = query_to_persona_idx_mapping[q_key]
                         filtered_personas = [
                             format_string.format(**{
@@ -334,6 +355,7 @@ def main(args):
 if __name__ == '__main__':
 
     argparser = argparse.ArgumentParser()
+    argparser.add_argument('--using_personadb_surveys', action='store_true')
     argparser.add_argument('--use_only_relevant_persona', action='store_true')
     argparser.add_argument('--use_cot', action='store_true')
     argparser.add_argument('--query_to_persona_idx_mapping_filename', type=str, default=None)

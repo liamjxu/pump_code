@@ -8,9 +8,9 @@ import time
 from tqdm import trange, tqdm
 from sklearn.cluster import KMeans, DBSCAN, MeanShift, estimate_bandwidth
 from sklearn.mixture import GaussianMixture
-from src.utils import last_token_pool, get_detailed_instruct, get_llm_response, list_s3_prefix, get_file_from_s3, get_topics
+from src.utils import last_token_pool, get_formatted_persona_dim, get_llm_response, list_s3_prefix, get_file_from_s3, get_topics
 from src.utils import persona_dim_object_list_to_dict_list, persona_dim_dict_to_object, persona_dim_dict_list_to_object_list
-from src.utils import TEST_KEY_MAPPING, CLAUDE_NAME_MAPPING, PersonaDimension  # the PersonaDimension class is necessary, otherwise extraction fails during eval.
+from src.utils import CLAUDE_NAME_MAPPING, PersonaDimension  # the PersonaDimension class is necessary, otherwise extraction fails during eval.
 from transformers import AutoTokenizer, AutoModel
 
 
@@ -33,9 +33,6 @@ def extract_personas_from_survey(info_df, survey, extraction_prompt_type, output
     }
     valid_cnt = 0
     for idx, row in tqdm(info_df.iterrows(), total=len(info_df)):
-
-        # if row['key'] not in TEST_KEY_MAPPING[survey]:
-        #     continue
 
         topics = get_topics(mapping, row['question'])
         input_dict = {
@@ -105,12 +102,6 @@ def cluster_extracted_personas(survey, extraction_dir, output_dir, debug, tokeni
     # Get data
     personas_from_questions_filename = f"{extraction_dir}/personas_extracted_from_question_{survey}.json"
     data = get_personas_extracted_from_questions_df(personas_from_questions_filename)
-
-    # Get formatted string for clustering
-    def get_formatted_persona_dim(row):
-        task = 'Given a persona dimension description, retrieve semantically similar persona dimension descriptions.'
-        persona = f"{row['name']}: {row['description']}. Candidate values: {row['candidate_values']}"
-        return get_detailed_instruct(task, persona)
     data['formatted'] = data.apply(get_formatted_persona_dim, axis=1)
 
     for level in ['high', 'mid', 'low']:
@@ -285,17 +276,22 @@ def main(args):
             loggings = json.load(f)
     else:
         loggings = {}
-    surveys = set()
-    for path in list_s3_prefix("human_resp/"):
-        if path.startswith("human_resp/American_Trends_Panel"):
-            # Extract the folder name
-            folder = path.split("/")[1]
-            surveys.add(folder)
-    if args.merging_personas_from_surveys == 'same_topic':
-        sorted_surveys = sorted(list(surveys))
-        surveys = [sorted_surveys[0]]
+
+    # Get correct surveys
+    if args.using_personadb_surveys:
+        surveys = ['American_Trends_Panel_W34', 'American_Trends_Panel_W41', 'American_Trends_Panel_W82']
     else:
-        surveys = sorted(list(surveys))[args.survey_starting:args.survey_ending]
+        surveys = set()
+        for path in list_s3_prefix("human_resp/"):
+            if path.startswith("human_resp/American_Trends_Panel"):
+                # Extract the folder name
+                folder = path.split("/")[1]
+                surveys.add(folder)
+        if args.merging_personas_from_surveys == 'same_topic':
+            sorted_surveys = sorted(list(surveys))
+            surveys = [sorted_surveys[0]]
+        else:
+            surveys = sorted(list(surveys))[args.survey_starting:args.survey_ending]
     mapping = np.load(get_file_from_s3('human_resp/topic_mapping.npy'), allow_pickle=True)
     mapping = mapping.item()
 
@@ -462,6 +458,7 @@ if __name__ == '__main__':
 
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--debug', action='store_true')
+    argparser.add_argument('--using_personadb_surveys', action='store_true')
     argparser.add_argument('--output_dir_root', type=str, default="opinions_qa/persona_dim")
     argparser.add_argument('--model_name', type=str, choices=["sonnet", "haiku"])
     argparser.add_argument('--clustering_algo', type=str, choices=['kmeans', 'gmm', 'dbscan', 'meanshift'])
