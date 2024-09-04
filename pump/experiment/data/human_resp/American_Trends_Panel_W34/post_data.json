@@ -1,0 +1,589 @@
+{
+    "SCI1_W34": {
+        "question": "Overall, do you think science has made life easier or more difficult for most people?",
+        "options": {
+            "easier": 1,
+            "more difficult": 2,
+            "refused": 99
+        }
+    },
+    "SCI2A_W34": {
+        "question": "Do you think science has had a mostly positive or mostly negative effect on the quality of food in the U.S.?",
+        "options": {
+            "mostly positive": 1,
+            "mostly negative": 2,
+            "refused": 99
+        }
+    },
+    "SCI2B_W34": {
+        "question": "Do you think science has had a mostly positive or mostly negative effect on the quality of Health care in the U.S.?",
+        "options": {
+            "mostly positive": 1,
+            "mostly negative": 2,
+            "refused": 99
+        }
+    },
+    "SCI2C_W34": {
+        "question": "Do you think science has had a mostly positive or mostly negative effect on the quality of the environment in the U.S.?",
+        "options": {
+            "mostly positive": 1,
+            "mostly negative": 2,
+            "refused": 99
+        }
+    },
+    "SCI3A_W34": {
+        "question": "In your opinion, do you think government investments in basic scientific research usually pay off in the long run, or are they not worth it?",
+        "options": {
+            "government investments usually pay off in the long run": 1,
+            "government investments aren't worth it": 2,
+            "refused": 99
+        }
+    },
+    "SCI3B_W34": {
+        "question": "In your opinion, do you think government investments in engineering and technology usually pay off in the long run, or are they not worth it?",
+        "options": {
+            "government investments usually pay off in the long run": 1,
+            "government investments aren't worth it": 2,
+            "refused": 99
+        }
+    },
+    "SCI3C_W34": {
+        "question": "In your opinion, do you think government investments in medical research usually pay off in the long run, or are they not worth it?",
+        "options": {
+            "government investments usually pay off in the long run": 1,
+            "government investments aren't worth it": 2,
+            "refused": 99
+        }
+    },
+    "SCI4_W34": {
+        "question": "Which statement comes closer to your view, even if neither is exactly right?",
+        "options": {
+            "government investment in research is essential for scientific progress": 1,
+            "private investment will ensure that enough scientific progress is made, even without government investment": 2,
+            "refused": 99
+        }
+    },
+    "SCI5_W34": {
+        "question": "All in all, do you favor or oppose the use of animals in scientific research?",
+        "options": {
+            "favor": 1,
+            "oppose": 2,
+            "refused": 99
+        }
+    },
+    "EAT1_W34": {
+        "question": "How often do you choose foods to eat because they are healthy and nutritious?",
+        "options": {
+            "all of the time": 1,
+            "more than half of the time": 2,
+            "about half of the time": 3,
+            "less than half of the time": 4,
+            "never": 5,
+            "refused": 99
+        }
+    },
+    "EAT2_W34": {
+        "question": "How often do you choose foods to eat because they are easy and most convenient?",
+        "options": {
+            "all of the time": 1,
+            "more than half of the time": 2,
+            "about half of the time": 3,
+            "less than half of the time": 4,
+            "never": 5,
+            "refused": 99
+        }
+    },
+    "EAT3E_W34": {
+        "question": "Which of the following, if any, do you restrict or limit eating on a regular basis? Cholesterol",
+        "options": {
+            "not selected": 0,
+            "cholesterol": 1
+        }
+    },
+    "EAT3F_W34": {
+        "question": "Which of the following, if any, do you restrict or limit eating on a regular basis? Sugar",
+        "options": {
+            "not selected": 0,
+            "sugar": 1
+        }
+    },
+    "EAT3G_W34": {
+        "question": "Which of the following, if any, do you restrict or limit eating on a regular basis? Artificial preservatives",
+        "options": {
+            "not selected": 0,
+            "artificial preservatives": 1
+        }
+    },
+    "EAT3H_W34": {
+        "question": "Which of the following, if any, do you restrict or limit eating on a regular basis? Artificial colors",
+        "options": {
+            "not selected": 0,
+            "artificial colors": 1
+        }
+    },
+    "EAT3I_W34": {
+        "question": "Which of the following, if any, do you restrict or limit eating on a regular basis? Artificial sweeteners",
+        "options": {
+            "not selected": 0,
+            "artificial sweeteners": 1
+        }
+    },
+    "EAT3J_W34": {
+        "question": "Which of the following, if any, do you restrict or limit eating on a regular basis? Gluten",
+        "options": {
+            "not selected": 0,
+            "gluten": 1
+        }
+    },
+    "EAT3K_W34": {
+        "question": "Which of the following, if any, do you restrict or limit eating on a regular basis? None of these",
+        "options": {
+            "not selected": 0,
+            "none of these": 1
+        }
+    },
+    "FUD22_W34": {
+        "question": "How much of the food you eat is organic?",
+        "options": {
+            "most of it": 1,
+            "some of it": 2,
+            "not too much": 3,
+            "none at all": 4,
+            "refused": 99
+        }
+    },
+    "FUD24_W34": {
+        "question": "Do you think organic fruits and vegetables are generally",
+        "options": {
+            "better for one's health than conventionally grown foods": 1,
+            "worse for one's health than conventionally grown foods": 2,
+            "neither better nor worse for one's health than conventionally grown foods": 3,
+            "refused": 99
+        }
+    },
+    "EAT5A_W34": {
+        "question": "How much health risk, if any, does eating fruits and vegetables grown with pesticides have for the average person over the course of their lifetime?",
+        "options": {
+            "a great deal of health risk": 1,
+            "some health risk": 2,
+            "not too much health risk": 3,
+            "no health risk at all": 4,
+            "refused": 99
+        }
+    },
+    "EAT5B_W34": {
+        "question": "How much health risk, if any, does eating meat from animals that have been given antibiotics or hormones have for the average person over the course of their lifetime?",
+        "options": {
+            "a great deal of health risk": 1,
+            "some health risk": 2,
+            "not too much health risk": 3,
+            "no health risk at all": 4,
+            "refused": 99
+        }
+    },
+    "EAT5C_W34": {
+        "question": "How much health risk, if any, does eating food and drinks with artificial coloring have for the average person over the course of their lifetime?",
+        "options": {
+            "a great deal of health risk": 1,
+            "some health risk": 2,
+            "not too much health risk": 3,
+            "no health risk at all": 4,
+            "refused": 99
+        }
+    },
+    "EAT5D_W34": {
+        "question": "How much health risk, if any, does eating food and drinks with artificial preservatives have for the average person over the course of their lifetime?",
+        "options": {
+            "a great deal of health risk": 1,
+            "some health risk": 2,
+            "not too much health risk": 3,
+            "no health risk at all": 4,
+            "refused": 99
+        }
+    },
+    "EAT6_W34": {
+        "question": "Which of these statements comes closer to your view, even if neither is exactly right?",
+        "options": {
+            "the average person is exposed to additives in the food they eat every day, which pose a serious risk to their health": 1,
+            "the average person is exposed to additives in the food they eat every day but they eat such a small amount that this doe": 2,
+            "refused": 99
+        }
+    },
+    "FUD32_W34": {
+        "question": "Genetically modified foods come from a technique that adds genes from other organisms to change that food's genetic characteristics. How much, if anything, have you heard or read about foods with genetically modified ingredients?",
+        "options": {
+            "a lot": 1,
+            "a little": 2,
+            "nothing at all": 3,
+            "refused": 99
+        }
+    },
+    "FUD33A_W34": {
+        "question": "Do you think foods with genetically modified ingredients are generally",
+        "options": {
+            "better for your health than foods with no genetically modified ingredients": 1,
+            "worse for your health than foods with no genetically modified ingredients": 2,
+            "neither better nor worse for your health than foods with no genetically modified ingredients": 3,
+            "not sure": 8,
+            "refused": 99
+        }
+    },
+    "FUD33B_W34": {
+        "question": "Even if you are not sure, which is closer to your views? Do you think foods with genetically modified ingredients are generally",
+        "options": {
+            "better for your health than foods with no genetically modified ingredients": 1,
+            "worse for your health than foods with no genetically modified ingredients": 2,
+            "neither better nor worse for your health than foods with no genetically modified ingredients": 3,
+            "refused": 99
+        }
+    },
+    "FUD35_W34": {
+        "question": "How much do you, personally, care about the issue of genetically modified foods?",
+        "options": {
+            "a great deal": 1,
+            "some": 2,
+            "not too much": 3,
+            "not at all": 4,
+            "refused": 99
+        }
+    },
+    "FUD37A_W34": {
+        "question": "How likely is it that genetically modified foods will lead to more affordably-priced food",
+        "options": {
+            "very likely": 1,
+            "fairly likely": 2,
+            "not too likely": 3,
+            "not at all likely": 4,
+            "refused": 99
+        }
+    },
+    "FUD37B_W34": {
+        "question": "How likely is it that genetically modified foods will lead to health problems for the population as a whole",
+        "options": {
+            "very likely": 1,
+            "fairly likely": 2,
+            "not too likely": 3,
+            "not at all likely": 4,
+            "refused": 99
+        }
+    },
+    "FUD37C_W34": {
+        "question": "How likely is it that genetically modified foods will create problems for the environment",
+        "options": {
+            "very likely": 1,
+            "fairly likely": 2,
+            "not too likely": 3,
+            "not at all likely": 4,
+            "refused": 99
+        }
+    },
+    "FUD37D_W34": {
+        "question": "How likely is it that genetically modified foods will increase the global food supply",
+        "options": {
+            "very likely": 1,
+            "fairly likely": 2,
+            "not too likely": 3,
+            "not at all likely": 4,
+            "refused": 99
+        }
+    },
+    "MED1_W34": {
+        "question": "Thinking now about medicine which of these statements comes closer to your point of view, even if neither is exactly right?",
+        "options": {
+            "medical treatments these days are worth the costs because they allow people to live longer and better quality lives": 1,
+            "medical treatments these days often create as many problems as they solve": 2,
+            "refused": 99
+        }
+    },
+    "MED2A_W34": {
+        "question": "Thinking about medical treatments these days, how much of a problem, if at all, are the following? Healthcare providers are too quick to order tests and procedures that may not be necessary",
+        "options": {
+            "a big problem": 1,
+            "a small problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "MED2B_W34": {
+        "question": "Thinking about medical treatments these days, how much of a problem, if at all, are the following? People rely too much on prescription medicines that may not be necessary",
+        "options": {
+            "a big problem": 1,
+            "a small problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "MED2C_W34": {
+        "question": "Thinking about medical treatments these days, how much of a problem, if at all, are the following? New treatments are made available before we fully understand how they affect people's health",
+        "options": {
+            "a big problem": 1,
+            "a small problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "MED2D_W34": {
+        "question": "Thinking about medical treatments these days, how much of a problem, if at all, are the following? The cost of treatments makes quality medical care unaffordable",
+        "options": {
+            "a big problem": 1,
+            "a small problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "MED2E_W34": {
+        "question": "Thinking about medical treatments these days, how much of a problem, if at all, are the following? New treatments are so complex that patients cannot make informed decisions",
+        "options": {
+            "a big problem": 1,
+            "a small problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "MED2F_W34": {
+        "question": "Thinking about medical treatments these days, how much of a problem, if at all, are the following? Side effects from prescription medicines create as many problems as the medicines solve",
+        "options": {
+            "a big problem": 1,
+            "a small problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "MED2G_W34": {
+        "question": "Thinking about medical treatments these days, how much of a problem, if at all, are the following? The process for evaluating the safety and effectiveness of new medical treatments is too slow",
+        "options": {
+            "a big problem": 1,
+            "a small problem": 2,
+            "not a problem": 3,
+            "refused": 99
+        }
+    },
+    "MED3_W34": {
+        "question": "How much, if anything, have you heard or read about gene editing that can be used to change a baby's genetic characteristics?",
+        "options": {
+            "a lot": 1,
+            "a little": 2,
+            "nothing at all": 3,
+            "refused": 99
+        }
+    },
+    "MED4A_W34": {
+        "question": "Do you think changing a baby's genetic characteristics to make the baby more intelligent is an appropriate use of medical technology ?",
+        "options": {
+            "an appropriate use of medical technology": 1,
+            "taking medical technology too far": 2,
+            "refused": 99
+        }
+    },
+    "MED4B_W34": {
+        "question": "Do you think changing a baby's genetic characteristics to treat a serious disease or condition the baby would have at birth is an appropriate use of medical technology ?",
+        "options": {
+            "an appropriate use of medical technology": 1,
+            "taking medical technology too far": 2,
+            "refused": 99
+        }
+    },
+    "MED4C_W34": {
+        "question": "Do you think changing a baby's genetic characteristics to reduce the risk of a serious disease or condition that could occur over the course of his or her lifetime is an appropriate use of medical technology ?",
+        "options": {
+            "an appropriate use of medical technology": 1,
+            "taking medical technology too far": 2,
+            "refused": 99
+        }
+    },
+    "MED5_W34": {
+        "question": "Thinking about what you have heard or read, how well do you think medical researchers understand the health risks and benefits of changing a baby's genetic characteristics?",
+        "options": {
+            "very well": 1,
+            "fairly well": 2,
+            "not too well": 3,
+            "not at all well": 4,
+            "refused": 99
+        }
+    },
+    "MED6A_W34": {
+        "question": "How likely is the following if gene editing to change a baby's genetic characteristics becomes widely available? Even if gene editing is used appropriately in some cases, others will use these techniques in ways that are morally unacceptable",
+        "options": {
+            "very likely": 1,
+            "fairly likely": 2,
+            "not too likely": 3,
+            "not at all likely": 4,
+            "refused": 99
+        }
+    },
+    "MED6B_W34": {
+        "question": "How likely is the following if gene editing to change a baby's genetic characteristics becomes widely available? These techniques will help people live longer and better quality lives",
+        "options": {
+            "very likely": 1,
+            "fairly likely": 2,
+            "not too likely": 3,
+            "not at all likely": 4,
+            "refused": 99
+        }
+    },
+    "MED6C_W34": {
+        "question": "How likely is the following if gene editing to change a baby's genetic characteristics becomes widely available? We will use these techniques before we fully understand how they affect people's health",
+        "options": {
+            "very likely": 1,
+            "fairly likely": 2,
+            "not too likely": 3,
+            "not at all likely": 4,
+            "refused": 99
+        }
+    },
+    "MED6D_W34": {
+        "question": "How likely is the following if gene editing to change a baby's genetic characteristics becomes widely available? Inequality will increase because this option will be available only for the wealthy",
+        "options": {
+            "very likely": 1,
+            "fairly likely": 2,
+            "not too likely": 3,
+            "not at all likely": 4,
+            "refused": 99
+        }
+    },
+    "MED6E_W34": {
+        "question": "How likely is the following if gene editing to change a baby's genetic characteristics becomes widely available? Development of these techniques will pave the way for new medical advances that benefit society as a whole",
+        "options": {
+            "very likely": 1,
+            "fairly likely": 2,
+            "not too likely": 3,
+            "not at all likely": 4,
+            "refused": 99
+        }
+    },
+    "MED7_W34": {
+        "question": "If gene editing to change a baby's genetic characteristics required testing on human embryos in order to develop these techniques, do you think this would be",
+        "options": {
+            "an appropriate use of medical technology": 1,
+            "taking medical technology too far": 2,
+            "refused": 99
+        }
+    },
+    "BIOTECHA_W34": {
+        "question": "Do you think genetic engineering of animals to increase their production of specific proteins that will lead to more nutritious meat would be",
+        "options": {
+            "an appropriate use of technology": 1,
+            "taking technology too far": 2,
+            "refused": 99
+        }
+    },
+    "BIOTECHB_W34": {
+        "question": "Do you think bringing back an animal that is currently extinct by genetically engineering a closely-related species would be",
+        "options": {
+            "an appropriate use of technology": 1,
+            "taking technology too far": 2,
+            "refused": 99
+        }
+    },
+    "BIOTECHC_W34": {
+        "question": "Do you think genetic engineering of mosquitoes that would prevent them from reproducing in order to prevent the spread of some mosquito-borne diseases would be",
+        "options": {
+            "an appropriate use of technology": 1,
+            "taking technology too far": 2,
+            "refused": 99
+        }
+    },
+    "BIOTECHD_W34": {
+        "question": "Do you think genetic engineering of animals to grow organs or tissues that can be used for humans needing a transplant would be",
+        "options": {
+            "an appropriate use of technology": 1,
+            "taking technology too far": 2,
+            "refused": 99
+        }
+    },
+    "BIOTECHE_W34": {
+        "question": "Do you think genetic engineering of aquarium fish to change their appearance, causing them to glow would be",
+        "options": {
+            "an appropriate use of technology": 1,
+            "taking technology too far": 2,
+            "refused": 99
+        }
+    },
+    "EVOONE_W34": {
+        "question": "Thinking about the development of human life on Earth which statement comes closer to your own views, even if neither is exactly right?",
+        "options": {
+            "humans have evolved over time": 1,
+            "humans have existed in their present form since the beginning of time": 2,
+            "refused": 99
+        }
+    },
+    "EVOTWO_W34": {
+        "question": "Even if you are not sure, which of these is closer to your views?",
+        "options": {
+            "humans have evolved over time": 1,
+            "humans have existed in their present form since the beginning of time": 2,
+            "other view": 3,
+            "refused": 99
+        }
+    },
+    "EVOTHREE_W34": {
+        "question": "Which of these statements comes closer to your own views, even if neither is exactly right?",
+        "options": {
+            "humans have evolved over time due to processes such as natural selection; god or a higher power had no role in this proc": 1,
+            "humans have evolved over time due to processes that were guided or allowed by god or a higher power": 2,
+            "refused": 99
+        }
+    },
+    "EVOPERS3_W34": {
+        "question": "Thinking about the development of human life on Earth which statement comes closest to your view?",
+        "options": {
+            "humans have evolved over time due to processes such as natural selection; god or a higher power had no role in this proc": 1,
+            "humans have evolved over time due to processes that were guided or allowed by god or a higher power": 2,
+            "humans have existed in their present form since the beginning of time": 3,
+            "refused": 99
+        }
+    },
+    "EVOPERS3A_W34": {
+        "question": "Even if you are not sure, which statement comes closest to your view?",
+        "options": {
+            "humans have evolved over time due to processes such as natural selection; god or a higher power had no role in this proc": 1,
+            "humans have evolved over time due to processes that were guided or allowed by god or a higher power": 2,
+            "humans have existed in their present form since the beginning of time": 3,
+            "other view": 4,
+            "refused": 99
+        }
+    },
+    "EVOBIOA_W34": {
+        "question": "From what you have heard or read, which of these statements about the development of human life on Earth comes closest to what most biological scientists say?",
+        "options": {
+            "humans have evolved over time due to processes such as natural selection": 1,
+            "humans have existed in their present form since the beginning of time": 2,
+            "not sure": 8,
+            "refused": 99
+        }
+    },
+    "EVOBIOB_W34": {
+        "question": "Even if you are not sure, from what you have heard or read, which of these statements about the development of human life on Earth comes closest to what most biological scientists say?",
+        "options": {
+            "humans have evolved over time due to processes such as natural selection": 1,
+            "humans have existed in their present form since the beginning of time": 2,
+            "refused": 99
+        }
+    },
+    "BIO15_W34": {
+        "question": "Have you seen a health care provider for an illness or medical condition in the past 12 months, or not?",
+        "options": {
+            "yes": 1,
+            "no": 2,
+            "refused": 99
+        }
+    },
+    "G1_W34": {
+        "question": "Do you, or does anyone in your immediate family, have a gene that predisposes you to a serious disease such as Alzheimer's, cancer, heart disease or sickle cell anemia?",
+        "options": {
+            "yes": 1,
+            "no": 2,
+            "not sure": 8,
+            "refused": 99
+        }
+    },
+    "G2_W34": {
+        "question": "Have you, or has anyone in your immediate family, ever had a genetic test, or haven't you done this?",
+        "options": {
+            "yes": 1,
+            "no": 2,
+            "not sure": 8,
+            "refused": 99
+        }
+    }
+}
