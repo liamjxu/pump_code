@@ -5,8 +5,8 @@ export USEDEMO=True
 
 python -m src.embed_persona \
     --survey_name American_Trends_Panel_W34 \
-    --persona_val_path opinions_qa/persona_val/American_Trends_Panel_W34/date0831_personas_full_haiku_known_test.json \
-    --user_mapping_filepath opinions_qa/similar_users/American_Trends_Panel_W34/date0831_personas_full_haiku_known_test_train${TRAIN_SIZE}_top${TOP_K}_skew${SKEW}_usedemo${USEDEMO}_withname.json \
+    --persona_val_path opinions_qa/persona_val/American_Trends_Panel_W34/date0902_personas_full_haiku_known_test_bn_hcbds.json \
+    --user_mapping_filepath opinions_qa/similar_users/American_Trends_Panel_W34/date0902_personas_full_haiku_known_test_bn_hcbds_train${TRAIN_SIZE}_top${TOP_K}_skew${SKEW}_usedemo${USEDEMO}_withname.json \
     --train_size $TRAIN_SIZE \
     --top_k $TOP_K \
     --skew $SKEW \

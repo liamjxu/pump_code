@@ -1,7 +1,7 @@
-export DATE=0901
+export DATE=0902
 export SURVEY_NAME="American_Trends_Panel_W$1"
-export PERSONA_VAL_FILENAME=opinions_qa/persona_val/${SURVEY_NAME}/date0831_personas_testonly_haiku_known_test.json
-export NEW_PERSONA_VAL_FILENAME=opinions_qa/persona_val/${SURVEY_NAME}/date${DATE}_personas_testonly_haiku_known_test_bn_hcbds.json
+export PERSONA_VAL_FILENAME=opinions_qa/persona_val/${SURVEY_NAME}/date0831_personas_full_haiku_known_test.json
+export NEW_PERSONA_VAL_FILENAME=opinions_qa/persona_val/${SURVEY_NAME}/date${DATE}_personas_full_haiku_known_test_bn_hcbds.json
 export PREDICT_MODEL="haiku"
 
 for i in 1
