@@ -212,7 +212,7 @@ def main(args):
         os.makedirs(review_path, exist_ok=True)
         print(f"\n\nReview at path: {review_path}\n\n")
 
-    if use_rag:
+    if use_rag and not args.ragupper:
         with open(args.rag_similar_user_mapping ,'r') as f:
             rag_similar_user_mapping = json.load(f)
 
@@ -261,8 +261,9 @@ def main(args):
                 'RACE': 'Racial Background'
             }
             demo = {key_mappings[k]: v for k, v in demo.items()}
-            demo = [f"{k}: {v}" for k, v in demo.items()]
-            demo = '\n'.join(demo)
+            # demo = [f"{k}: {v}" for k, v in demo.items()]
+            demo = [f"{v}" for k, v in demo.items()]
+            demo = ';'.join(demo)
 
 
         # for each legal test question, predict
@@ -312,11 +313,15 @@ def main(args):
                     input_dict["personas"] = filtered_personas
 
                 if use_rag:
-                    similar_user_name = [int(_) for _ in rag_similar_user_mapping[str(user_idx)]]
-                    filtered_df = train_resp_df[train_resp_df['index'].isin(similar_user_name)]
-                    similar_answers = filtered_df[q_key].tolist()
-                    # print(similar_answers)
-                    input_dict["rag_similar_answer"] = '\n'.join(similar_answers)
+                    if args.ragupper:
+                        similar_answers = [gold_answer for _ in range(40)]
+                        input_dict["rag_similar_answer"] = '\n'.join(similar_answers)
+                    else:
+                        similar_user_name = [int(_) for _ in rag_similar_user_mapping[str(user_idx)]]
+                        filtered_df = train_resp_df[train_resp_df['index'].isin(similar_user_name)]
+                        similar_answers = filtered_df[q_key].tolist()
+                        # print(similar_answers)
+                        input_dict["rag_similar_answer"] = '\n'.join(similar_answers)
 
                 prompt = pred_prompt_template.format(**input_dict)
                 # raise Exception(prompt)
@@ -357,6 +362,7 @@ if __name__ == '__main__':
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--using_personadb_surveys', action='store_true')
     argparser.add_argument('--use_only_relevant_persona', action='store_true')
+    argparser.add_argument('--ragupper', action='store_true')
     argparser.add_argument('--use_cot', action='store_true')
     argparser.add_argument('--query_to_persona_idx_mapping_filename', type=str, default=None)
     argparser.add_argument('--rag_similar_user_mapping', type=str, default=None)

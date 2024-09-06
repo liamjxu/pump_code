@@ -16,10 +16,6 @@ from src.utils import TEST_KEY_MAPPING
 
 random.seed(42)
 
-parser = argparse.ArgumentParser()
-args = parser.parse_args([])
-args.persona_val_path = "opinions_qa/persona_val/American_Trends_Panel_W34/date0831_personas_full_haiku_known_test.json"
-args.survey_name = "American_Trends_Panel_W34"
 
 def get_skew_personas_to_exclude(pvals, user_list, skew_thres):
     records = []
@@ -104,7 +100,37 @@ def calc_gold_ratio(resp_df, similar_user_mapping, test_keys):
     return overall_ratio
 
 
-def get_gold_ratio(setting, skew_thres, model):
+def calc_gold_ratio_personadb_surveys(resp_df, similar_user_mapping, user_test_q_key_mapping):
+    res = []
+    for user in similar_user_mapping:
+        most_is_gold_cnt = 0
+        correct_ratio = 0
+        q_cnt = 0
+        for key in user_test_q_key_mapping[user]:
+            similar_users = [int(_) for _ in similar_user_mapping[user]]
+            row = resp_df.iloc[int(user)]
+            gold = row[key]
+
+            similar_df = resp_df[resp_df.index.isin(similar_users)]
+            similar_answers = similar_df[key]
+            most_freq = Counter(similar_answers).most_common(1)[0][0]
+            if most_freq == gold:
+                most_is_gold_cnt += 1
+            correct_ratio += Counter(similar_answers).most_common(1)[0][1] / len(similar_users)
+            q_cnt += 1
+        res.append({
+            "key": key,
+            "most_is_gold_cnt": most_is_gold_cnt,
+            "q_cnt": q_cnt,
+            "gold_concentration": correct_ratio
+        })
+    print(res)
+    most_is_gold_ratio = sum([_['most_is_gold_cnt'] for _ in res]) / sum([_['q_cnt'] for _ in res])
+    gold_concentration = sum([_['gold_concentration'] for _ in res]) / sum([_['q_cnt'] for _ in res])
+    return most_is_gold_ratio, gold_concentration
+
+
+def get_gold_ratio(args, setting, skew_thres, model, using_personadb_surveys=False):
     # 
     # Initialization 
     # 
@@ -115,12 +141,19 @@ def get_gold_ratio(setting, skew_thres, model):
         p_vals = json.load(f)
 
     resp_df = pd.read_csv(get_file_from_s3(f"human_resp/{args.survey_name}/responses.csv"))
-    test_user_idx = random.choices(range(len(resp_df)), k=int(len(resp_df)*0.1))
-    test_resp_df = resp_df.iloc[test_user_idx]
-    test_len = int(len(resp_df)*0.1)
+    
+    if using_personadb_surveys:
+        with open(f'experiment/data/human_resp/{args.survey_name}/user_test_q_key_mapping.json', 'r') as f:
+            user_test_q_key_mapping = json.load(f)
+        test_user_list = list(user_test_q_key_mapping.keys())
+        train_user_list = [_ for _ in p_vals.keys() if _ not in test_user_list]
+    else:
+        test_user_idx = random.choices(range(len(resp_df)), k=int(len(resp_df)*0.1))
+        test_resp_df = resp_df.iloc[test_user_idx]
+        test_len = int(len(resp_df)*0.1)
 
-    test_user_list = list(p_vals.keys())[:test_len]
-    train_user_list = list(p_vals.keys())[test_len:]
+        test_user_list = list(p_vals.keys())[:test_len]
+        train_user_list = list(p_vals.keys())[test_len:]
 
     print("Number of users:", len(list(p_vals.keys())))
     print('test users:', len(test_user_list))
@@ -200,34 +233,62 @@ def get_gold_ratio(setting, skew_thres, model):
     scores = (query_embeddings @ passage_embeddings.T) * 100
 
     out = []
-    for top_k in list(range(100, 200, 20)) + list(range(200, 400, 50)):
+    for top_k in list(range(40, 100, 20)) + list(range(100, 400, 50)):
         similar_user_mapping = get_top_k_similar_users(scores, test_user_list, train_user_list, top_k)
         # from IPython import embed; embed()
-        result = calc_gold_ratio(resp_df, similar_user_mapping, TEST_KEY_MAPPING[args.survey_name])
-        out.append({
-            "setting": setting,
-            "skew_thres": skew_thres,
-            "top_k": top_k,
-            "result": result,
-            "similar_user_mapping": similar_user_mapping
-        })
+        if using_personadb_surveys:
+            most_is_gold_ratio, gold_concentration = calc_gold_ratio_personadb_surveys(resp_df, similar_user_mapping, user_test_q_key_mapping)
+            out.append({
+                "setting": setting,
+                "skew_thres": skew_thres,
+                "top_k": top_k,
+                "most_is_gold_ratio": most_is_gold_ratio,
+                "gold_concentration": gold_concentration,
+                "similar_user_mapping": similar_user_mapping
+            })
+        else:
+            result = calc_gold_ratio(resp_df, similar_user_mapping, TEST_KEY_MAPPING[args.survey_name])
+            out.append({
+                "setting": setting,
+                "skew_thres": skew_thres,
+                "top_k": top_k,
+                "result": result,
+                "similar_user_mapping": similar_user_mapping
+            })
 
     return out
 
 
-all_grids = []
-model = AutoModel.from_pretrained('nvidia/NV-Embed-v2', trust_remote_code=True, device_map='auto')
-for setting in ['demo_persona', 'persona_only', 'demo_only']:
-    for skew_thres in [10, 5, 3]:
-        out = get_gold_ratio(setting, skew_thres, model)
-        all_grids += out
+def main(args):
+    all_grids = []
+    model = AutoModel.from_pretrained('nvidia/NV-Embed-v2', trust_remote_code=True, device_map='auto')
+    for setting in ['demo_persona', 'persona_only', 'demo_only']:
+        for skew_thres in [10, 5, 3]:
+            out = get_gold_ratio(args, setting, skew_thres, model, using_personadb_surveys=args.using_personadb_surveys)
+            all_grids += out
 
-        for entry in out:
-            print(entry['setting'])
-            print(entry['skew_thres'])
-            print(entry['top_k'])
-            print(entry['result'])
-            print()
-        
-        with open('hp_grid_search_v2.json', 'w') as f:
-            json.dump(all_grids, f, indent=4)
+            for entry in out:
+                print(entry['setting'])
+                print(entry['skew_thres'])
+                print(entry['top_k'])
+                print(entry['result'])
+                print()
+            
+            with open('hp_grid_search_personadb_surveys.json', 'w') as f:
+                json.dump(all_grids, f, indent=4)
+
+
+if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser()
+    # args = parser.parse_args([])
+    # args.persona_val_path = "opinions_qa/persona_val/American_Trends_Panel_W34/date0831_personas_full_haiku_known_test.json"
+    # args.survey_name = "American_Trends_Panel_W34"
+
+    parser.add_argument('--persona_val_path', type=str)
+    parser.add_argument('--survey_name', type=str)
+    parser.add_argument('--using_personadb_surveys', action='store_true')
+    args = parser.parse_args()
+
+    main(args)
+
