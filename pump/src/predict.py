@@ -11,6 +11,7 @@ from src.utils import get_llm_response, CLAUDE_NAME_MAPPING, TEST_KEY_MAPPING
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModel
 from scipy.spatial.distance import cdist
+from collections import Counter
 
 
 def get_persona_values(file_key, user_history, persona_path_name, model_name="sonnet", persona_num=5):
@@ -154,6 +155,7 @@ def main(args):
         "history_demo_persona": 'experiment/prompts/predict_response/predict_history_demo_persona_prompt3.txt',
         # "history_demo_persona": 'experiment/prompts/predict_response/predict_history_demo_persona_prompt4.txt',
         "history_demo_persona_rag": 'experiment/prompts/predict_response/predict_history_demo_persona_rag_prompt3.txt',
+        # "history_demo_persona_rag": 'experiment/prompts/predict_response/predict_history_demo_persona_rag_prompt4_most_common.txt',
         "demo": 'experiment/prompts/predict_response/predict_demo.txt',
         "persona": 'experiment/prompts/predict_response/predict_persona.txt',
         "demo_persona": 'experiment/prompts/predict_response/predict_demo_persona.txt',
@@ -319,9 +321,11 @@ def main(args):
                     else:
                         similar_user_name = [int(_) for _ in rag_similar_user_mapping[str(user_idx)]]
                         filtered_df = train_resp_df[train_resp_df['index'].isin(similar_user_name)]
-                        similar_answers = filtered_df[q_key].tolist()
+                        similar_answers = filtered_df[q_key].dropna().tolist()
                         # print(similar_answers)
-                        input_dict["rag_similar_answer"] = '\n'.join(similar_answers)
+                        # input_dict["rag_similar_answer"] = '\n'.join(similar_answers)
+                        most_common_answer = Counter(similar_answers).most_common(1)[0][0]
+                        input_dict["rag_similar_answer"] = '\n'.join([most_common_answer for _ in range(40)])
 
                 prompt = pred_prompt_template.format(**input_dict)
                 # raise Exception(prompt)

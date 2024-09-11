@@ -103,31 +103,34 @@ def calc_gold_ratio(resp_df, similar_user_mapping, test_keys):
 def calc_gold_ratio_personadb_surveys(resp_df, similar_user_mapping, user_test_q_key_mapping):
     res = []
     for user in similar_user_mapping:
-        most_is_gold_cnt = 0
-        correct_ratio = 0
-        q_cnt = 0
+
         for key in user_test_q_key_mapping[user]:
             similar_users = [int(_) for _ in similar_user_mapping[user]]
             row = resp_df.iloc[int(user)]
             gold = row[key]
 
             similar_df = resp_df[resp_df.index.isin(similar_users)]
-            similar_answers = similar_df[key]
+            similar_answers = similar_df[key].dropna()
+            if len(similar_answers) == 0:
+                similar_answers = ["NA"]  # for most common operation in the next line
             most_freq = Counter(similar_answers).most_common(1)[0][0]
             if most_freq == gold:
-                most_is_gold_cnt += 1
-            correct_ratio += Counter(similar_answers).most_common(1)[0][1] / len(similar_users)
-            q_cnt += 1
-        res.append({
-            "key": key,
-            "most_is_gold_cnt": most_is_gold_cnt,
-            "q_cnt": q_cnt,
-            "gold_concentration": correct_ratio
-        })
+                most_is_gold_cnt = 1
+            else:
+                most_is_gold_cnt = 0
+            gold_cnt = Counter(similar_answers)[gold] if gold in Counter(similar_answers) else 0
+            gold_concentration = gold_cnt / len(similar_answers)
+
+            res.append({
+                "user": user,
+                "key": key,
+                "most_is_gold_cnt": most_is_gold_cnt,
+                "gold_concentration": gold_concentration
+            })
     print(res)
-    most_is_gold_ratio = sum([_['most_is_gold_cnt'] for _ in res]) / sum([_['q_cnt'] for _ in res])
-    gold_concentration = sum([_['gold_concentration'] for _ in res]) / sum([_['q_cnt'] for _ in res])
-    return most_is_gold_ratio, gold_concentration
+    most_is_gold_ratio = sum([_['most_is_gold_cnt'] for _ in res]) / len(res)
+    gold_concentration_ratio = sum([_['gold_concentration'] for _ in res]) / len(res)
+    return most_is_gold_ratio, gold_concentration_ratio
 
 
 def get_gold_ratio(args, setting, skew_thres, model, using_personadb_surveys=False):
@@ -233,17 +236,18 @@ def get_gold_ratio(args, setting, skew_thres, model, using_personadb_surveys=Fal
     scores = (query_embeddings @ passage_embeddings.T) * 100
 
     out = []
-    for top_k in list(range(40, 100, 20)) + list(range(100, 400, 50)):
+    # for top_k in list(range(40, 100, 20)) + list(range(100, 400, 50)):
+    for top_k in list(range(20, 160, 20)) + list(range(160, 400, 40)):
         similar_user_mapping = get_top_k_similar_users(scores, test_user_list, train_user_list, top_k)
         # from IPython import embed; embed()
         if using_personadb_surveys:
-            most_is_gold_ratio, gold_concentration = calc_gold_ratio_personadb_surveys(resp_df, similar_user_mapping, user_test_q_key_mapping)
+            most_is_gold_ratio, gold_concentration_ratio = calc_gold_ratio_personadb_surveys(resp_df, similar_user_mapping, user_test_q_key_mapping)
             out.append({
                 "setting": setting,
                 "skew_thres": skew_thres,
                 "top_k": top_k,
                 "most_is_gold_ratio": most_is_gold_ratio,
-                "gold_concentration": gold_concentration,
+                "gold_concentration_ratio": gold_concentration_ratio,
                 "similar_user_mapping": similar_user_mapping
             })
         else:
@@ -262,19 +266,17 @@ def get_gold_ratio(args, setting, skew_thres, model, using_personadb_surveys=Fal
 def main(args):
     all_grids = []
     model = AutoModel.from_pretrained('nvidia/NV-Embed-v2', trust_remote_code=True, device_map='auto')
-    for setting in ['demo_persona', 'persona_only', 'demo_only']:
-        for skew_thres in [10, 5, 3]:
+    # for setting in ['demo_persona', 'persona_only', 'demo_only']:
+    for setting in ['persona_only', 'demo_persona']:
+        # for skew_thres in [10, 5, 3]:
+        for skew_thres in [100, 15, 10, 7, 3, 2]:
             out = get_gold_ratio(args, setting, skew_thres, model, using_personadb_surveys=args.using_personadb_surveys)
             all_grids += out
 
-            for entry in out:
-                print(entry['setting'])
-                print(entry['skew_thres'])
-                print(entry['top_k'])
-                print(entry['result'])
-                print()
+            print(out)
+            print()
             
-            with open('hp_grid_search_personadb_surveys.json', 'w') as f:
+            with open(args.output_name, 'w') as f:
                 json.dump(all_grids, f, indent=4)
 
 
@@ -287,6 +289,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--persona_val_path', type=str)
     parser.add_argument('--survey_name', type=str)
+    parser.add_argument('--output_name', type=str)
     parser.add_argument('--using_personadb_surveys', action='store_true')
     args = parser.parse_args()
 
