@@ -14,7 +14,7 @@ from tqdm import tqdm
 import numpy as np
 
 
-brt = boto3.client(service_name='bedrock-runtime', config=Config(read_timeout=120))
+brt = boto3.client(service_name='bedrock-runtime', region_name="us-east-1", config=Config(read_timeout=120))
 s3_client = boto3.client('s3')
 bucket_name = 'probabilistic-user-modeling'
 
@@ -28,7 +28,11 @@ TEST_KEY_MAPPING = {
 
 CLAUDE_NAME_MAPPING = {
     "sonnet": "anthropic.claude-3-sonnet-20240229-v1:0",
-    "haiku": "anthropic.claude-3-haiku-20240307-v1:0"
+    "haiku": "anthropic.claude-3-haiku-20240307-v1:0",
+    "llama8b3": "meta.llama3-8b-instruct-v1:0",
+    "llama70b3": "meta.llama3-70b-instruct-v1:0",
+    "sonnet35": "anthropic.claude-3-5-sonnet-20240620-v1:0",
+    "mistrallarge": "mistral.mistral-large-2402-v1:0",
 }
 
 @dataclass
@@ -76,12 +80,99 @@ def persona_dim_dict_list_to_object_list(persona_dict_list: List[Dict]) -> List[
 
 def get_llm_response(
     input_text,
-    model_id = "anthropic.claude-3-haiku-20240307-v1:0",  # "anthropic.claude-3-sonnet-20240229-v1:0",
+    model_id = "anthropic.claude-3-haiku-20240307-v1:0",  # model_id: https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html#model-ids-arns
     prefill = None,
     max_tokens = 1000,
     return_full = False
 ):
-    # model_id: https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html#model-ids-arns
+    if model_id.startswith("anthropic"):
+        res = _get_llm_response_anthropic(input_text, model_id, prefill, max_tokens, return_full)
+    if model_id.startswith("meta"):
+        res = _get_llm_response_meta(input_text, model_id, max_tokens)
+    if model_id.startswith("mistral"):
+        res = _get_llm_response_mistral(input_text, model_id, max_tokens)
+    
+    return res
+
+
+def _get_llm_response_mistral(
+    input_text,
+    model_id,
+    max_tokens = 1000,
+):
+
+    conversation = [
+        {
+            "role": "user",
+            "content": [{"text": input_text}],
+        }
+    ]
+
+    inputs = {
+        "modelId": model_id,
+        "messages": conversation,
+        "inferenceConfig": {"maxTokens": max_tokens, "temperature": 0},
+        "additionalModelRequestFields": {}
+    }
+
+    failure = 0
+    while failure < 3:
+        try:
+            response = brt.converse(**inputs)
+            break
+        except Exception as e:
+            print(f"Failure {(failure/3)}: brt.invoke_model(**inputs) failed. Error Message: {e}.")
+            print("Retrying.")
+            failure += 1
+
+    response_text = response["output"]["message"]["content"][0]["text"]
+
+    return response_text
+    
+
+def _get_llm_response_meta(
+    input_text,
+    model_id,
+    max_tokens = 1000,
+):
+
+    body = json.dumps({
+        "temperature": 0,
+        "prompt": input_text,
+        "max_gen_len": max_tokens
+    })
+
+    inputs = {
+        "modelId": model_id,
+        "contentType": "application/json",
+        "accept": "application/json",
+        "body": body
+    }
+    failure = 0
+    while failure < 3:
+        try:
+            response = brt.invoke_model(**inputs)
+            break
+        except Exception as e:
+            print(f"Failure {(failure/3)}: brt.invoke_model(**inputs) failed. Error Message: {e}.")
+            print("Retrying.")
+            failure += 1
+
+    response_body = json.loads(response.get('body').read())
+
+    # text
+    # from IPython import embed; embed()
+    output = response_body['generation']
+    return output
+    
+
+def _get_llm_response_anthropic(
+    input_text,
+    model_id = "anthropic.claude-3-haiku-20240307-v1:0",  # model_id: https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html#model-ids-arns
+    prefill = None,
+    max_tokens = 1000,
+    return_full = False
+):
     if prefill is not None:
         body = json.dumps({
             "anthropic_version": "bedrock-2023-05-31",
@@ -132,6 +223,7 @@ def get_llm_response(
         "accept": "application/json",
         "body": body
     }
+    # from IPython import embed; embed()
     failure = 0
     while failure < 3:
         try:

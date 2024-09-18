@@ -1,0 +1,3 @@
+sh experiment/scripts/predict_response/run_predict_personadb_allpred_allconfig.sh 34 llama70b3
+sh experiment/scripts/predict_response/run_predict_personadb_allpred_allconfig.sh 41 llama70b3
+sh experiment/scripts/predict_response/run_predict_personadb_allpred_allconfig.sh 82 llama70b3

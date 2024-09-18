@@ -48,8 +48,9 @@ def get_skew_personas_to_exclude(pvals, user_list, skew_thres):
             print(Counter(df[col].values))
             print()
 
-    print("Skewed Ratio: ", skew_cnt / len(df.columns))
-    return skew_personas
+    # print("Skewed Ratio: ", skew_cnt / len(df.columns))
+    skewed_ratio = skew_cnt / len(df.columns)
+    return skew_personas, skewed_ratio
 
 
 def get_user_persona_repr(user, all_personas):
@@ -169,7 +170,7 @@ def get_gold_ratio(args, setting, skew_thres, model, using_personadb_surveys=Fal
     all_personas = {}
 
     if use_persona:
-        skew_personas_to_exclude = get_skew_personas_to_exclude(p_vals, test_user_list + train_user_list, skew_thres)
+        skew_personas_to_exclude, skewed_ratio = get_skew_personas_to_exclude(p_vals, test_user_list + train_user_list, skew_thres)
         for user in p_vals:
             if user not in all_personas:
                 all_personas[user] = []

@@ -1,0 +1,3 @@
+sh experiment/scripts/predict_response/run_predict_personadb_allpred_allconfig.sh 34 mistrallarge
+sh experiment/scripts/predict_response/run_predict_personadb_allpred_allconfig.sh 41 mistrallarge
+sh experiment/scripts/predict_response/run_predict_personadb_allpred_allconfig.sh 82 mistrallarge

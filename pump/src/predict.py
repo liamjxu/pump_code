@@ -326,6 +326,8 @@ def main(args):
                         # input_dict["rag_similar_answer"] = '\n'.join(similar_answers)
                         most_common_answer = Counter(similar_answers).most_common(1)[0][0]
                         input_dict["rag_similar_answer"] = '\n'.join([most_common_answer for _ in range(40)])
+                        if args.response_prediction_model_name != 'sonnet':  # temp, only for the missing exp TODO: remove this after the exp
+                            input_dict["rag_similar_answer"] = most_common_answer
 
                 prompt = pred_prompt_template.format(**input_dict)
                 # raise Exception(prompt)
@@ -398,6 +400,6 @@ if __name__ == '__main__':
     argparser.add_argument('--persona_path_name', type=str, default=None)
     argparser.add_argument('--persona_filename', type=str, default=None)
     argparser.add_argument('--persona_inference_model_name', type=str, default="sonnet", help="If inferring persona values, use this for model name", choices=['sonnet', 'haiku'])
-    argparser.add_argument('--response_prediction_model_name', type=str, default="sonnet", help="If predicting user responses, use this for model name", choices=['sonnet', 'haiku'])
+    argparser.add_argument('--response_prediction_model_name', type=str, default="sonnet", help="If predicting user responses, use this for model name", choices=list(CLAUDE_NAME_MAPPING.keys()))
     args = argparser.parse_args()
     main(args)
