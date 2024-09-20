@@ -1,3 +1,0 @@
-sh experiment/scripts/predict_response/run_predict_personadb_allpred_allconfig.sh 34 sonnet
-# sh experiment/scripts/predict_response/run_predict_personadb_allpred_allconfig.sh 41 sonnet
-# sh experiment/scripts/predict_response/run_predict_personadb_allpred_allconfig.sh 82 sonnet

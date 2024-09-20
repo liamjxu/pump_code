@@ -1,7 +1,5 @@
 *.DS_Store
-pump/sm_local/
-pump/outputs/
-pump/opinions_qa/
+opinions_qa/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
